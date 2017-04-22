@@ -15,11 +15,12 @@ public enum Resource
 static public class ResourcesManger
 {
 
-    static Dictionary<Resource,int> resources = new Dictionary<Resource, int> ();
-    static public int resourcesCapacity=1000;
+    public static Dictionary <Resource, int> resources;
+    static public int resourcesCapacity = 1000;
 
-    static void Start ()
+    static ResourcesManger ()
     {
+        resources = new Dictionary<Resource, int> ();
         resources.Add (Resource.Food, 100);
         resources.Add (Resource.BuildingMaterial, 100);
         resources.Add (Resource.Bananas, 0);
@@ -28,10 +29,6 @@ static public class ResourcesManger
         resources.Add (Resource.Stone, 0);
     }
 
-    static void Update ()
-    {
-
-    }
 
     static public bool hasResource (Resource resourceName, int value = 1)
     {
@@ -84,12 +81,26 @@ static public class ResourcesManger
             return false;
     }
 
+    static public bool zeroResource (Resource resourceName)
+    {
+        if (resources.ContainsKey (resourceName))
+        {
+            resources [resourceName] = 0;
+            return true;
+        }
+        else
+            return false;
+    }
+
     static public bool clearStockpile ()
     {
-        foreach (KeyValuePair<Resource, int> resource in resources)
-        {
-            resources [resource.Key] = 0;
-        }
+        zeroResource (Resource.Bananas);
+        zeroResource (Resource.BuildingMaterial);
+        zeroResource (Resource.Food);
+        zeroResource (Resource.Stone);
+        zeroResource (Resource.Sugar);
+        zeroResource (Resource.Wood);
+
         return true;
     }
 
