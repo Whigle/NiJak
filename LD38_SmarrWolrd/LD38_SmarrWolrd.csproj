@@ -115,9 +115,10 @@
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\Scripts\BuildingRequirements.cs" />
     <Compile Include="Assets\Scripts\BuildingSelection.cs" />
+    <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\HookScript.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
-    <Compile Include="Assets\Scripts\ResourcesManger.cs" />
+    <Compile Include="Assets\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />
     <Compile Include="Assets\Scripts\initialIslandScript.cs" />
   </ItemGroup>

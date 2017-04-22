@@ -382,9 +382,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 10
-    wood: 1
-    stone: 10
+    Food: 0
+    BuildingMaterial: 100
+    Bananas: 100
+    Sugar: 0
+    Wood: 0
+    Stone: 0
 --- !u!114 &114054782116583474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -642,9 +645,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 5
-    wood: 5
-    stone: 5
+    Food: 20
+    BuildingMaterial: 20
+    Bananas: 20
+    Sugar: 0
+    Wood: 0
+    Stone: 0
 --- !u!114 &114398271686386794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -744,9 +750,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 5
-    wood: 0
-    stone: 5
+    Food: 10
+    BuildingMaterial: 10
+    Bananas: 10
+    Sugar: 0
+    Wood: 0
+    Stone: 0
 --- !u!114 &114527909423758666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,9 +869,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 5
-    wood: 20
-    stone: 0
+    Food: 50
+    BuildingMaterial: 50
+    Bananas: 50
+    Sugar: 50
+    Wood: 0
+    Stone: 0
 --- !u!114 &114582848366788768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -981,9 +993,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 5
-    wood: 10
-    stone: 10
+    Food: 100
+    BuildingMaterial: 100
+    Bananas: 0
+    Sugar: 0
+    Wood: 0
+    Stone: 0
 --- !u!114 &114755197129669650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1141,9 +1156,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredResources:
-    banana: 1
-    wood: 1
-    stone: 10
+    Food: 50
+    BuildingMaterial: 50
+    Bananas: 50
+    Sugar: 0
+    Wood: 50
+    Stone: 0
 --- !u!114 &114989866535723356
 MonoBehaviour:
   m_ObjectHideFlags: 1

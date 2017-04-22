@@ -20,10 +20,12 @@ public class MainGame : MonoBehaviour {
     void Start () {
         grid = new int[200][];
         for(int i=0;i<200;i++)
-            grid[i] = new int[300];
+            grid[i] = new int[200];
         range = 70f;
         floatingIslands = new List<GameObject>();
         for (int i = 0; i < initialIslandCount; i++) instantiateFI11(floatingIsland);
+
+        FindObjectOfType<initialIslandScript>().Mystart();
     }
 	
 	// Update is called once per frame

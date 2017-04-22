@@ -239,5 +239,6 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 0
   partOfIsland: 0
+  box: {fileID: 1349088518446128, guid: d899c1a624866da419db1548fa127171, type: 2}
   x: 0
   y: 0
