@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 204c61aa940133c49bf313f031d0b8e9
+timeCreated: 1481489260
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DK Garden Gnome
+  fontNames:
+  - DK Garden Gnome
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
