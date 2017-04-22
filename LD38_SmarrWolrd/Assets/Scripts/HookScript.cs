@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HookScript : MonoBehaviour {
+public class HookScript : MonoBehaviour
+{
 
     Vector3 startPosition;
     Vector3 targetPosition;
@@ -13,25 +14,32 @@ public class HookScript : MonoBehaviour {
     bool hookEnabled = true;
     bool trigger = false;
     float lineLength = 10f;
+    GridPoint gridPosition;
+    MainGame mainGame;
 
     // Use this for initialization
-    void Start () {
-        lineRenderer = gameObject.GetComponent<LineRenderer>();
+    void Start ()
+    {
+        lineRenderer = gameObject.GetComponent<LineRenderer> ();
         lineRenderer.numPositions = 2;
         lineRenderer.enabled = false;
         startPosition = transform.position;
+        gridPosition = new GridPoint (100, 100);
+        mainGame = FindObjectOfType<MainGame> ();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update ()
+    {
+        GetInput ();
         if (hookEnabled)
         {
             //Cursor.visible=false;
-            if (!hookShooting&&!hookReturning)
+            if (!hookShooting && !hookReturning)
             {
-                RaycastHit myRay = new RaycastHit();
-                Physics.Raycast(Camera.allCameras[1].ScreenPointToRay(Input.mousePosition), out myRay);
-                if (myRay.GetType() != null)
+                RaycastHit myRay = new RaycastHit ();
+                Physics.Raycast (Camera.allCameras [1].ScreenPointToRay (Input.mousePosition), out myRay);
+                if (myRay.GetType () != null)
                 {
                     if (myRay.transform.gameObject.tag == "RayCatcher")
                     {
@@ -45,21 +53,21 @@ public class HookScript : MonoBehaviour {
                         targetPosition.y += 1f;
                         targetPosition *= 1000;
                         targetPosition.z = startPosition.z;
-                        transform.LookAt(targetPosition);
+                        transform.LookAt (targetPosition);
                     }
                 }
-                if (Input.GetMouseButton(0))
+                if (Input.GetMouseButton (0))
                 {
                     hookShooting = false;
-                    ShootHook(startPosition + transform.forward * 20);
+                    ShootHook (startPosition + transform.forward * 20);
                 }
             }
         }
         if (hookShooting)
         {
-            lineRenderer.SetPosition(1, gameObject.transform.position);
-            transform.Translate(new Vector3(0f, 0f, 1f * speed * Time.deltaTime));
-            if (Vector3.Distance(startPosition, transform.position) > lineLength)
+            lineRenderer.SetPosition (1, gameObject.transform.position);
+            transform.Translate (new Vector3 (0f, 0f, 1f * speed * Time.deltaTime));
+            if (Vector3.Distance (startPosition, transform.position) > lineLength)
             {
                 hookShooting = false;
                 hookReturning = true;
@@ -67,9 +75,9 @@ public class HookScript : MonoBehaviour {
         }
         if (hookReturning)
         {
-            lineRenderer.SetPosition(1, gameObject.transform.position);
-            transform.Translate(new Vector3(0f, 0f, -1f * speed * Time.deltaTime));
-            if (Vector3.Distance(startPosition, transform.position) <= 0.5f)
+            lineRenderer.SetPosition (1, gameObject.transform.position);
+            transform.Translate (new Vector3 (0f, 0f, -1f * speed * Time.deltaTime));
+            if (Vector3.Distance (startPosition, transform.position) <= 0.5f)
             {
                 hookReturning = false;
                 lineRenderer.enabled = false;
@@ -78,31 +86,76 @@ public class HookScript : MonoBehaviour {
         }
     }
 
-    void ShootHook(Vector3 targetPos)
+    void ShootHook (Vector3 targetPos)
     {
         transform.position = startPosition;
         targetPosition = targetPos;
-        lineRenderer.SetPosition(0, startPosition);
+        lineRenderer.SetPosition (0, startPosition);
         lineRenderer.enabled = true;
         hookShooting = true;
     }
 
-    void returnHook()
+    void returnHook ()
     {
         hookShooting = false;
         hookReturning = true;
     }
-    void OnTriggerEnter(Collider col)
+    void OnTriggerEnter (Collider col)
     {
         if (!trigger)
         {
-            if (!col.GetComponent<floatingIslandScript>().partOfIsland) { 
-                col.GetComponent<floatingIslandScript>().direction = startPosition - transform.position;
-                col.GetComponent<floatingIslandScript>().direction.Normalize();
-                col.GetComponent<floatingIslandScript>().speed = speed;
-                returnHook();
-                trigger = true;
+            if (col.GetComponent<floatingIslandScript> () != null)
+            {
+                if (!col.GetComponent<floatingIslandScript> ().partOfIsland)
+                {
+                    col.GetComponent<floatingIslandScript> ().direction = startPosition - transform.position;
+                    col.GetComponent<floatingIslandScript> ().direction.Normalize ();
+                    col.GetComponent<floatingIslandScript> ().speed = speed;
+                    returnHook ();
+                    trigger = true;
+                }
             }
         }
     }
+
+    private void GetInput ()
+    {
+        if (Input.GetKeyDown (KeyCode.W))
+        {
+            if (mainGame.grid [gridPosition.x] [gridPosition.y + 1] == 1)
+            {
+                transform.position += Vector3.up;
+                startPosition = transform.position;
+                gridPosition.y += 1;
+            }
+        }
+        if (Input.GetKeyDown (KeyCode.S))
+        {
+            if (mainGame.grid [gridPosition.x] [gridPosition.y - 1] == 1)
+            {
+                transform.position += Vector3.down;
+                startPosition = transform.position;
+                gridPosition.y -= 1;
+            }
+        }
+        if (Input.GetKeyDown (KeyCode.A))
+        {
+            if (mainGame.grid [gridPosition.x - 1] [gridPosition.y] == 1)
+            {
+                transform.position += Vector3.left;
+                startPosition = transform.position;
+                gridPosition.x -= 1;
+            }
+        }
+        if (Input.GetKeyDown (KeyCode.D))
+        {
+            if (mainGame.grid [gridPosition.x + 1] [gridPosition.y] == 1)
+            {
+                transform.position += Vector3.right;
+                startPosition = transform.position;
+                gridPosition.x += 1;
+            }
+        }
+    }
+
 }

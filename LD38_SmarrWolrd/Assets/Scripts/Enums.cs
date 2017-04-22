@@ -21,6 +21,17 @@ public enum Building
     PowerStation
 }
 
+public struct GridPoint
+{
+    public int x;
+    public int y;
+    public GridPoint (int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+}
+
 [System.Serializable]
 public class Resources
 {
