@@ -16,8 +16,9 @@ public class spawnResources : MonoBehaviour {
 		
 	}
 
-    public void randomSpawn(Resource resource,GameObject island)
+    public int randomSpawn(Resource resource, GameObject island)
     {
+        int count = 0;
         if(resource==Resource.Wood)
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
@@ -25,6 +26,7 @@ public class spawnResources : MonoBehaviour {
                 if (Random.Range(0f, 1f) < 0.3f)
                 {
                     Instantiate(tree, item+new Vector3(0,0,-0.5f), Quaternion.Euler(Vector3.left * 90)).transform.parent = island.transform;
+                    count++;
                 }
             }
         }
@@ -35,9 +37,11 @@ public class spawnResources : MonoBehaviour {
                 if (Random.Range(0f, 1f) < 0.3f)
                 {
                     Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90)).transform.parent = island.transform;
+                    count++;
                 }
             }
         }
+        return count;
     }
 
 }

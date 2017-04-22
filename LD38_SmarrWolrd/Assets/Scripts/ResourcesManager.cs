@@ -66,6 +66,7 @@ static public class ResourcesManager
             {
                 resources [resourceName] += value;
             }
+            MonoBehaviour.print(resourceName+": "+resources[resourceName]);
             return true;
         }
         else

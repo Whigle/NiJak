@@ -14,6 +14,7 @@ public class floatingIslandScript : MonoBehaviour
     public GameObject box;
     bool flaga = false;
     public Resource resource;
+    public int resourceCount;
     public List<Vector3> fields;
 
     #endregion
@@ -59,7 +60,7 @@ public class floatingIslandScript : MonoBehaviour
                 break;
         }
         calculateFields();
-        GetComponent<spawnResources>().randomSpawn(resource,gameObject);
+        resourceCount = GetComponent<spawnResources>().randomSpawn(resource,gameObject);
 
     }
 
@@ -89,7 +90,7 @@ public class floatingIslandScript : MonoBehaviour
             collision.gameObject.GetComponent<floatingIslandScript>().direction = new Vector3(0, 0, 0);
             collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland = true;
             collision.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
+            ResourcesManager.increaseResource(resource, resourceCount);
         }
     }
 
