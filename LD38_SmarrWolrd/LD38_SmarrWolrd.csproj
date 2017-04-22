@@ -115,6 +115,7 @@
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\Scripts\BuildingRequirements.cs" />
     <Compile Include="Assets\Scripts\BuildingSelection.cs" />
+    <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\HookScript.cs" />
     <Compile Include="Assets\Scripts\HookSpawner.cs" />
