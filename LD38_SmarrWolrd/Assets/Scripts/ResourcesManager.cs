@@ -2,23 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Resource
-{
-    Food,
-    BuildingMaterial,
-    Bananas,
-    Sugar,
-    Wood,
-    Stone
-}
 
-static public class ResourcesManger
+static public class ResourcesManager
 {
 
     public static Dictionary <Resource, int> resources;
     static public int resourcesCapacity = 1000;
 
-    static ResourcesManger ()
+    static ResourcesManager ()
     {
         resources = new Dictionary<Resource, int> ();
         resources.Add (Resource.Food, 100);

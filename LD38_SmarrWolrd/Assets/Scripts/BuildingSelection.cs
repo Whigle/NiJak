@@ -23,7 +23,7 @@ public class BuildingSelection : MonoBehaviour
 
     void LateUpdate ()
     {
-        HighLightButtons ();
+        HighlightButtons ();
     }
 
     public void Selected (Button button)
@@ -31,7 +31,7 @@ public class BuildingSelection : MonoBehaviour
 
     }
 
-    private void HighLightButtons ()
+    private void HighlightButtons ()
     {
         foreach (Button button in buildButtons)
         {
