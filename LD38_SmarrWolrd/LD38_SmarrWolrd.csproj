@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\BuildingSelection.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\HookScript.cs" />
+    <Compile Include="Assets\Scripts\HookSpawner.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
     <Compile Include="Assets\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />

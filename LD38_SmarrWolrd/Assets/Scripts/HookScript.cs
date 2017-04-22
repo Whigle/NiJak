@@ -45,14 +45,25 @@ public class HookScript : MonoBehaviour
                     {
                         Vector3 rayCatcherPosition = myRay.transform.position;
                         //float dist = Vector3.Distance(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0f), new Vector3(Camera.allCameras[1].transform.position.x, Camera.allCameras[1].transform.position.y, 0f));
-                        targetPosition = myRay.point;
+                        /*targetPosition = myRay.point;
                         targetPosition.x -= rayCatcherPosition.x;
                         targetPosition.y -= rayCatcherPosition.y;
                         targetPosition.x -= startPosition.x;
                         targetPosition.y -= startPosition.y;
                         targetPosition.y += 1f;
                         targetPosition *= 1000;
-                        targetPosition.z = startPosition.z;
+                        targetPosition.z = startPosition.z;*/
+                        Vector3 p = new Vector3();
+                        Camera c = Camera.main;
+                        Event e = Event.current;
+                        Vector2 mousePos = new Vector2();
+
+                        // Get the mouse position from Event.
+                        // Note that the y position from Event is inverted.
+                        mousePos.x = Input.mousePosition.x;
+                        mousePos.y = Input.mousePosition.y;
+
+                        targetPosition = c.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, -c.transform.position.z));
                         transform.LookAt (targetPosition);
                     }
                 }
@@ -79,6 +90,7 @@ public class HookScript : MonoBehaviour
             transform.Translate (new Vector3 (0f, 0f, -1f * speed * Time.deltaTime));
             if (Vector3.Distance (startPosition, transform.position) <= 0.5f)
             {
+                transform.position = startPosition;
                 hookReturning = false;
                 lineRenderer.enabled = false;
                 trigger = false;
