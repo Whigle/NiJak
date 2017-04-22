@@ -2,69 +2,95 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-static public class ResourcesManger {
+public enum Resource
+{
+    Food,
+    BuildingMaterial,
+    Bananas,
+    Sugar,
+    Wood,
+    Stone
+}
 
-	static Dictionary<string,int> resources = new Dictionary<string,int>();
-	static public int resourcesCapacity=1000;
-	// Use this for initialization
-	static void Start () {
-		resources.Add("Food",100);
-		resources.Add("Building material",100);
-		resources.Add("Bananas",0);
-		resources.Add("Sugar",0);
-		resources.Add("Wood",0);	
-		resources.Add("Stone",0);	
-	}
-	
-	// Update is called once per frame
-	static void Update () {
-		
-	}
+static public class ResourcesManger
+{
 
-	static public bool hasResource(string resourceName, int value=1){
-		if(resources.ContainsKey(resourceName)){
-			if (resources[resourceName]>=value) return true;
-			return false;
-		}
-		else return false;
-	}
+    static Dictionary<Resource,int> resources = new Dictionary<Resource, int> ();
+    static public int resourcesCapacity=1000;
 
-	static public int getResource(string resourceName){
-		if(resources.ContainsKey(resourceName)){
-			return resources[resourceName];
-		}
-		else return 0;
-	}
+    static void Start ()
+    {
+        resources.Add (Resource.Food, 100);
+        resources.Add (Resource.BuildingMaterial, 100);
+        resources.Add (Resource.Bananas, 0);
+        resources.Add (Resource.Sugar, 0);
+        resources.Add (Resource.Wood, 0);
+        resources.Add (Resource.Stone, 0);
+    }
 
-	static public bool decreaseResource(string resourceName, int value){
-		if(resources.ContainsKey(resourceName)&&(resources[resourceName]-value>=0)){
-			resources[resourceName]-=value;
-			return true;
-		}
-		else return false;
-	}
+    static void Update ()
+    {
 
-	static public bool increaseResource(string resourceName, int value){
-		if(resources.ContainsKey(resourceName)){
-			if (resources[resourceName]+value>=resourcesCapacity){
-				resources[resourceName]=resourcesCapacity;
-			}
-			else{
-				resources[resourceName]+=value;
-			}
-			return true;
-		}
-		else return false;
-	}
+    }
 
-	static public bool clearStockpile(){
-		string [] str = new string[resources.Keys.Count];
-		resources.Keys.CopyTo(str,0);
-		resources.Clear();
-		foreach(string s in str){
-			resources.Add(s,0);
-		}
-		return true;
-	}
+    static public bool hasResource (Resource resourceName, int value = 1)
+    {
+        if (resources.ContainsKey (resourceName))
+        {
+            if (resources [resourceName] >= value)
+                return true;
+            return false;
+        }
+        else
+            return false;
+    }
+
+    static public int getResource (Resource resourceName)
+    {
+        if (resources.ContainsKey (resourceName))
+        {
+            return resources [resourceName];
+        }
+        else
+            return 0;
+    }
+
+    static public bool decreaseResource (Resource resourceName, int value)
+    {
+        if (resources.ContainsKey (resourceName) && (resources [resourceName] - value >= 0))
+        {
+            resources [resourceName] -= value;
+            return true;
+        }
+        else
+            return false;
+    }
+
+    static public bool increaseResource (Resource resourceName, int value)
+    {
+        if (resources.ContainsKey (resourceName))
+        {
+            if (resources [resourceName] + value >= resourcesCapacity)
+            {
+                resources [resourceName] = resourcesCapacity;
+            }
+            else
+            {
+                resources [resourceName] += value;
+            }
+            return true;
+        }
+        else
+            return false;
+    }
+
+    static public bool clearStockpile ()
+    {
+        foreach (KeyValuePair<Resource, int> resource in resources)
+        {
+            resources [resource.Key] = 0;
+        }
+        return true;
+    }
 
 }
