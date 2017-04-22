@@ -13,6 +13,8 @@ public class HookScript : MonoBehaviour
     bool hookReturning = false;
     bool hookEnabled = true;
     bool trigger = false;
+    bool hookReturned = false;
+    bool hookGotIsland = false;
     float lineLength = 10f;
     GridPoint gridPosition;
     MainGame mainGame;
@@ -33,6 +35,8 @@ public class HookScript : MonoBehaviour
     {
         if (hookEnabled)
         {
+            if (hookReturned && hookGotIsland)
+                Destroy (gameObject);
             //Cursor.visible=false;
             if (!hookShooting && !hookReturning)
             {
@@ -94,6 +98,7 @@ public class HookScript : MonoBehaviour
                 hookReturning = false;
                 lineRenderer.enabled = false;
                 trigger = false;
+                hookReturned = true;
             }
         }
     }
@@ -105,12 +110,14 @@ public class HookScript : MonoBehaviour
         lineRenderer.SetPosition (0, startPosition);
         lineRenderer.enabled = true;
         hookShooting = true;
+        hookReturned = false;
     }
 
     void returnHook ()
     {
         hookShooting = false;
         hookReturning = true;
+        hookGotIsland = true;
     }
     void OnTriggerEnter (Collider col)
     {
