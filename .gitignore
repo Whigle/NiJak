@@ -32,3 +32,1329 @@
 # Builds
 /**/*.apk
 /**/*.unitypackage
+LD38_SmarrWolrd/Assets/NatureStarterKit/info.txt.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionSelective.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/Demo.unity.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground03.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Animations.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/New Terrain.asset
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionSelective.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground03.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_5_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Animations/Main Camera.controller
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/New Terrain.asset.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground03.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_5_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Animations/Main Camera.controller.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground03.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/rock10_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_5_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/SecondaryTerrain.asset
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Animations/cameraanim.anim
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/sky.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/rock10_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Adaptation.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/SecondaryTerrain.asset.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/sky.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Animations/cameraanim.anim.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Rock10_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/sky.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Rock10_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Adaptation.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/sky.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Rock10_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Materials/Rock17_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/info.txt
+LD38_SmarrWolrd/Assets/NatureStarterKit.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Apply.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/AntialiasingEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Materials/Rock17_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/info.txt.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Materials/Rock17_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/AntialiasingEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/Point light (5).controller
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Apply.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Additional Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Materials/GlassRefractive.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/BloomAndFlaresEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Materials/Rock17_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/Point light (5).controller.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Additional Textures/Detail1.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Luminance.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/BloomAndFlaresEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Materials/GlassRefractive.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/Point light (6).controller
+LD38_SmarrWolrd/Assets/Rocks Pack/Additional Textures/Detail1.tif.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/BloomEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Shaders.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Luminance.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Additional Textures/Detail1_n.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/Point light (6).controller.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/BloomEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Additional Textures/Detail1_n.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/camanim.anim
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/MinMaxReduction.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/CameraMotionBlurEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/camanim.anim.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/Camera_Animation.anim
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/CameraMotionBlurEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/MinMaxReduction.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/camanim.controller
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/Camera_Animation.anim.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/camanim.controller.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/ColorCorrectionCurvesEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ContrastComposite.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/Demo.unity
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/point1.anim
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedAlbedo.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/ColorCorrectionCurvesEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/Demo.unity.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/point1.anim.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ContrastComposite.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/New Terrain.asset
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedAlbedo.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/point2.anim
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/ColorCorrectionLookupEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/Stone17_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Demo Scene/New Terrain.asset.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ConvertDepth.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Animations/point2.anim.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/rock17_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/ColorCorrectionLookupEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedNormals.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Resources/rock17_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ConvertDepth.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/CreaseShadingEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone1_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/bark01.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Rock17_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedNormals.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/CreaseApply.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/bark01.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/CreaseShadingEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Rock17_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone1_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/branch01.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Rock17_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone2_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldDeprecatedEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/CreaseApply.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/branch01.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock17/Rock17_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone2_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/cloud1.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldDeprecatedEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/PrepareSunShaftsBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/EdgeDetectNormals.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone3_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/cloud1.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/PrepareSunShaftsBlur.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/Detailstone3_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/grass.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/EdgeDetectNormals.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/grass.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Materials/Rock18_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/RadialBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/FisheyeShader.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/grid.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/EdgeDetectionEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Rock10_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Materials/Rock18_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/RadialBlur.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/grid.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Materials/Rock18_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/Materials/detailstone1A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/EdgeDetectionEditor.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/FisheyeShader.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/ground.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ShowAlphaChannel.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Materials/Rock18_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/Materials/detailstone1A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/NoiseAndGrainEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/ground.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/GlobalFog.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock01N.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/NoiseAndGrainEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_d.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ShowAlphaChannel.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/GlobalFog.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Materials/Rock11_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock01N.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/SunShaftsEditor.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_d.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock02N.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Materials/Rock11_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/GrayscaleEffect.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock02N.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/SunShaftsEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Materials/Rock11_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock03N.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/VignetteShader.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/GrayscaleEffect.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Materials/Rock11_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/TonemappingEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/rock03N.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/MotionBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/sky.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/VignetteShader.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/TonemappingEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/StoneDetail_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Materials/sky.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/MotionBlur.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_ms.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/frag_ao.cginc
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/VignetteAndChromaticAberrationEditor.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone1.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/MotionBlurClear.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/New Terrain.asset
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone1.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Editor/ImageEffects/VignetteAndChromaticAberrationEditor.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/Stone18_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/New Terrain.asset.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone2.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/rock18_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/MotionBlurClear.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bark01.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Resources/rock18_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone2.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bark01.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/ContrastEnhanced3D16.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrain.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Rock18_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_ms.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone3.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bark02.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Rock18_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/ContrastEnhanced3D16.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrain.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bark02.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Details Stones/resources/detailstone3.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Rock18_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/Stone11_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/branch01.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/Neutral3D16.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock18/Rock18_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrainDX11.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/rock11_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/branch01.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground5.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/Neutral3D16.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Resources/rock11_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrainDX11.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/branch02.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground5.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Rock11_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/branch02.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/Noise.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground6.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderRGB.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Rock11_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Materials/Rock19_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bush01.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground6.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Rock11_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bush01.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Materials/Rock19_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderRGB.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground7.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock11/Rock11_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bush02.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/Tree_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Materials/Rock19_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/grayscale ramp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground7.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/bush02.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Materials/Rock19_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderYUV.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground8.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Textures/grayscale ramp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/sky.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/cloud1.FBX
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/Ground8.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/sky.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderYUV.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/cloud1.FBX.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/gray.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Materials/Rock12_A.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/skybox.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock01.fbx
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/gray.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SSAOShader.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Materials/Rock12_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Materials/skybox.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground1.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock01.fbx.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Materials/Rock12_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/FlashlightCookie.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock02.fbx
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground1.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SSAOShader.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground2.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock02.fbx.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Materials/Rock12_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/FlashlightCookie.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock03.fbx
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground2.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock03.fbx.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceAmbientObscurance.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground3.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/FlashlightIrregularCookie.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock04.fbx
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground3.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/rock04.fbx.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceAmbientObscurance.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/FlashlightIrregularCookie.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/skybox.FBX
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Grounds/ground4.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/Stone19_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Models/skybox.FBX.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SepiaToneEffect.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightHardCookie.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Scenes.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/rock19_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Branch1.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightHardCookie.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Resources/rock19_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Scenes/Demo.unity
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SepiaToneEffect.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Branch1.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Rock19_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Scenes/Demo.unity.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightSoftCookie.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Branch1.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SimpleClear.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Rock19_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Branch1.tif.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Rock19_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightSoftCookie.tif.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SimpleClear.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Snowfleaks1.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock19/Rock19_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/Stone12_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightSquareCookie.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush01_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Snowfleaks1.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SunShaftsComposite.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/rock12_LP_popr.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Snowparticle1.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Resources/rock12_LP_popr.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightCookies/Textures/LightSquareCookie.psd.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/SunShaftsComposite.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Snowparticle1.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Rock12_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Materials/Rock2_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Rock12_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Tonemapper.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Materials/Rock2_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Rock12_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/Tonemapper.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Materials/Rock2_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock12/Rock12_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/50mmZoom.flare
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Materials/Rock2_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/TwirlEffect.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/50mmZoom.flare.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Rock2_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Rock2_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/TwirlEffect.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/FlareSmall.flare
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Materials/Rock13_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/VignettingShader.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/FlareSmall.flare.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Materials/Rock13_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Materials/Rock13_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/VignettingShader.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/Sun.flare
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Materials/Rock13_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush02_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Flares/Sun.flare.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Blur.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/VortexEffect.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree1_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Blur.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_ms.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Materials/Flare50mm.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/DLAA.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Resources/Stone2_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Rock2_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/DLAA.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Textures/Flare50mm.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Rock2_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA2.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Textures/Flare50mm.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Rock2_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock2/Rock2_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA2.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Textures/FlareStar.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/Stone13_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/rock13_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/LightFlares/Textures/FlareStar.psd.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA3Console.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Resources/rock13_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush03_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Rock13_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Materials/Rock3_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA3Console.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Guidelines.txt
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Rock13_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Materials/Rock3_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree2_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset2.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Rock13_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Materials/Rock3_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Guidelines.txt.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock13/Rock13_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Materials/Rock3_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset2.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Rock3_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/GridProjector.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset3.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Rock3_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Materials/Rock14_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/GridProjector.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset3.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ContrastEnhance.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Materials/Rock14_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/LightProjector.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Materials/Rock14_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/NFAA.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ContrastEnhance.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/LightProjector.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Materials/Rock14_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/NFAA.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/ShadowProjector.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/SSAA.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush04_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Materials/ShadowProjector.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/SSAA.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Tree3_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Trunk1.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/BlobLightProjector.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Resources/Stone3_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/Trunk1.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Rock3_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/Blend.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/bark1.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/BlobLightProjector.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Rock3_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/bark1.tif.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Rock3_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/Blend.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/bark1_nmp.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/BlobShadowProjector.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock3/Rock3_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/bark1_nmp.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/Stone14_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/grass1.tif
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/BlobShadowProjector.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/rock14_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/grass1.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/GridProjector.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Resources/rock14_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/grass2.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Materials/Rock4_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Rock14_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendOneOne.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/grass2.tif.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Prefabs/GridProjector.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Rock14_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Materials/Rock4_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush05_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/snowfleaks.tif
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Rock14_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Materials/Rock4_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendOneOne.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/Others/snowfleaks.tif.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock14/Rock14_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Fisheye.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Materials/Rock4_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders/ProjectorLight.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Rock4_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/Streak.flare
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Fisheye.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders/ProjectorLight.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Rock4_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/Streak.flare.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/Streak_glow.flare
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Materials/Rock15_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders/ProjectorMultiply.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/Streak_glow.flare.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Materials/Rock15_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders/ProjectorMultiply.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/streak_flare.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Materials/Rock15_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/streak_flare.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Materials/Rock15_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/streak_glow.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Falloff.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ImageEffectBase.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Enviro/flares/streak_glow.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Falloff.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/Rock1_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ImageEffectBase.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/bush06_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Grid.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/Rock1_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ImageEffects.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/Rock1_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Grid.psd.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/LensFlareCreate.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Resources/Stone4_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/Rock1_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Light.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ImageEffects.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Rock4_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/LensFlareCreate.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Rock4_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/MotionBlur.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Light.psd.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Rock4_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBloom.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock4/Rock4_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Materials/Rock1_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Shadow.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Materials/Rock1_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBloom.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/Stone15_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndGrain.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/Projectors/Textures/Shadow.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Materials/Rock1_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/rock15_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndGrain.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Materials/Rock1_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Resources/rock15_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Materials/Rock5_A.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Rock1_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Rock15_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBlur.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndScratches.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Materials/Rock5_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Rock15_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Rock1_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Materials/Rock5_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecular.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Rock15_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MultiPassHollywoodFlares.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndScratches.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Materials/Rock5_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock15/Rock15_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree01_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Rock5_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecular.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MultiPassHollywoodFlares.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Rock5_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_h.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularDisplacement.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/SeparableBlurPlus.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Materials/Rock16_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Materials/Rock16_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/SeparableBlurPlus.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularDisplacement.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Materials/Rock16_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Quads.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Materials/Rock16_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularSmooth.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Quads.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/Bokeh34.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock1/resources/Stone1_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularSmooth.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/shadow.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/Bokeh34.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Models.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfField34.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Resources/Stone5_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Models/LowPolySphere.fbx
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Materials/Rock10_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree02_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Rock5_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfField34.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Materials/Rock10_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Models/LowPolySphere.fbx.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Rock5_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Materials/Rock10_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Rock5_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldDX11.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Scenes.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock5/Rock5_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Materials/Rock10_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldDX11.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Scenes/TessellationSample.unity
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/Stone16_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Rock6_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldScatter.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_1_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Scenes/TessellationSample.unity.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Rock6_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_1_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldScatter.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_2_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_2_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders/BumpedSpecularDisplacement.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_3_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_3_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableBlur.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree03_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock10/Resources/Stone10_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders/BumpedSpecularDisplacement.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_4_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_3_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_4_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableWeightedBlurDof34.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders/BumpedSpecularSmooth.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_3_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/TiltShift.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_5_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_3_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableWeightedBlurDof34.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Resources/rock16_5_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_4_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders/BumpedSpecularSmooth.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/diffuse.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_1_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_4_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/diffuse.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/Stone6_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_4_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_1_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/normal_specular.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_1_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Textures/CliffHeight.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_4_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_1_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/normal_specular.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/materials/Rock6_A.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_5_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Triangles.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_2_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Textures/CliffHeight.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/shadow.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Rock6_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/materials/Rock6_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_2_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Triangles.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Rock6_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/shadow.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/materials/Rock6_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Textures/CliffNormals.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_2_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Rock6_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/translucency_gloss.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Resources/materials/Rock6_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_2_B.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock6/Rock6_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Textures/CliffNormals.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock16/Rock16_3_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Nature/tree04_Textures/translucency_gloss.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/MotionBlurJitter.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Materials/Rock8_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Scene/Demo.unity
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/MotionBlurJitter.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Materials/Rock8_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Materials/Rock7_A.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Rock8_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonBasic.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseAndGrain.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonBasic.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_ms.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Materials/Rock7_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Rock8_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Materials/Rock7_B.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseAndGrain.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonBasicOutline.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_nmp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Materials/Rock7_B.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Textures/ToonLit.psd
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectGrain.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Rock7_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonBasicOutline.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Rock7_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Rock7_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Textures/ToonLit.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_B.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Rock7_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectGrain.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonLit.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Rock7_B.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Textures/UtilToonGradient.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Rock7_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonLit.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectScratch.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_h.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Textures/UtilToonGradient.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock7/Resources/Stone7_B.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_ms.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonLitOutline.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Rock8_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/NoiseEffectScratch.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/BlurEffectConeTaps.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Rock8_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bark01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Materials/Rock8_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_nmp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Materials/ToonLitOutline.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bark01.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/BlurEffectConeTaps.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Stone8_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Resources/Materials/Rock8_A.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/RandomVectors.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bark02.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Rock8_A.prefab
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_B.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bark02.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasic.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock8/Rock8_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/SphereShape.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_h.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Materials/Rock9_A.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/branch01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox1.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlur.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_h.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Materials/Rock9_A.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasic.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/branch01.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/SphereShape.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox1.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_ms.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Materials/Rock9_B.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bush01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox2.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlurDX11.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasicOutline.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_ms.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/bush01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Materials/Rock9_B.mat.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox2.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/grass01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_nmp.png
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Rock9_1_LP.obj
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox3.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlurDX11.shader.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasicOutline.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_nmp.png.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox3.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/grass01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Rock9_1_LP.obj.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_1_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonLit.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox4.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/grass02.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/color correction ramp.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Rock9_2_LP.obj
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_1_A.prefab.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/Skybox4.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/grass02.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Rock9_2_LP.obj.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonLit.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.1.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Textures/color correction ramp.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground01.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_1_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.1.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground01.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_1_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonLitOutline.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9.png.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/bark01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.2.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrection3DLut.shader
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_2_A.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Resources/Stone9_B.png
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/bark01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.2.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_2_A.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground01.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonLitOutline.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.5.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/bark01N.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.3.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrection3DLut.shader.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_2_B.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground02.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.3.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.5.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/bark01N.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Rock9/Rock9_2_B.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit2/Textures/ground02.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.3.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.3.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.1.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurves.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/branch01.tga
+LD38_SmarrWolrd/Assets/Stone.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.4.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.4.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.1.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/branch01.tga.meta
+LD38_SmarrWolrd/Assets/Stone/materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox1_.4.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_diffusePSD.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.4.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.2.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurves.shader.meta
+LD38_SmarrWolrd/Assets/Stone/materials/Stone.mat
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/cloud01.tga
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_diffuse.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_diffusePSD.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.5.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.2.tga.meta
+LD38_SmarrWolrd/Assets/Stone/materials/Stone.mat.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/cloud01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.5.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_diffusePSD.psd
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.3.tga
+LD38_SmarrWolrd/Assets/Stone/mesh.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_normals.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurvesSimple.shader
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/cloud1.tga
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_diffusePSD.psd.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.1.tga
+LD38_SmarrWolrd/Assets/Stone/mesh/Materials.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.3.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_normals.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/cloud1.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_normals.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.1.tga.meta
+LD38_SmarrWolrd/Assets/Stone/mesh/Materials/Default.mat
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.4.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionCurvesSimple.shader.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_specular.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/grass01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.2.tga
+LD38_SmarrWolrd/Assets/Stone/mesh/Materials/Default.mat.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_normals.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_specular.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/grass01.tga.meta
+LD38_SmarrWolrd/Assets/Stone/mesh/Mesh.FBX
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.2.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.5.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionEffect.shader
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_specular.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/grid.tga
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_diffuse.tga
+LD38_SmarrWolrd/Assets/Stone/mesh/Mesh.FBX.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.3.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox2_.5.tga.meta
+LD38_SmarrWolrd/Assets/Stone/prefab.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(256)_specular.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/grid.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/ground01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.3.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.1.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionEffect.shader.meta
+LD38_SmarrWolrd/Assets/Stone/prefab/Stone.prefab
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/ground01.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03AO.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/ground01N.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.4.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.1.tga.meta
+LD38_SmarrWolrd/Assets/Stone/prefab/Stone.prefab.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03N.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/ground01N.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.4.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.2.tga
+LD38_SmarrWolrd/Assets/Stone/texture.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03N.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.5.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/groundgrass01.tga
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox3_.2.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_diffuse.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03S.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/groundgrass01.tga.meta
+LD38_SmarrWolrd/Assets/Rocks Pack/Skyboxes/skybox4_.5.tga.meta
+LD38_SmarrWolrd/Assets/Stone/texture/Stone(2048)_diffuse.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03S.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/groundgrass01N.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/sky.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/groundgrass01N.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/sky.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock01AO.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/info.txt
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock01AO.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock01N.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock01N.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock02AO.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock02AO.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock02N.tga
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock02N.tga.meta
+LD38_SmarrWolrd/Assets/NatureStarterKit/Textures/rock03AO.tga
