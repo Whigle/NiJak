@@ -6,12 +6,10 @@ public class MainGame : MonoBehaviour {
 
     #region zmienne
 
-    List<GameObject> floatingIslands1_1;
-    List<GameObject> floatingIslands3_1;
-    public GameObject floatingIsland1_1;
-    public GameObject floatingIsland3_1;
-    public int initialIslandCount1_1;
-    public int initialIslandCount3_1;
+    public int[][] grid;
+    List<GameObject> floatingIslands;
+    public GameObject floatingIsland;
+    public int initialIslandCount;
     float range;
 
     #endregion
@@ -20,18 +18,36 @@ public class MainGame : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        grid = new int[200][];
+        for(int i=0;i<200;i++)
+            grid[i] = new int[300];
         range = 70f;
-        floatingIslands1_1 = new List<GameObject>();
-        floatingIslands3_1 = new List<GameObject>();
-        for (int i = 0; i < initialIslandCount1_1; i++) instantiateFI11(floatingIsland1_1);
-        for (int i = 0; i < initialIslandCount3_1; i++) instantiateFI31(floatingIsland1_1);
+        floatingIslands = new List<GameObject>();
+        for (int i = 0; i < initialIslandCount; i++) instantiateFI11(floatingIsland);
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if(floatingIslands1_1.Count<initialIslandCount1_1) instantiateFI11(floatingIsland1_1);
-        if (floatingIslands3_1.Count < initialIslandCount3_1)  instantiateFI31(floatingIsland1_1);
+		if(floatingIslands.Count<initialIslandCount) instantiateFI11(floatingIsland);
         
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        for (int i = 0; i < 200; i++)
+        {
+            for (int j = 0; j < 200; j++)
+            {
+                if (grid!=null && grid[i][j] == 1)
+                {
+                    Vector3 temp = transform.position;
+                    temp.x += i - 100;
+                    temp.y += j - 100;
+                    Gizmos.DrawCube(temp, new Vector3(0.9f, 0.9f, 1.1f));
+                }
+            }
+        }
     }
 
     #endregion
@@ -40,10 +56,8 @@ public class MainGame : MonoBehaviour {
 
     public void removeIslandfromList(GameObject island)
     {
-        if(floatingIslands1_1.Contains(island))
-            floatingIslands1_1.Remove(island);
-        if (floatingIslands3_1.Contains(island))
-            floatingIslands3_1.Remove(island);
+        if(floatingIslands.Contains(island))
+            floatingIslands.Remove(island);
     }
     
     void instantiateFI11(GameObject island)
@@ -51,14 +65,7 @@ public class MainGame : MonoBehaviour {
         float positionx = Random.Range(-range, range);
         float positiony = Random.Range(-range, range);
         Vector3 translate = new Vector3(positionx, positiony, 0f);
-        floatingIslands1_1.Add(Instantiate(island, this.transform.position + translate, new Quaternion()));
-    }
-    void instantiateFI31(GameObject island)
-    {
-        float positionx = Random.Range(-range, range);
-        float positiony = Random.Range(-range, range);
-        Vector3 translate = new Vector3(positionx, positiony, 0f);
-        floatingIslands3_1.Add(Instantiate(island, this.transform.position + translate, new Quaternion()));
+        floatingIslands.Add(Instantiate(island, this.transform.position + translate, new Quaternion()));
     }
 
     #endregion
