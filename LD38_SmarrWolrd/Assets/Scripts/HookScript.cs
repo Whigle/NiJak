@@ -13,6 +13,8 @@ public class HookScript : MonoBehaviour
     bool hookReturning = false;
     bool hookEnabled = true;
     bool trigger = false;
+    bool hookReturned = false;
+    bool hookGotIsland = false;
     float lineLength = 10f;
     GridPoint gridPosition;
     MainGame mainGame;
@@ -31,12 +33,14 @@ public class HookScript : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        GetInput ();
         if (hookEnabled)
         {
+            if (hookReturned && hookGotIsland)
+                Destroy (gameObject);
             //Cursor.visible=false;
             if (!hookShooting && !hookReturning)
             {
+                GetInput ();
                 RaycastHit myRay = new RaycastHit ();
                 Physics.Raycast (Camera.allCameras [1].ScreenPointToRay (Input.mousePosition), out myRay);
                 if (myRay.GetType () != null)
@@ -94,6 +98,7 @@ public class HookScript : MonoBehaviour
                 hookReturning = false;
                 lineRenderer.enabled = false;
                 trigger = false;
+                hookReturned = true;
             }
         }
     }
@@ -105,12 +110,14 @@ public class HookScript : MonoBehaviour
         lineRenderer.SetPosition (0, startPosition);
         lineRenderer.enabled = true;
         hookShooting = true;
+        hookReturned = false;
     }
 
     void returnHook ()
     {
         hookShooting = false;
         hookReturning = true;
+        hookGotIsland = true;
     }
     void OnTriggerEnter (Collider col)
     {
