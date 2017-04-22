@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 114583593606183076}
   - component: {fileID: 114989866535723356}
   - component: {fileID: 95933987067463850}
+  - component: {fileID: 114455699515250686}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -93,6 +94,7 @@ GameObject:
   - component: {fileID: 114434824812027218}
   - component: {fileID: 114134191270466264}
   - component: {fileID: 95998969941872368}
+  - component: {fileID: 114389939779854816}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -112,6 +114,7 @@ GameObject:
   - component: {fileID: 114430302243315366}
   - component: {fileID: 114335081350071518}
   - component: {fileID: 95807097858934694}
+  - component: {fileID: 114956303317993806}
   m_Layer: 5
   m_Name: 5
   m_TagString: Untagged
@@ -165,6 +168,7 @@ GameObject:
   - component: {fileID: 114582848366788768}
   - component: {fileID: 114629210713975334}
   - component: {fileID: 95082895817328572}
+  - component: {fileID: 114019084043962088}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -201,6 +205,7 @@ GameObject:
   - component: {fileID: 114066000250336286}
   - component: {fileID: 114539853790960694}
   - component: {fileID: 95796319478453596}
+  - component: {fileID: 114650595724281154}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -255,6 +260,7 @@ GameObject:
   - component: {fileID: 114780770955603562}
   - component: {fileID: 114755197129669650}
   - component: {fileID: 95480718493238544}
+  - component: {fileID: 114580275182078684}
   m_Layer: 5
   m_Name: 6
   m_TagString: Untagged
@@ -364,6 +370,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114019084043962088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1580984838402488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 10
+    wood: 1
+    stone: 10
 --- !u!114 &114054782116583474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -451,15 +472,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114134191270466264}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Selected
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -596,12 +617,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114335081350071518}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -609,6 +630,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114389939779854816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1393317216147912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 5
+    wood: 5
+    stone: 5
 --- !u!114 &114398271686386794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -696,6 +732,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114455699515250686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177576943755156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 5
+    wood: 0
+    stone: 5
 --- !u!114 &114527909423758666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -784,12 +835,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114539853790960694}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -797,6 +848,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114580275182078684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1960006114504856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 5
+    wood: 20
+    stone: 0
 --- !u!114 &114582848366788768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -890,12 +956,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114629210713975334}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -903,6 +969,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114650595724281154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1830806290236788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 5
+    wood: 10
+    stone: 10
 --- !u!114 &114755197129669650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -942,12 +1023,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114755197129669650}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1048,6 +1129,21 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 6.33
   m_Text: 5
+--- !u!114 &114956303317993806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480357478626048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce683003bbc2f58458b2d1668b7e598f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredResources:
+    banana: 1
+    wood: 1
+    stone: 10
 --- !u!114 &114989866535723356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1087,12 +1183,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ad7ede35fa9244047b50a6df8c74da15, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: Selected
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 114989866535723356}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

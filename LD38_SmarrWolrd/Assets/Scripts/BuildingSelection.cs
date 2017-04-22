@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class BuildingSelection : MonoBehaviour
 {
     public List<Button> buildButtons;
-
+    public List<Image> buildImages;
+    public Material green;
+    public Material red;
+    public Material grey;
 
     void Start ()
     {
@@ -18,11 +21,29 @@ public class BuildingSelection : MonoBehaviour
 
     }
 
-    public void Selected (Button button)
+    void LateUpdate ()
     {
-        print (button.GetComponentInChildren<Text>().text);
+        HighLightButtons ();
     }
 
+    public void Selected (Button button)
+    {
 
+    }
+
+    private void HighLightButtons ()
+    {
+        foreach (Button button in buildButtons)
+        {
+            if (button.GetComponent<BuildingRequirements> ().CanBuild ())
+            {
+                button.GetComponent<Image> ().material = green;
+            }
+            else
+            {
+                button.GetComponent<Image> ().material = red;
+            }
+        }
+    }
 
 }
