@@ -98,14 +98,14 @@ public class floatingIslandScript : MonoBehaviour
                 {
                     transform.position += Vector3.right;
                     mainGame.grid[x + 101][y + 100] = 1;
-                    Instantiate(box, new Vector3(x + 101, y + 100, 0), new Quaternion());
+                    Instantiate(box, new Vector3(x + 1, y, 0), new Quaternion());
                     //print("right");
                 }
                 else
                 {
                     transform.position += Vector3.left;
                     mainGame.grid[x + 99][y + 100] = 1;
-                    Instantiate(box, new Vector3(x + 99, y + 100, 0), new Quaternion());
+                    Instantiate(box, new Vector3(x -1, y, 0), new Quaternion());
                    // print("left");
                 }
             }
@@ -115,14 +115,14 @@ public class floatingIslandScript : MonoBehaviour
                 {
                     transform.position += Vector3.up;
                     mainGame.grid[x + 100][y + 101] = 1;
-                    Instantiate(box, new Vector3(x + 100, y + 101, 0), new Quaternion());
+                    Instantiate(box, new Vector3(x , y + 1, 0), new Quaternion());
                     //print("up");
                 }
                 else
                 {
                     transform.position += Vector3.down;
                     mainGame.grid[x + 100][y + 99] = 1;
-                    Instantiate(box, new Vector3(x + 100, y + 99, 0), new Quaternion());
+                    Instantiate(box, new Vector3(x , y -1, 0), new Quaternion());
                     //print("down");
                 }
             }
@@ -135,34 +135,34 @@ public class floatingIslandScript : MonoBehaviour
                 //print("here 1");
                 transform.position += Vector3.up;
                 mainGame.grid[x + 100][y + 101] = 1;
-                Instantiate(box, new Vector3(x + 100, y + 101, 0), new Quaternion());
+                Instantiate(box, new Vector3(x , y + 1, 0), new Quaternion());
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 100][y + 99] == 0)
             {
                 //print("here 2");
                 transform.position += Vector3.down;
                 mainGame.grid[x + 100][y + 99] = 1;
-                Instantiate(box, new Vector3(x + 100, y + 99, 0), new Quaternion());
+                Instantiate(box, new Vector3(x , y - 1, 0), new Quaternion());
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 99][y + 100] == 0)
             {
                // print("here 3");
                 transform.position += Vector3.left;
                 mainGame.grid[x + 99][y + 100] = 1;
-                Instantiate(box, new Vector3(x + 99, y + 100, 0), new Quaternion());
+                Instantiate(box, new Vector3(x - 1, y , 0), new Quaternion());
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 101][y + 100] == 0)
             {
                 //print("here 4");
                 transform.position += Vector3.right;
                 mainGame.grid[x + 101][y + 100] = 1;
-                Instantiate(box, new Vector3(x + 101, y + 100, 0), new Quaternion());
+                Instantiate(box, new Vector3(x + 1, y , 0), new Quaternion());
             }
             else
             {
                 //print("here 5");
                 mainGame.grid[x + 100][y + 100] = 1;
-                Instantiate(box, new Vector3(x + 100, y + 100, 0), new Quaternion());
+                Instantiate(box, new Vector3(x , y , 0), new Quaternion());
             }
         }
     }
