@@ -1,0 +1,108 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HookScript : MonoBehaviour {
+
+    Vector3 startPosition;
+    Vector3 targetPosition;
+    LineRenderer lineRenderer;
+    public float speed = 1f;
+    bool hookShooting = false;
+    bool hookReturning = false;
+    bool hookEnabled = true;
+    bool trigger = false;
+    float lineLength = 10f;
+
+    // Use this for initialization
+    void Start () {
+        lineRenderer = gameObject.GetComponent<LineRenderer>();
+        lineRenderer.numPositions = 2;
+        lineRenderer.enabled = false;
+        startPosition = transform.position;
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        if (hookEnabled)
+        {
+            //Cursor.visible=false;
+            if (!hookShooting&&!hookReturning)
+            {
+                RaycastHit myRay = new RaycastHit();
+                Physics.Raycast(Camera.allCameras[1].ScreenPointToRay(Input.mousePosition), out myRay);
+                if (myRay.GetType() != null)
+                {
+                    if (myRay.transform.gameObject.tag == "RayCatcher")
+                    {
+                        Vector3 rayCatcherPosition = myRay.transform.position;
+                        //float dist = Vector3.Distance(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0f), new Vector3(Camera.allCameras[1].transform.position.x, Camera.allCameras[1].transform.position.y, 0f));
+                        targetPosition = myRay.point;
+                        targetPosition.x -= rayCatcherPosition.x;
+                        targetPosition.y -= rayCatcherPosition.y;
+                        targetPosition.x -= startPosition.x;
+                        targetPosition.y -= startPosition.y;
+                        targetPosition.y += 1f;
+                        targetPosition *= 1000;
+                        targetPosition.z = startPosition.z;
+                        transform.LookAt(targetPosition);
+                    }
+                }
+                if (Input.GetMouseButton(0))
+                {
+                    hookShooting = false;
+                    ShootHook(startPosition + transform.forward * 20);
+                }
+            }
+        }
+        if (hookShooting)
+        {
+            lineRenderer.SetPosition(1, gameObject.transform.position);
+            transform.Translate(new Vector3(0f, 0f, 1f * speed * Time.deltaTime));
+            if (Vector3.Distance(startPosition, transform.position) > lineLength)
+            {
+                hookShooting = false;
+                hookReturning = true;
+            }
+        }
+        if (hookReturning)
+        {
+            lineRenderer.SetPosition(1, gameObject.transform.position);
+            transform.Translate(new Vector3(0f, 0f, -1f * speed * Time.deltaTime));
+            if (Vector3.Distance(startPosition, transform.position) <= 0.5f)
+            {
+                hookReturning = false;
+                lineRenderer.enabled = false;
+                trigger = false;
+            }
+        }
+    }
+
+    void ShootHook(Vector3 targetPos)
+    {
+        transform.position = startPosition;
+        targetPosition = targetPos;
+        lineRenderer.SetPosition(0, startPosition);
+        lineRenderer.enabled = true;
+        hookShooting = true;
+    }
+
+    void returnHook()
+    {
+        hookShooting = false;
+        hookReturning = true;
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        if (!trigger)
+        {
+            if (!col.GetComponent<floatingIslandScript>().partOfIsland) { 
+                col.GetComponent<floatingIslandScript>().direction = startPosition - transform.position;
+                col.GetComponent<floatingIslandScript>().direction.Normalize();
+                col.GetComponent<floatingIslandScript>().speed = speed;
+                returnHook();
+                trigger = true;
+            }
+        }
+    }
+}
