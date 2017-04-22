@@ -31,12 +31,12 @@ public class HookScript : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        GetInput ();
         if (hookEnabled)
         {
             //Cursor.visible=false;
             if (!hookShooting && !hookReturning)
             {
+                GetInput ();
                 RaycastHit myRay = new RaycastHit ();
                 Physics.Raycast (Camera.allCameras [1].ScreenPointToRay (Input.mousePosition), out myRay);
                 if (myRay.GetType () != null)
