@@ -12,6 +12,7 @@ public class MainGame : MonoBehaviour {
     public int initialIslandCount;
     float range;
 
+
     #endregion
 
     #region główne funkcje
@@ -24,7 +25,7 @@ public class MainGame : MonoBehaviour {
         range = 70f;
         floatingIslands = new List<GameObject>();
         for (int i = 0; i < initialIslandCount; i++) instantiateFI11(floatingIsland);
-
+        
         FindObjectOfType<initialIslandScript>().Mystart();
     }
 	

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23085656095970324}
   - component: {fileID: 114104743072229434}
   - component: {fileID: 54609852596835494}
+  - component: {fileID: 114822902375048372}
   m_Layer: 0
   m_Name: FloatingIsland1_1
   m_TagString: Untagged
@@ -240,5 +241,20 @@ MonoBehaviour:
   speed: 0
   partOfIsland: 0
   box: {fileID: 1349088518446128, guid: d899c1a624866da419db1548fa127171, type: 2}
+  resource: 0
+  fields: []
   x: 0
   y: 0
+--- !u!114 &114822902375048372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051282113560476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78258cb674e691840aeb0821b1b6f041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stone: {fileID: 100000, guid: d4f42247e4fd5aa469325fdd13e321b1, type: 3}
+  tree: {fileID: 112922, guid: 0018a0d5fcd38d34d81764846a43c4bd, type: 2}

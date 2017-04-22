@@ -13,6 +13,8 @@ public class floatingIslandScript : MonoBehaviour
     public bool partOfIsland;
     public GameObject box;
     bool flaga = false;
+    public Resource resource;
+    public List<Vector3> fields;
 
     #endregion
 
@@ -21,9 +23,10 @@ public class floatingIslandScript : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        int scalex = (int)Random.Range(0f, 1f);
+        fields = new List<Vector3>();
+        int scalex = (int)Random.Range(0f, 8f);
         if (scalex % 2 != 0) scalex++;
-        int scaley = (int)Random.Range(0f, 1f);
+        int scaley = (int)Random.Range(0f, 8f);
         if (scaley % 2 != 0) scaley++;
         transform.localScale += new Vector3(scalex, scaley);
         direction = Vector3.zero - transform.position;
@@ -31,6 +34,33 @@ public class floatingIslandScript : MonoBehaviour
         speed = Random.Range(1f, 2f);
         partOfIsland = false;
         if (mainGame == null) mainGame = GameObject.Find("MainGame").GetComponent<MainGame>();
+        int r = Random.Range(0, 6);
+        switch (r)
+        {
+            case 0:
+                resource = Resource.Food;
+                break;
+            case 1:
+                resource = Resource.BuildingMaterial;
+                break;
+            case 2:
+                resource = Resource.Bananas;
+                break;
+            case 3:
+                resource = Resource.Sugar;
+                break;
+            case 4:
+                resource = Resource.Wood;
+                break;
+            case 5:
+                resource = Resource.Stone;
+                break;
+            default:
+                break;
+        }
+        calculateFields();
+        GetComponent<spawnResources>().randomSpawn(resource,gameObject);
+
     }
 
     // Update is called once per frame
@@ -65,6 +95,24 @@ public class floatingIslandScript : MonoBehaviour
 
     public float x;
     public float y;
+
+    private void calculateFields()
+    {
+        x = transform.localScale.x;
+        y = transform.localScale.y;
+        float transx = 1 / x;
+        float transy = 1 / y;
+        for (int i = 0; i < x; i++)
+        {
+            for (int j = 0; j < y; j++)
+            {
+                Vector3 temp = transform.position;
+                temp.x += i - (int)x / 2;
+                temp.y += j - (int)y / 2;
+                fields.Add(temp);
+            }
+        }
+    }
 
     private void testuj()
     {
