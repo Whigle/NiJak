@@ -8,6 +8,11 @@ TagManager:
   - RayCatcher
   - Island
   - BuildButton
+  - Rtree
+  - Rstone
+  - Rbanana
+  - Rsugar
+  - ChunkIsland
   layers:
   - Default
   - TransparentFX

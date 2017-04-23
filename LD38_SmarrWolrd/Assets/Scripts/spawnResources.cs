@@ -6,6 +6,8 @@ public class spawnResources : MonoBehaviour {
 
     public GameObject stone;
     public GameObject tree;
+    public GameObject banana;
+    public GameObject sugar;
 	// Use this for initialization
 	void Start () {
 		
@@ -28,8 +30,6 @@ public class spawnResources : MonoBehaviour {
                     GameObject res = Instantiate(tree, item + new Vector3(0, 0, -0.5f),Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
                     res.transform.parent = island.transform;
-                    island.GetComponent<floatingIslandScript> ().resourcesFields.Add (item);
-                    
                     count++;
                 }
             }
@@ -43,7 +43,6 @@ public class spawnResources : MonoBehaviour {
                     GameObject res = Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
                     res.transform.parent = island.transform;
-                    island.GetComponent<floatingIslandScript> ().resourcesFields.Add (item);
                     count++;
                 }
             }

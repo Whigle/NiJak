@@ -174,7 +174,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e2649b48a8b3f8f46bb626a5bd76c887, type: 2}
+  - {fileID: 2100000, guid: 3b5521b9ec6d9aa45a9f949306711a1b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,5 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78258cb674e691840aeb0821b1b6f041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stone: {fileID: 100000, guid: d4f42247e4fd5aa469325fdd13e321b1, type: 3}
+  stone: {fileID: 1305474438653252, guid: ae6278983cbaa05448f69ba25bb843b0, type: 2}
   tree: {fileID: 112922, guid: 0018a0d5fcd38d34d81764846a43c4bd, type: 2}
+  banana: {fileID: 0}
+  sugar: {fileID: 0}
