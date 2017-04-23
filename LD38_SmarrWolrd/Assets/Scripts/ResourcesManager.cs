@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
-static public class ResourcesManager
+public class ResourcesManager : MonoBehaviour
 {
 
     public static Dictionary <Resource, int> resources;
+    public Texture [] resourcesTextures;
     static public int resourcesCapacity = 1000;
 
     static ResourcesManager ()
@@ -19,7 +21,7 @@ static public class ResourcesManager
         resources.Add (Resource.Wood, 0);
         resources.Add (Resource.Stone, 0);
     }
-
+    
 
     static public bool hasResource (Resource resourceName, int value = 1)
     {
@@ -94,6 +96,25 @@ static public class ResourcesManager
         zeroResource (Resource.Wood);
 
         return true;
+    }
+
+    void OnGUI()
+    {
+        int i = 0, width=75, height=40, spacing=5;
+        foreach (KeyValuePair<Resource, int> pair in resources)
+        {
+            GUIContent content;
+            if (i < resourcesTextures.Length)
+            {
+                content = new GUIContent(pair.Value.ToString(), resourcesTextures[i]);
+            }
+            else
+            {
+                content = new GUIContent(pair.Key.ToString()+": "+pair.Value.ToString());
+            }
+            GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
+            i++;
+        }
     }
 
 }
