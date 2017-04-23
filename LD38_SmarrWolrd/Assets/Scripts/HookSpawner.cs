@@ -6,6 +6,7 @@ public class HookSpawner : MonoBehaviour
 {
     public GameObject hook;
     MainGame main;
+    GameObject reference;
 
     void Start ()
     {
@@ -21,7 +22,8 @@ public class HookSpawner : MonoBehaviour
     {
         if (Input.GetKeyDown (KeyCode.E))
         {
-            Instantiate (hook);
+            if(reference==null)
+            reference = Instantiate (hook,transform.position + Vector3.back, new Quaternion());
         }
     }
 }

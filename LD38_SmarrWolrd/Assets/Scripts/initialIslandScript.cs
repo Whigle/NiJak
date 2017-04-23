@@ -40,6 +40,8 @@ public class initialIslandScript : MonoBehaviour
         collision.gameObject.GetComponent<floatingIslandScript>().direction = new Vector3(0, 0, 0);
         collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland = true;
         Vector3 temp = collision.gameObject.transform.position;
+
+        temp.z = 0;
         temp.x = System.Convert.ToInt32(temp.x);
         temp.y = System.Convert.ToInt32(temp.y);
         collision.gameObject.transform.position = temp;
