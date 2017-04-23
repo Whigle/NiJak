@@ -7,7 +7,9 @@ public class initialIslandScript : MonoBehaviour
 
     #region zmienne
 
+    public GameObject Minion;
     public MainGame mainGame;
+    GameObject firstMinion;
 
     public GameObject box;
     public bool isGrid = false;
@@ -19,6 +21,10 @@ public class initialIslandScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+        firstMinion = Instantiate(Minion, transform.position + Vector3.back * 0.75f, Quaternion.Euler(0, 0, 0));
+        firstMinion.GetComponent<minionScript>().spawner=this.gameObject;
+        
     }
 
     // Update is called once per frame
@@ -30,6 +36,7 @@ public class initialIslandScript : MonoBehaviour
     public void Mystart()
     {
         if (mainGame == null) mainGame = GameObject.Find("MainGame").GetComponent<MainGame>();
+        firstMinion.GetComponent<minionScript>().grid = mainGame.grid;
         testuj();
 
     }
