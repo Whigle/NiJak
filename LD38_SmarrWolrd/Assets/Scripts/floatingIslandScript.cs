@@ -96,6 +96,7 @@ public class floatingIslandScript : MonoBehaviour
             collision.gameObject.GetComponent<floatingIslandScript> ().partOfIsland = true;
             collision.gameObject.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
             ResourcesManager.increaseResource (resource, resourceCount);
+            //FindObjectOfType<CameraScript> ().SHAKE ();
         }
     }
 
