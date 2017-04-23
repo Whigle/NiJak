@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BudMarket : MonoBehaviour {
+public class BudMarket : BuildingObject
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start ()
+    {
+        buildingCooldown = 10f;
+        buildingType = Building.BudMarket;
+    }
+
+    void Update ()
+    {
+
+    }
 }

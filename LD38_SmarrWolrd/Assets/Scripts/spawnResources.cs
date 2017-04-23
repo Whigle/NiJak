@@ -28,6 +28,7 @@ public class spawnResources : MonoBehaviour {
                     GameObject res = Instantiate(tree, item + new Vector3(0, 0, -0.5f),Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
                     res.transform.parent = island.transform;
+                    island.GetComponent<floatingIslandScript> ().resourcesFields.Add (item);
                     
                     count++;
                 }

@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildingObject : MonoBehaviour {
+public class BuildingObject : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public float buildingCooldown;
+    public Building buildingType;
+
+    void Start ()
+    {
+
+    }
+
+    void Update ()
+    {
+
+    }
 }

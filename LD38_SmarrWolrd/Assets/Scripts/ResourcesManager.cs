@@ -133,6 +133,23 @@ public class ResourcesManager : MonoBehaviour
         return ret;
     }
 
+    public static Building ResourceToBuilding (Resource r)
+    {
+        switch (r)
+        {
+            case Resource.Bananas:
+                return Building.Bananery;
+            case Resource.Stone:
+                return Building.Stonery;
+            case Resource.Sugar:
+                return Building.Sugarery;
+            case Resource.Wood:
+                return Building.Woodery;
+            default:
+                return Building.None;
+        }
+    }
+
     void OnGUI()
     {
         int i = 0, width=75, height=40, spacing=5;

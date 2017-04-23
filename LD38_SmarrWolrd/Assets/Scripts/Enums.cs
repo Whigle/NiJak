@@ -22,7 +22,8 @@ public enum Building
     Bananery,
     Sugarery,
     JamMaker,
-    BudMarket
+    BudMarket,
+    None
 }
 
 public struct GridPoint

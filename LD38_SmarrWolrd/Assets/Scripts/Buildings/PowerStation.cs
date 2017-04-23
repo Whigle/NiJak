@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerStation : MonoBehaviour {
+public class PowerStation : BuildingObject
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start ()
+    {
+        buildingCooldown = 5f;
+        buildingType = Building.PowerStation;
+    }
+
+    void Update ()
+    {
+
+    }
 }

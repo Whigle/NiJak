@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stonery : MonoBehaviour {
+public class Stonery : BuildingObject
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start ()
+    {
+        buildingCooldown = 10f;
+        buildingType = Building.Stonery;
+    }
+
+    void Update ()
+    {
+
+    }
 }

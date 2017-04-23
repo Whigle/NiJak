@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sugarery : BuildingObject
+public class IslandField : MonoBehaviour
 {
+
+    public Building fieldType;
 
     void Start ()
     {
-        buildingCooldown = 10f;
-        buildingType = Building.Sugarery;
+        fieldType = Building.None;
     }
 
     void Update ()
     {
 
     }
+
 }
