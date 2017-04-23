@@ -22,6 +22,18 @@ public class ResourcesManager : MonoBehaviour
         resources.Add (Resource.Stone, 0);
     }
     
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            string str = "Resources on connected isles:\n";
+            foreach (KeyValuePair<Resource,int> res in getResourcesFromIslands())
+            {
+                str += res.Key + ": " + res.Value+'\n';
+            }
+            print(str);
+        }
+    }
 
     static public bool hasResource (Resource resourceName, int value = 1)
     {
@@ -68,7 +80,7 @@ public class ResourcesManager : MonoBehaviour
             {
                 resources [resourceName] += value;
             }
-            MonoBehaviour.print(resourceName+" added: "+value+" In stockpile: "+resources[resourceName]);
+            //MonoBehaviour.print(resourceName+" added: "+value+" In stockpile: "+resources[resourceName]);
             return true;
         }
         else
@@ -96,6 +108,29 @@ public class ResourcesManager : MonoBehaviour
         zeroResource (Resource.Wood);
 
         return true;
+    }
+
+    static List<KeyValuePair<Resource,int>> getResourcesFromIslands()
+    {
+        List<KeyValuePair<Resource, int>> ret = new List<KeyValuePair<Resource, int>>();
+        foreach (GameObject island in getIslandsConnected())
+        {
+            if (island.GetComponent<floatingIslandScript>()!=null)
+                ret.Add(new KeyValuePair<Resource, int> (island.GetComponent<floatingIslandScript>().resource, island.GetComponent<floatingIslandScript>().resourceCount));
+        }
+        return ret;
+    }
+
+    static List<GameObject> getIslandsConnected(){
+        List<GameObject> ret = new List<GameObject>();
+        foreach (GameObject island in GameObject.FindGameObjectsWithTag("Island"))
+        {
+            if (island.GetComponent<floatingIslandScript>() != null)
+            {
+                if (island.GetComponent<floatingIslandScript>().partOfIsland) ret.Add(island);
+            }
+        }
+        return ret;
     }
 
     void OnGUI()

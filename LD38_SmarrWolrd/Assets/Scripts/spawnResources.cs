@@ -25,7 +25,10 @@ public class spawnResources : MonoBehaviour {
             {
                 if (Random.Range(0f, 1f) < 0.3f)
                 {
-                    Instantiate(tree, item+new Vector3(0,0,-0.5f), Quaternion.Euler(Vector3.left * 90)).transform.parent = island.transform;
+                    GameObject res = Instantiate(tree, item + new Vector3(0, 0, -0.5f),Quaternion.Euler(Vector3.left * 90));
+                    res.transform.localScale *= 0.4f;
+                    res.transform.parent = island.transform;
+                    
                     count++;
                 }
             }
@@ -36,7 +39,9 @@ public class spawnResources : MonoBehaviour {
             {
                 if (Random.Range(0f, 1f) < 0.3f)
                 {
-                    Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90)).transform.parent = island.transform;
+                    GameObject res = Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
+                    res.transform.localScale *= 0.4f;
+                    res.transform.parent = island.transform;
                     count++;
                 }
             }

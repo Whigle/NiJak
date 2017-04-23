@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114822902375048372}
   m_Layer: 0
   m_Name: FloatingIsland1_1
-  m_TagString: Untagged
+  m_TagString: Island
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,6 +242,7 @@ MonoBehaviour:
   partOfIsland: 0
   box: {fileID: 1349088518446128, guid: d899c1a624866da419db1548fa127171, type: 2}
   resource: 0
+  resourceCount: 0
   fields: []
   x: 0
   y: 0

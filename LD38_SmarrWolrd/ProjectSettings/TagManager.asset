@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hook
   - RayCatcher
+  - Island
   layers:
   - Default
   - TransparentFX
