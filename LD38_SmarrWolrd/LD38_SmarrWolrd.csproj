@@ -123,6 +123,7 @@
     <Compile Include="Assets\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />
     <Compile Include="Assets\Scripts\initialIslandScript.cs" />
+    <Compile Include="Assets\Scripts\minionScript.cs" />
     <Compile Include="Assets\Scripts\spawnResources.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class BuildingRequirements : MonoBehaviour
 {
+    public string buildingName = "";
     public Resources requiredResources;
-
+    public Resource islandTypeNeeded;
 
     void Start ()
     {

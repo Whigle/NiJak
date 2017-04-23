@@ -5,6 +5,7 @@ using UnityEngine;
 
 public enum Resource
 {
+    None,
     Food,
     BuildingMaterial,
     Bananas,
