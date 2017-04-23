@@ -19,4 +19,13 @@ public class BuildingObject : MonoBehaviour
     {
 
     }
+
+
+    void OnTriggerEnter (Collider col)
+    {
+        if (col.gameObject.CompareTag ("ChunkIsland"))
+        {
+            Destroy (gameObject);
+        }
+    }
 }

@@ -18,9 +18,14 @@ public class ResourceScript : MonoBehaviour
 
     void OnTriggerEnter (Collider col)
     {
-        if (col.gameObject.CompareTag ("ChunkIsland"))
+        if (col.gameObject.GetComponent<ResourceScript> () != null)
         {
-            print ("lol");
+            Destroy (col.gameObject);
+        }
+        if (col.gameObject.GetComponent<BuildingObject> () != null)
+        {
+            Destroy (col.gameObject);
         }
     }
+
 }
