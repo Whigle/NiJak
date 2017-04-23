@@ -16,9 +16,13 @@ public enum Resource
 public enum Building
 {
     Tower,
-    Mine,
-    Sawmill,
-    PowerStation
+    Stonery,
+    Woodery,
+    PowerStation,
+    Bananery,
+    Sugarery,
+    JamMaker,
+    BudMarket
 }
 
 public struct GridPoint
