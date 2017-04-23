@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Woodery : BuildingObject
 {
+    public int woodAmount = 10;
 
-    void Start ()
+    public Woodery() : base() { }
+    void Start()
     {
+        base.Start();
         buildingType = Building.Woodery;
-        buildingCooldown = 10f;
     }
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.getResource(Resource.Wood) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.increaseResource(Resource.Wood, woodAmount);
+        }
     }
-
-
-
-
 }

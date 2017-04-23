@@ -126,7 +126,7 @@
     <Compile Include="Assets\Scripts\Buildings\BudMarket.cs" />
     <Compile Include="Assets\Scripts\Buildings\BuildingObject.cs" />
     <Compile Include="Assets\Scripts\Buildings\JamMaker.cs" />
-    <Compile Include="Assets\Scripts\Buildings\PowerStation.cs" />
+    <Compile Include="Assets\Scripts\Buildings\PowerTower.cs" />
     <Compile Include="Assets\Scripts\Buildings\Stonery.cs" />
     <Compile Include="Assets\Scripts\Buildings\Sugarery.cs" />
     <Compile Include="Assets\Scripts\Buildings\Woodery.cs" />

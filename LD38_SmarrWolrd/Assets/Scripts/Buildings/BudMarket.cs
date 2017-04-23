@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class BudMarket : BuildingObject
 {
-
-    void Start ()
+    public int woodCost = 10;
+    public int stoneCost = 10;
+    public int buildingMaterialAmount = 10;
+    public BudMarket() : base() { }
+    void Start()
     {
-        buildingCooldown = 10f;
+        base.Start();
         buildingType = Building.BudMarket;
     }
 
-    void Update ()
-    {
 
+    protected override void iterateProduction()
+    {
+        if (ResourcesManager.hasResource(Resource.Wood, woodCost) && ResourcesManager.hasResource(Resource.Stone, stoneCost) && ResourcesManager.getResource(Resource.BuildingMaterial) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.decreaseResource(Resource.Wood, woodCost);
+            ResourcesManager.decreaseResource(Resource.Stone, stoneCost);
+            ResourcesManager.increaseResource(Resource.BuildingMaterial, buildingMaterialAmount);
+        }
     }
 }

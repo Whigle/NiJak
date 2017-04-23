@@ -3698,5 +3698,7 @@ MonoBehaviour:
   name: Bananery
   description: Place Bananery on banana palms resource to start gathering bananas.
   buildingImage: {fileID: 0}
-  buildingCooldown: 0
+  buildingCooldown: 2
   buildingType: 4
+  enabled: 1
+  bananasAmount: 10

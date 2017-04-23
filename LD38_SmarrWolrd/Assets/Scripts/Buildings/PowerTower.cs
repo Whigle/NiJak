@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PowerTower : BuildingObject
 {
-
+    public int energyAmount;
+    public PowerTower() : base() { }
     void Start ()
     {
-        buildingCooldown = 5f;
+        base.Start();
         buildingType = Building.PowerTower;
     }
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.getResource(Resource.Energy) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.increaseResource(Resource.Energy, energyAmount);
+        }
     }
 }
