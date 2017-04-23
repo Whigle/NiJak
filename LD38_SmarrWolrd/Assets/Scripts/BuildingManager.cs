@@ -5,6 +5,10 @@ using UnityEngine;
 public class BuildingManager : MonoBehaviour
 {
     public static List<IslandField> buildingFields;
+    static public GameObject selectedCube;
+    Ray ray;
+    RaycastHit hit;
+    public static Resources reqResources;
 
     static BuildingManager()
     {
@@ -18,7 +22,7 @@ public class BuildingManager : MonoBehaviour
 
     void Update()
     {
-
+        GetMouseInput();
     }
 
     public static void AddBuildingField(IslandField bf)
@@ -33,9 +37,40 @@ public class BuildingManager : MonoBehaviour
         List<GameObject> ret = new List<GameObject>();
         foreach (IslandField island in buildingFields)
         {
-            if (island.fieldType == ResourcesManager.ResourceToBuilding(resourceType)) ret.Add(island.gameObject);
+            if (island != null)
+            {
+                if (island.fieldType == ResourcesManager.ResourceToBuilding(resourceType)) ret.Add(island.gameObject);
+            }
         }
         return ret;
     }
+    void GetMouseInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
 
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.GetComponent<IslandField>() != null)
+                {
+                    if (BuildingSelection.lastIslands.Contains(hit.collider.gameObject))
+                    {
+                        GameObject building = Instantiate(BuildingSelection.selected.GetComponent<BuildingSelection>().buildingPrefab, hit.collider.gameObject.transform.position, Quaternion.identity);
+                        building.transform.Rotate(new Vector3(-90f, 0f, 0f));
+                        building.transform.localScale /= 3;
+                        building.transform.Translate(new Vector3(0f, 0.5f, 0f));
+                        Destroy(hit.collider.gameObject);
+                        if (hit.collider.gameObject.GetComponent<IslandField>().resourceObject != null)
+                        {
+                            Destroy(hit.collider.gameObject.GetComponent<IslandField>().resourceObject);
+                        }
+
+                        ResourcesManager.useResources(reqResources);
+
+                    }
+                }
+            }
+        }
+    }
 }

@@ -98,6 +98,18 @@ public class ResourcesManager : MonoBehaviour
             return false;
     }
 
+    static public void useResources(Resources r)
+    {
+        decreaseResource(Resource.Bananas, r.Bananas);
+        decreaseResource(Resource.BuildingMaterial, r.BuildingMaterial);
+        decreaseResource(Resource.Food, r.Food);
+        decreaseResource(Resource.Stone, r.Stone);
+        decreaseResource(Resource.Sugar, r.Sugar);
+        decreaseResource(Resource.Wood, r.Wood);
+        decreaseResource(Resource.Energy, r.Energy);
+
+    }
+
     static public bool clearStockpile ()
     {
         zeroResource (Resource.Bananas);

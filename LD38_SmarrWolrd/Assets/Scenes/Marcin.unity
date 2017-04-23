@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 198211437}
   - component: {fileID: 198211439}
   - component: {fileID: 198211440}
+  - component: {fileID: 198211441}
   m_Layer: 0
   m_Name: MainGame
   m_TagString: Untagged
@@ -176,6 +177,17 @@ MonoBehaviour:
   - {fileID: 2800000, guid: f9986e246893b1b4ab57490274cf4a71, type: 3}
   - {fileID: 2800000, guid: bdc863d3e4a748244b5030adf80fff03, type: 3}
   - {fileID: 2800000, guid: 3694df7e74e24af4594ce1a12371e5bd, type: 3}
+--- !u!114 &198211441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 198211436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5a9a36de384c546904628191bd2e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &215340565
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,6 +329,7 @@ MonoBehaviour:
     Sugar: 0
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 5
 --- !u!95 &238262317
 Animator:
@@ -697,6 +710,7 @@ MonoBehaviour:
     Sugar: 0
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 4
 --- !u!95 &484035896
 Animator:
@@ -929,7 +943,7 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: ace40ff0e93b59642beee3723e12681c, type: 2}
   red: {fileID: 2100000, guid: 902e5c3540a75b149b692669ea85abb5, type: 2}
   active: {fileID: 2100000, guid: bc8f71c2753fea242829aa9d771d8b9a, type: 2}
-  buildingPrefab: {fileID: 1072526127627176, guid: 22b151ff495b2cc43a6433f803eac345,
+  buildingPrefab: {fileID: 1252967183542816, guid: 26e91879bb024274d861d33490db249a,
     type: 2}
   buildingImage: {fileID: 0}
 --- !u!114 &722172419
@@ -951,6 +965,7 @@ MonoBehaviour:
     Sugar: 0
     Wood: 50
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 0
 --- !u!95 &722172420
 Animator:
@@ -1215,6 +1230,7 @@ MonoBehaviour:
     Sugar: 0
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 6
 --- !u!95 &766110843
 Animator:
@@ -1401,6 +1417,7 @@ MonoBehaviour:
     Sugar: 0
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 3
 --- !u!95 &824893965
 Animator:
@@ -1701,7 +1718,7 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: ace40ff0e93b59642beee3723e12681c, type: 2}
   red: {fileID: 2100000, guid: 902e5c3540a75b149b692669ea85abb5, type: 2}
   active: {fileID: 2100000, guid: bc8f71c2753fea242829aa9d771d8b9a, type: 2}
-  buildingPrefab: {fileID: 1807261690051606, guid: 4915c9cd316ead244afee08c650c1658,
+  buildingPrefab: {fileID: 1515575418703296, guid: 3510c2761c9319a4ca148413554f44b5,
     type: 2}
   buildingImage: {fileID: 0}
 --- !u!114 &915446813
@@ -1723,6 +1740,7 @@ MonoBehaviour:
     Sugar: 50
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 0
 --- !u!95 &915446814
 Animator:
@@ -2046,6 +2064,7 @@ MonoBehaviour:
     Sugar: 50
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 0
 --- !u!95 &1069116546
 Animator:
@@ -2362,6 +2381,7 @@ MonoBehaviour:
     Sugar: 50
     Wood: 0
     Stone: 0
+    Energy: 0
   islandTypeNeeded: 0
 --- !u!95 &1238001205
 Animator:
@@ -2550,6 +2570,7 @@ GameObject:
   - component: {fileID: 1388386787}
   - component: {fileID: 1388386786}
   - component: {fileID: 1388386791}
+  - component: {fileID: 1388386792}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2643,6 +2664,20 @@ MonoBehaviour:
   maxZoom: 2
   minZoom: 30
   edgeMargin: 20
+--- !u!114 &1388386792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388386785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1462672853
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,8 @@ public enum Resource
     Bananas,
     Sugar,
     Wood,
-    Stone
+    Stone,
+    Energy
 }
 
 public enum Building
@@ -48,6 +49,7 @@ public class Resources
     public int Sugar;
     public int Wood;
     public int Stone;
+    public int Energy;
 }
 
 

@@ -136,6 +136,7 @@
     <Compile Include="Assets\Scripts\HookSpawner.cs" />
     <Compile Include="Assets\Scripts\IslandField.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
+    <Compile Include="Assets\Scripts\ResourceScript.cs" />
     <Compile Include="Assets\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />
     <Compile Include="Assets\Scripts\initialIslandScript.cs" />

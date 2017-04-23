@@ -9,13 +9,13 @@ public class CameraScript : MonoBehaviour {
     public float maxZoom = 2f;
     public float minZoom = 30f;
     public float edgeMargin = 20f;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
         Vector3 mousePos = Input.mousePosition;
         if (mousePos.x > 0f && mousePos.x < Screen.width && mousePos.y > 0f && mousePos.y < Screen.height)
         {
@@ -51,4 +51,6 @@ public class CameraScript : MonoBehaviour {
             }
         }
     }
+
+    
 }

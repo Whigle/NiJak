@@ -7,7 +7,7 @@ public class BuildingSelection : MonoBehaviour
 {
     //public List<Button> buildButtons;
     //public List<Image> buildImages;
-    static List<GameObject> lastIslands =  new List<GameObject>();
+    static public List<GameObject> lastIslands =  new List<GameObject>();
     static List<Material> lastMaterials = new List<Material>();
     public Material green;
     public Material red;
@@ -37,12 +37,13 @@ public class BuildingSelection : MonoBehaviour
 
     public void Selected (Button button)
     {
-        if (button.gameObject != selected)
-        {
+        /*if (button.gameObject != selected)
+        {*/
             lastselected = selected;
             selected = button.gameObject;
             HighlightIslands();
-        }
+            BuildingManager.reqResources = GetComponent<BuildingRequirements>().requiredResources;
+        //}
     }
 
     private void HighlightButtons ()
@@ -56,6 +57,7 @@ public class BuildingSelection : MonoBehaviour
             }
             else
             {
+                button.enabled = false;
                 button.GetComponent<Image> ().material = red;
             }
         }
@@ -67,7 +69,7 @@ public class BuildingSelection : MonoBehaviour
         {
             for (int i = 0; i < lastIslands.Count; i++)
             {
-                lastIslands[i].GetComponent<MeshRenderer>().material = new Material(lastMaterials[i]);
+                if (lastIslands[i]!=null) lastIslands[i].GetComponent<MeshRenderer>().material = new Material(lastMaterials[i]);
             }
             lastIslands.Clear();
             lastMaterials.Clear();
@@ -78,11 +80,15 @@ public class BuildingSelection : MonoBehaviour
             {
                 if (!lastIslands.Contains(island))
                 {
+
                     lastIslands.Add(island);
                     lastMaterials.Add(new Material(island.GetComponent<MeshRenderer>().material));
                     island.GetComponent<MeshRenderer>().material = active;
+                    
                 }
             }
         }
     }
+
+    
 }
