@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingIsland: {fileID: 1051282113560476, guid: 4c37c1d15f6e5314db6f60f1ba96b671,
     type: 2}
-  initialIslandCount: 30
+  initialIslandCount: 20
 --- !u!4 &198211438
 Transform:
   m_ObjectHideFlags: 0
@@ -838,6 +838,12 @@ Prefab:
       propertyPath: m_TagString
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 114267159601315716, guid: 92ca89ffe5ad07d42bc938c78a461f7c,
+        type: 2}
+      propertyPath: Minion
+      value: 
+      objectReference: {fileID: 1340891649136434, guid: cf4840ebc2d7a4747a1b2920a6faa10d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
   m_IsPrefabParent: 0
