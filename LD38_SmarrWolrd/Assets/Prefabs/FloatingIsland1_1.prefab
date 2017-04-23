@@ -244,6 +244,7 @@ MonoBehaviour:
   resource: 0
   resourceCount: 0
   fields: []
+  resourcesFields: []
   x: 0
   y: 0
 --- !u!114 &114822902375048372
@@ -258,6 +259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stone: {fileID: 1305474438653252, guid: ae6278983cbaa05448f69ba25bb843b0, type: 2}
-  tree: {fileID: 112922, guid: 0018a0d5fcd38d34d81764846a43c4bd, type: 2}
+  tree: {fileID: 112922, guid: cf96bd2c34fef4f4e9b923b8d03a9e18, type: 2}
   banana: {fileID: 0}
   sugar: {fileID: 0}

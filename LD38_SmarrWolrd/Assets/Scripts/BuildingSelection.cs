@@ -11,7 +11,7 @@ public class BuildingSelection : MonoBehaviour
     static List<Material> lastMaterials = new List<Material>();
     public Material green;
     public Material red;
-    public Material grey;
+    public Material active;
     public GameObject buildingPrefab;
     static public GameObject selected;
     static GameObject lastselected;
@@ -23,8 +23,11 @@ public class BuildingSelection : MonoBehaviour
 
     void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) selected = null;
-        if (selected!=lastselected) HighlightIslands();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            selected = null;
+            HighlightIslands();
+        }
     }
 
     void LateUpdate ()
@@ -69,13 +72,16 @@ public class BuildingSelection : MonoBehaviour
             lastIslands.Clear();
             lastMaterials.Clear();
         }
-        foreach (GameObject island in ResourcesManager.getIslandsOfTypeConnected(selected.GetComponent<BuildingRequirements>().islandTypeNeeded))
+        if (selected != null)
         {
-            if (!lastIslands.Contains(island))
+            foreach (GameObject island in BuildingManager.getIslandsOfTypeConnected(selected.GetComponent<BuildingRequirements>().islandTypeNeeded))
             {
-                lastIslands.Add(island);
-                lastMaterials.Add(new Material(island.GetComponent<MeshRenderer>().material));
-                island.GetComponent<MeshRenderer>().material = red;
+                if (!lastIslands.Contains(island))
+                {
+                    lastIslands.Add(island);
+                    lastMaterials.Add(new Material(island.GetComponent<MeshRenderer>().material));
+                    island.GetComponent<MeshRenderer>().material = active;
+                }
             }
         }
     }

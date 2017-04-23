@@ -149,21 +149,6 @@ public class ResourcesManager : MonoBehaviour
                 return Building.None;
         }
     }
-    static public List<GameObject> getIslandsOfTypeConnected(Resource resourceType)
-    {
-        List<GameObject> ret = new List<GameObject>();
-        foreach (GameObject island in GameObject.FindGameObjectsWithTag("Island"))
-        {
-            if (island.GetComponent<floatingIslandScript>() != null)
-            {
-                if (island.GetComponent<floatingIslandScript>().partOfIsland)
-                {
-                    if (island.GetComponent<floatingIslandScript>().resource==resourceType) ret.Add(island);
-                }
-            }
-        }
-        return ret;
-    }
 
     void OnGUI()
     {

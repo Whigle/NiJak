@@ -12,7 +12,8 @@ public class IslandField : MonoBehaviour
         RaycastHit ray;
         if (Physics.Raycast (transform.position, Vector3.back, out ray, 10f))
         {
-            fieldType = ResourcesManager.ResourceToBuilding (ray.collider.gameObject.GetComponent<ResourceScript> ().resourceType);
+            if (ray.collider.gameObject.GetComponent<ResourceScript>()!=null)
+                fieldType = ResourcesManager.ResourceToBuilding (ray.collider.gameObject.GetComponent<ResourceScript> ().resourceType);
         }
         /*foreach (IslandField field in BuildingManager.buildingFields)
         {
