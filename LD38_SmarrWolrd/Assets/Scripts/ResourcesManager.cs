@@ -66,7 +66,7 @@ static public class ResourcesManager
             {
                 resources [resourceName] += value;
             }
-            MonoBehaviour.print(resourceName+": "+resources[resourceName]);
+            MonoBehaviour.print(resourceName+" added: "+value+" In stockpile: "+resources[resourceName]);
             return true;
         }
         else

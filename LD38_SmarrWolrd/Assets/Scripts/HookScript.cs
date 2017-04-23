@@ -43,7 +43,7 @@ public class HookScript : MonoBehaviour
                 GetInput ();
                 RaycastHit myRay = new RaycastHit ();
                 Physics.Raycast (Camera.allCameras [1].ScreenPointToRay (Input.mousePosition), out myRay);
-                if (myRay.GetType () != null)
+                if (myRay.transform != null)
                 {
                     if (myRay.transform.gameObject.tag == "RayCatcher")
                     {
