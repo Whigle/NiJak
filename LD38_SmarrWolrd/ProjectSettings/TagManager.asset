@@ -7,6 +7,7 @@ TagManager:
   - Hook
   - RayCatcher
   - Island
+  - BuildButton
   layers:
   - Default
   - TransparentFX

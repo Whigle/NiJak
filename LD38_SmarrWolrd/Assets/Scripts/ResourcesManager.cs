@@ -110,7 +110,7 @@ public class ResourcesManager : MonoBehaviour
         return true;
     }
 
-    static List<KeyValuePair<Resource,int>> getResourcesFromIslands()
+    static public List<KeyValuePair<Resource,int>> getResourcesFromIslands()
     {
         List<KeyValuePair<Resource, int>> ret = new List<KeyValuePair<Resource, int>>();
         foreach (GameObject island in getIslandsConnected())
@@ -121,13 +121,28 @@ public class ResourcesManager : MonoBehaviour
         return ret;
     }
 
-    static List<GameObject> getIslandsConnected(){
+    static public List<GameObject> getIslandsConnected(){
         List<GameObject> ret = new List<GameObject>();
         foreach (GameObject island in GameObject.FindGameObjectsWithTag("Island"))
         {
             if (island.GetComponent<floatingIslandScript>() != null)
             {
                 if (island.GetComponent<floatingIslandScript>().partOfIsland) ret.Add(island);
+            }
+        }
+        return ret;
+    }
+    static public List<GameObject> getIslandsOfTypeConnected(Resource resourceType)
+    {
+        List<GameObject> ret = new List<GameObject>();
+        foreach (GameObject island in GameObject.FindGameObjectsWithTag("Island"))
+        {
+            if (island.GetComponent<floatingIslandScript>() != null)
+            {
+                if (island.GetComponent<floatingIslandScript>().partOfIsland)
+                {
+                    if (island.GetComponent<floatingIslandScript>().resource==resourceType) ret.Add(island);
+                }
             }
         }
         return ret;
