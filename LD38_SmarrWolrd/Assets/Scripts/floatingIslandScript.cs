@@ -25,9 +25,9 @@ public class floatingIslandScript : MonoBehaviour
     void Awake()
     {
         fields = new List<Vector3>();
-        int scalex = (int)Random.Range(0f, 8f);
+        int scalex = (int)Random.Range(0f, 5f);
         if (scalex % 2 != 0) scalex++;
-        int scaley = (int)Random.Range(0f, 8f);
+        int scaley = (int)Random.Range(0f, 5f);
         if (scaley % 2 != 0) scaley++;
         transform.localScale += new Vector3(scalex, scaley);
         direction = Vector3.zero - transform.position;
@@ -81,6 +81,7 @@ public class floatingIslandScript : MonoBehaviour
         else if (collision.gameObject.GetComponent<floatingIslandScript>() != null && !collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland)
         {
             Vector3 temp = collision.gameObject.transform.position;
+            temp.z = 0;
             //print(temp.x + " " + System.Convert.ToInt32(temp.x));
             temp.x = System.Convert.ToInt32(temp.x);
             temp.y = System.Convert.ToInt32(temp.y > 0 ? temp.y - 0.5f : temp.y);
@@ -186,43 +187,43 @@ public class floatingIslandScript : MonoBehaviour
         {
             if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 100][y + 101] == 0)
             {
-                //print("here 1");
-                transform.position += Vector3.up;
-                mainGame.grid[x + 100][y + 101] = 1;
-                cube = Instantiate (box, new Vector3 (x, y + 1, 0), new Quaternion ());
-                cube.transform.parent = gameObject.transform;
+                print("here 1");
+                //transform.position += Vector3.up;
+                //mainGame.grid[x + 100][y + 101] = 1;
+                //cube = Instantiate (box, new Vector3 (x, y + 1, 0), new Quaternion ());
+                //cube.transform.parent = gameObject.transform;
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 100][y + 99] == 0)
             {
-                //print("here 2");
-                transform.position += Vector3.down;
-                mainGame.grid[x + 100][y + 99] = 1;
-                cube = Instantiate (box, new Vector3 (x, y - 1, 0), new Quaternion ());
-                cube.transform.parent = gameObject.transform;
+                print("here 2");
+                //transform.position += Vector3.down;
+                //mainGame.grid[x + 100][y + 99] = 1;
+                //cube = Instantiate (box, new Vector3 (x, y - 1, 0), new Quaternion ());
+                //cube.transform.parent = gameObject.transform;
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 99][y + 100] == 0)
             {
-               // print("here 3");
-                transform.position += Vector3.left;
-                mainGame.grid[x + 99][y + 100] = 1;
-                cube = Instantiate (box, new Vector3 (x - 1, y, 0), new Quaternion ());
-                cube.transform.parent = gameObject.transform;
+                print("here 3");
+                //transform.position += Vector3.left;
+                //mainGame.grid[x + 99][y + 100] = 1;
+                //cube = Instantiate (box, new Vector3 (x - 1, y, 0), new Quaternion ());
+                //cube.transform.parent = gameObject.transform;
             }
             else if (mainGame.grid[x + 100][y + 100] == 1 && mainGame.grid[x + 101][y + 100] == 0)
             {
-                //print("here 4");
-                transform.position += Vector3.right;
-                mainGame.grid[x + 101][y + 100] = 1;
-                cube = Instantiate (box, new Vector3 (x + 1, y, 0), new Quaternion ());
-                cube.transform.parent = gameObject.transform;
+                print("here 4");
+                //transform.position += Vector3.right;
+                //mainGame.grid[x + 101][y + 100] = 1;
+                //cube = Instantiate (box, new Vector3 (x + 1, y, 0), new Quaternion ());
+                //cube.transform.parent = gameObject.transform;
             }
-            else
-            {
+            //else
+            //{
                 //print("here 5");
                 mainGame.grid[x + 100][y + 100] = 1;
                 cube = Instantiate (box, new Vector3 (x, y, 0), new Quaternion ());
                 cube.transform.parent = gameObject.transform;
-            }
+            //}
         }
     }
 
