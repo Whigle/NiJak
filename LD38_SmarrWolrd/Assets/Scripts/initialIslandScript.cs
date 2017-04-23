@@ -58,6 +58,7 @@ public class initialIslandScript : MonoBehaviour
 
     private void testuj()
     {
+        GameObject cube;
         float x = transform.localScale.x;
         float y = transform.localScale.y;
         float transx = 1 / x;
@@ -70,7 +71,11 @@ public class initialIslandScript : MonoBehaviour
                 temp.x += i - (int)x / 2;
                 temp.y += j - (int)y / 2;
                 mainGame.grid[(int)temp.x + 100][(int)temp.y + 100] = 1;
-                Instantiate(box, temp, new Quaternion());
+                cube = Instantiate (box, temp, new Quaternion ());
+                cube.transform.parent = gameObject.transform;
+
+                BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
+
             }
         }
     }

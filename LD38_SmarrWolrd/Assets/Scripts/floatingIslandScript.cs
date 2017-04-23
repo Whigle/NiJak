@@ -16,7 +16,6 @@ public class floatingIslandScript : MonoBehaviour
     public Resource resource;
     public int resourceCount;
     public List<Vector3> fields;
-    public List<Vector3> resourcesFields;
 
 
     #endregion
@@ -27,7 +26,7 @@ public class floatingIslandScript : MonoBehaviour
     void Awake ()
     {
         fields = new List<Vector3> ();
-        resourcesFields = new List<Vector3> ();
+
         int scalex = (int) Random.Range (0f, 5f);
         if (scalex % 2 != 0)
             scalex++;
@@ -157,14 +156,6 @@ public class floatingIslandScript : MonoBehaviour
                     cube = Instantiate (box, new Vector3 (x + 1, y, 0), new Quaternion ());
                     cube.transform.parent = gameObject.transform;
 
-                    foreach (Vector3 pos in resourcesFields)
-                    {
-                        if (pos.x == cube.transform.position.x && pos.y == cube.transform.position.y)
-                        {
-                            cube.GetComponent<IslandField> ().fieldType = ResourcesManager.ResourceToBuilding (resource);
-                            break;
-                        }
-                    }
                     BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
                     //print("right");
                 }
@@ -174,14 +165,7 @@ public class floatingIslandScript : MonoBehaviour
                     mainGame.grid [x + 99] [y + 100] = 1;
                     cube = Instantiate (box, new Vector3 (x - 1, y, 0), new Quaternion ());
                     cube.transform.parent = gameObject.transform;
-                    foreach (Vector3 pos in resourcesFields)
-                    {
-                        if (pos.x == cube.transform.position.x && pos.y == cube.transform.position.y)
-                        {
-                            cube.GetComponent<IslandField> ().fieldType = ResourcesManager.ResourceToBuilding (resource);
-                            break;
-                        }
-                    }
+
                     BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
                     // print("left");
                 }
@@ -194,14 +178,7 @@ public class floatingIslandScript : MonoBehaviour
                     mainGame.grid [x + 100] [y + 101] = 1;
                     cube = Instantiate (box, new Vector3 (x, y + 1, 0), new Quaternion ());
                     cube.transform.parent = gameObject.transform;
-                    foreach (Vector3 pos in resourcesFields)
-                    {
-                        if (pos.x == cube.transform.position.x && pos.y == cube.transform.position.y)
-                        {
-                            cube.GetComponent<IslandField> ().fieldType = ResourcesManager.ResourceToBuilding (resource);
-                            break;
-                        }
-                    }
+
                     BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
                     //print("up");
                 }
@@ -211,14 +188,7 @@ public class floatingIslandScript : MonoBehaviour
                     mainGame.grid [x + 100] [y + 99] = 1;
                     cube = Instantiate (box, new Vector3 (x, y - 1, 0), new Quaternion ());
                     cube.transform.parent = gameObject.transform;
-                    foreach (Vector3 pos in resourcesFields)
-                    {
-                        if (pos.x == cube.transform.position.x && pos.y == cube.transform.position.y)
-                        {
-                            cube.GetComponent<IslandField> ().fieldType = ResourcesManager.ResourceToBuilding (resource);
-                            break;
-                        }
-                    }
+
                     BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
                     //print("down");
                 }
@@ -265,14 +235,7 @@ public class floatingIslandScript : MonoBehaviour
             mainGame.grid [x + 100] [y + 100] = 1;
             cube = Instantiate (box, new Vector3 (x, y, 0), new Quaternion ());
             cube.transform.parent = gameObject.transform;
-            foreach (Vector3 pos in resourcesFields)
-            {
-                if (pos.x == cube.transform.position.x && pos.y == cube.transform.position.y)
-                {
-                    cube.GetComponent<IslandField> ().fieldType = ResourcesManager.ResourceToBuilding (resource);
-                    break;
-                }
-            }
+
             BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
             //}
         }
