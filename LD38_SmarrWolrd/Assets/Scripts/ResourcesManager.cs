@@ -14,12 +14,12 @@ public class ResourcesManager : MonoBehaviour
     static ResourcesManager ()
     {
         resources = new Dictionary<Resource, int> ();
-        resources.Add (Resource.Food, 100);
-        resources.Add (Resource.BuildingMaterial, 100);
-        resources.Add (Resource.Bananas, 0);
-        resources.Add (Resource.Sugar, 0);
-        resources.Add (Resource.Wood, 0);
-        resources.Add (Resource.Stone, 0);
+        resources.Add (Resource.Food, 1000);
+        resources.Add (Resource.BuildingMaterial, 1000);
+        resources.Add (Resource.Bananas, 1000);
+        resources.Add (Resource.Sugar, 1000);
+        resources.Add (Resource.Wood, 1000);
+        resources.Add (Resource.Stone, 1000);
     }
     
     public void Update()

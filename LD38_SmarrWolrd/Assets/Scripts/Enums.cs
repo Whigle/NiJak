@@ -20,7 +20,7 @@ public enum Building
     Tower,
     Stonery,
     Woodery,
-    PowerStation,
+    PowerTower,
     Bananery,
     Sugarery,
     JamMaker,

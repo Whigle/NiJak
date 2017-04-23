@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerStation : BuildingObject
+public class PowerTower : BuildingObject
 {
 
     void Start ()
     {
         buildingCooldown = 5f;
-        buildingType = Building.PowerStation;
+        buildingType = Building.PowerTower;
     }
 
     void Update ()
