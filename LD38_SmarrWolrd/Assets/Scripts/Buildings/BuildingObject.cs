@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BuildingObject : MonoBehaviour
 {
-
+    public string name = "";
+    public string description = "";
+    public Texture buildingImage;
     public float buildingCooldown;
     public Building buildingType;
 

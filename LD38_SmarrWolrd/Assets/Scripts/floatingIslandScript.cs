@@ -45,10 +45,10 @@ public class floatingIslandScript : MonoBehaviour
         switch (r)
         {
             case 0:
-                resource = Resource.Food;
+                resource = Resource.None;
                 break;
             case 1:
-                resource = Resource.BuildingMaterial;
+                resource = Resource.Stone;
                 break;
             case 2:
                 resource = Resource.Bananas;
@@ -58,9 +58,6 @@ public class floatingIslandScript : MonoBehaviour
                 break;
             case 4:
                 resource = Resource.Wood;
-                break;
-            case 5:
-                resource = Resource.Stone;
                 break;
             default:
                 break;

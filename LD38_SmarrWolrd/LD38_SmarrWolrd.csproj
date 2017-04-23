@@ -75,6 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LD38_SmarrWolrd.Plugins.csproj">
+      <Project>{6307FD7D-C544-1E96-9BF8-2D7B0246F4F5}</Project>
+      <Name>LD38_SmarrWolrd.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -113,12 +119,22 @@
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Scripts\BuildingManager.cs" />
     <Compile Include="Assets\Scripts\BuildingRequirements.cs" />
     <Compile Include="Assets\Scripts\BuildingSelection.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Bananery.cs" />
+    <Compile Include="Assets\Scripts\Buildings\BudMarket.cs" />
+    <Compile Include="Assets\Scripts\Buildings\BuildingObject.cs" />
+    <Compile Include="Assets\Scripts\Buildings\JamMaker.cs" />
+    <Compile Include="Assets\Scripts\Buildings\PowerStation.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Stonery.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Sugarery.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Woodery.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\HookScript.cs" />
     <Compile Include="Assets\Scripts\HookSpawner.cs" />
+    <Compile Include="Assets\Scripts\IslandField.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
     <Compile Include="Assets\Scripts\ResourcesManager.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />
@@ -205,6 +221,11 @@
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\NatureStarterKit2\info.txt" />
+    <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
