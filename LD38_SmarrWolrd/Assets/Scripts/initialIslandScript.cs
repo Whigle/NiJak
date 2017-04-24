@@ -54,6 +54,10 @@ public class initialIslandScript : MonoBehaviour
         collision.gameObject.transform.position = temp;
         mainGame.removeIslandfromList(collision.gameObject);
         collision.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        if (collision.gameObject.GetComponent<floatingIslandScript> () != null && !collision.gameObject.GetComponent<floatingIslandScript> ().partOfIsland)
+        {
+            //FindObjectOfType<CameraScript> ().SHAKE ();
+        }
     }
 
     private void testuj()

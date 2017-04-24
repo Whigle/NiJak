@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65184752285377704}
   - component: {fileID: 23316903803050134}
   - component: {fileID: 114982431253370680}
+  - component: {fileID: 65489857644943256}
   m_Layer: 9
   m_Name: Cube
   m_TagString: ChunkIsland
@@ -93,6 +94,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65489857644943256
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349088518446128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114982431253370680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,3 +118,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldType: 8
+  resourceObject: {fileID: 0}

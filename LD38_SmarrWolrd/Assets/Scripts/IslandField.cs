@@ -14,9 +14,9 @@ public class IslandField : MonoBehaviour
         RaycastHit ray;
         if (Physics.Raycast (transform.position, Vector3.back, out ray, 10f))
         {
-            if (ray.collider.gameObject.GetComponent<ResourceScript>() != null)
+            if (ray.collider.gameObject.GetComponent<ResourceScript> () != null)
             {
-                fieldType = ResourcesManager.ResourceToBuilding(ray.collider.gameObject.GetComponent<ResourceScript>().resourceType);
+                fieldType = ResourcesManager.ResourceToBuilding (ray.collider.gameObject.GetComponent<ResourceScript> ().resourceType);
                 resourceObject = ray.collider.gameObject;
             }
         }
@@ -36,14 +36,20 @@ public class IslandField : MonoBehaviour
 
     }
 
-
-    void OnCollisionEnter (Collision col)
+    void OnTriggerEnter (Collider col)
     {
         if (col.gameObject.CompareTag ("ChunkIsland"))
         {
-            Destroy (gameObject);
+            if (BuildingManager.buildingFields.IndexOf (this) > BuildingManager.buildingFields.IndexOf (col.GetComponent<IslandField> ()))
+            {
+                if (col.GetComponent<IslandField> ().resourceObject != null)
+                    Destroy (col.GetComponent<IslandField> ().resourceObject);
+                Destroy (col.gameObject);
+            }
+            else
+                Destroy (gameObject);
         }
     }
-    
+
 
 }

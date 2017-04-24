@@ -1005,8 +1005,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33aed9e16cc6cc43881f98fa4b0aabd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Place Woodery on trees resource to start gathering wood.
-  description: 
+  name: Woodery
+  description: Place Woodery on trees resource to start gathering wood.
   buildingImage: {fileID: 0}
-  buildingCooldown: 0
+  buildingCooldown: 2
   buildingType: 2
+  enabled: 1
+  woodAmount: 10

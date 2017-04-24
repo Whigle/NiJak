@@ -3720,5 +3720,7 @@ MonoBehaviour:
   name: Sugarery
   description: Place Sugarery on sugar resource to start producing sugar.
   buildingImage: {fileID: 0}
-  buildingCooldown: 0
+  buildingCooldown: 2
   buildingType: 5
+  enabled: 1
+  sugarAmount: 10

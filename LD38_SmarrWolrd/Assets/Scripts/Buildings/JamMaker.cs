@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class JamMaker : BuildingObject
 {
+    public int bananasCost=10;
+    public int sugarCost=10;
+    public int foodAmount=10;
+
+    public JamMaker() : base(){}
 
     void Start ()
     {
-        buildingCooldown = 10f;
+        base.Start();
         buildingType = Building.JamMaker;
     }
+    
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.hasResource(Resource.Bananas, bananasCost) && ResourcesManager.hasResource(Resource.Sugar, sugarCost)&&ResourcesManager.getResource(Resource.Food)< ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.decreaseResource(Resource.Bananas, bananasCost);
+            ResourcesManager.decreaseResource(Resource.Sugar, sugarCost);
+            ResourcesManager.increaseResource(Resource.Food, foodAmount);
+        }
     }
 }

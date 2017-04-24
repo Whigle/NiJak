@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Stonery : BuildingObject
 {
+    public int stoneAmount = 10;
 
-    void Start ()
+    public Stonery() : base() { }
+    void Start()
     {
-        buildingCooldown = 10f;
+        base.Start();
         buildingType = Building.Stonery;
     }
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.getResource(Resource.Stone) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.increaseResource(Resource.Stone, stoneAmount);
+        }
     }
 }

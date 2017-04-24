@@ -5,14 +5,20 @@ using UnityEngine;
 public class Sugarery : BuildingObject
 {
 
-    void Start ()
+    public int sugarAmount = 10;
+
+    public Sugarery() : base() { }
+    void Start()
     {
-        buildingCooldown = 10f;
+        base.Start();
         buildingType = Building.Sugarery;
     }
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.getResource(Resource.Sugar) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.increaseResource(Resource.Sugar, sugarAmount);
+        }
     }
 }

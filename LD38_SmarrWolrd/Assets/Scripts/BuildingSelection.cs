@@ -16,9 +16,35 @@ public class BuildingSelection : MonoBehaviour
     static public GameObject selected;
     static GameObject lastselected;
     public Image buildingImage;
+    bool showTip = false;
+    float tooltipWidth = 200f, tooltipHeight = 75f;
+    string costs = "Costs:\n";
+    string tooltipText = "";
 
     void Start ()
     {
+        if (GetComponent<BuildingRequirements>() != null)
+        {
+            if (buildingPrefab.GetComponent<BuildingObject>() != null)
+            {
+                Resources r = GetComponent<BuildingRequirements>().requiredResources;
+                if (r.Bananas > 0) costs += "Bananas: " + r.Bananas + '\n';
+                if (r.BuildingMaterial > 0) costs += "BuildingMaterial: " + r.BuildingMaterial + '\n';
+                if (r.Energy > 0) costs += "Energy: " + r.Energy + '\n';
+                if (r.Food > 0) costs += "Food: " + r.Food + '\n';
+                if (r.Stone > 0) costs += "Stone: " + r.Stone + '\n';
+                if (r.Sugar > 0) costs += "Sugar: " + r.Sugar + '\n';
+                if (r.Wood > 0) costs += "Wood: " + r.Wood + '\n';
+
+                tooltipText = buildingPrefab.GetComponent<BuildingObject>().name + "\n" + buildingPrefab.GetComponent<BuildingObject>().description + "\n" + costs;
+                for (int i = 0; i < tooltipText.Length; i++)
+                {
+                    if (tooltipText[i] == '\n')
+                        tooltipHeight += 12;
+                }
+            }
+        }
+        else costs = "";
     }
 
     void Update ()
@@ -80,15 +106,34 @@ public class BuildingSelection : MonoBehaviour
             {
                 if (!lastIslands.Contains(island))
                 {
-
                     lastIslands.Add(island);
                     lastMaterials.Add(new Material(island.GetComponent<MeshRenderer>().material));
                     island.GetComponent<MeshRenderer>().material = active;
-                    
                 }
             }
         }
     }
 
-    
+    public void OnGUI()
+    {
+        if (showTip) {
+            if (buildingPrefab != null)
+            {
+                if (buildingPrefab.GetComponent<BuildingObject>() != null)
+                {
+                    GUI.TextArea(new Rect(Input.mousePosition.x, Screen.height - Input.mousePosition.y - tooltipHeight, tooltipWidth, tooltipHeight), tooltipText);
+
+                }
+            }
+        }
+    }
+
+    public void OnMouseOver()
+    {
+        showTip = true;
+    }
+    public void OnMouseExit()
+    {
+        showTip = false;
+    }
 }

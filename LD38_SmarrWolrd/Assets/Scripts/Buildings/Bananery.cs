@@ -1,18 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bananery : BuildingObject
 {
+    public int bananasAmount = 10;
 
-    void Start ()
+    public Bananery() : base() { }
+    void Start()
     {
-        buildingCooldown = 10f;
+        base.Start();
         buildingType = Building.Bananery;
     }
 
-    void Update ()
+    protected override void iterateProduction()
     {
-
+        if (ResourcesManager.getResource(Resource.Bananas) < ResourcesManager.resourcesCapacity)
+        {
+            ResourcesManager.increaseResource(Resource.Bananas, bananasAmount);
+        }
     }
 }

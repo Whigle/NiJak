@@ -9,6 +9,10 @@ public class CameraScript : MonoBehaviour {
     public float maxZoom = 2f;
     public float minZoom = 30f;
     public float edgeMargin = 20f;
+    private float shakeDuration = 0f;
+    private bool toShake = false;
+    private bool flaga = false;
+    private Vector3 position;
     // Use this for initialization
     void Start () {
 		
@@ -50,7 +54,26 @@ public class CameraScript : MonoBehaviour {
                 }
             }
         }
+
+        if (toShake)
+        {
+            shakeDuration -= Time.deltaTime;
+            transform.position += new Vector3 (Random.Range (-0.5f, 0.5f), Random.Range (-0.5f, 0.5f), 0f);
+        }
+        if (shakeDuration < 0f && flaga)
+        {
+            toShake = false;
+            flaga = false;
+            transform.position = position;
+        }
     }
 
-    
+    public void SHAKE ()
+    {
+        shakeDuration = 1f;
+        toShake = true;
+        flaga = true;
+        position = transform.position;
+
+    }
 }
