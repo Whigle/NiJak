@@ -44,13 +44,15 @@ public class IslandField : MonoBehaviour
             {
                 if (col.GetComponent<IslandField> ().resourceObject != null)
                 {
-                    Destroy (col.GetComponent<IslandField> ().resourceObject);
                     Destroy (col.gameObject);
                     fieldType = Building.None;
                 }
             }
             else
+            {
+                Destroy (resourceObject);
                 Destroy (gameObject);
+            }
         }
     }
 

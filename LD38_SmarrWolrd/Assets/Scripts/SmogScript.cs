@@ -49,7 +49,7 @@ public class SmogScript : MonoBehaviour
 
     void OnCollisionEnter (Collision c)
     {
-        if (c.gameObject.tag != "Island" && c.gameObject.tag != "ChunkIsland")
+        if (c.gameObject.tag != "Island")// && c.gameObject.tag != "ChunkIsland")
         {
             Destroy (c.gameObject);
         }
