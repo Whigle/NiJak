@@ -37,7 +37,7 @@ public class MainGame : MonoBehaviour {
 	void Update () {
 
 
-        //print(minx + " " + miny + " " + maxx + " " + maxy);
+        print(minx + " " + miny + " " + maxx + " " + maxy);
         //print((minx + maxx) / 2f + " " + (miny + maxy) / 2f);
 
         float distx = Mathf.Abs(minx - (minx + maxx) / 2f) + 5f;
@@ -47,7 +47,25 @@ public class MainGame : MonoBehaviour {
         //print(dist);
 
         initPosition = Vector3.up * (dist);
-        if (floatingIslands.Count<initialIslandCount) instantiateFI11(floatingIsland);
+        if (floatingIslands.Count < initialIslandCount) {
+            for (int i = 0; i < 200; i++)
+            {
+                for (int j = 0; j < 200; j++)
+                {
+                    if (grid != null && grid[i][j] == 1)
+                    {
+                        if (i < minx) minx = i;
+                        if (i > maxx) maxx = i;
+                        if (j < miny) miny = j;
+                        if (j > maxy) maxy = j;
+                        /*Vector3 temp = transform.position;
+                        temp.x += i - 100;
+                        temp.y += j - 100;
+                        Gizmos.DrawCube(temp, new Vector3(0.9f, 0.9f, 1.1f));*/
+                    }
+                }
+            }
+            instantiateFI11(floatingIsland); }
 
     }
 
