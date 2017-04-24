@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 95480709617807502}
   - component: {fileID: 136921576924852790}
   - component: {fileID: 114114940116782194}
+  - component: {fileID: 65562226341759960}
   m_Layer: 0
   m_Name: Rstone
   m_TagString: Rstone
@@ -82,6 +83,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305474438653252}
   m_Mesh: {fileID: 4300000, guid: d4f42247e4fd5aa469325fdd13e321b1, type: 3}
+--- !u!65 &65562226341759960
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305474438653252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01, z: 0}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!95 &95480709617807502
 Animator:
   serializedVersion: 3

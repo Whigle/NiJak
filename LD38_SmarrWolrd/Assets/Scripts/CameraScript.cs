@@ -27,19 +27,19 @@ public class CameraScript : MonoBehaviour {
         {
             if (mousePos.x <= edgeMargin)
             {
-                transform.Translate(new Vector3(-1f, 0f, 0f) * cameraSpeed);
+                transform.Translate(new Vector3(-1f, 0f, 0f) * cameraSpeed,Space.World);
             }
             if (mousePos.y <= edgeMargin)
             {
-                transform.Translate(new Vector3(0f, -1f, 0f) * cameraSpeed);
+                transform.Translate(new Vector3(0f, -1f, 0f) * cameraSpeed, Space.World);
             }
             if (mousePos.x >= Screen.width - edgeMargin)
             {
-                transform.Translate(new Vector3(1f, 0f, 0f) * cameraSpeed);
+                transform.Translate(new Vector3(1f, 0f, 0f) * cameraSpeed, Space.World);
             }
             if (mousePos.y >= Screen.height - edgeMargin)
             {
-                transform.Translate(new Vector3(0f, 1f, 0f) * cameraSpeed);
+                transform.Translate(new Vector3(0f, 1f, 0f) * cameraSpeed, Space.World);
             }
             if (Input.mouseScrollDelta.y > 0)
             {

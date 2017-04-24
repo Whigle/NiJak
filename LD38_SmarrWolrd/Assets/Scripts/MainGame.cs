@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainGame : MonoBehaviour {
+public class MainGame : MonoBehaviour
+{
 
     #region zmienne
 
@@ -11,8 +12,10 @@ public class MainGame : MonoBehaviour {
     public int[][] grid;
     List<GameObject> floatingIslands;
     public GameObject floatingIsland;
+    public GameObject smog;
     public int initialIslandCount;
     float range;
+    int smogCount = 0;
     DateTime timeToEat;
     TimeSpan span = TimeSpan.FromSeconds(5);
 
@@ -23,11 +26,12 @@ public class MainGame : MonoBehaviour {
     #region główne funkcje
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         initPosition = Vector3.up * 10f;
         minx = 100; miny = 100; maxx = 100; maxy = 100;
         grid = new int[200][];
-        for(int i=0;i<200;i++)
+        for (int i = 0; i < 200; i++)
             grid[i] = new int[200];
         range = 70f;
         floatingIslands = new List<GameObject>();
@@ -36,9 +40,10 @@ public class MainGame : MonoBehaviour {
 
         FindObjectOfType<initialIslandScript>().Mystart();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (DateTime.Now - timeToEat >= span)
         {
             bool hasFood = ResourcesManager.decreaseResource(Resource.Food, minionScript.population);
@@ -59,7 +64,8 @@ public class MainGame : MonoBehaviour {
         //print(dist);
 
         initPosition = Vector3.up * (dist);
-        if (floatingIslands.Count < initialIslandCount) {
+        if (floatingIslands.Count < initialIslandCount)
+        {
             for (int i = 0; i < 200; i++)
             {
                 for (int j = 0; j < 200; j++)
@@ -77,7 +83,15 @@ public class MainGame : MonoBehaviour {
                     }
                 }
             }
-            instantiateFI11(floatingIsland); }
+            instantiateFI11(floatingIsland);
+
+
+        }
+            if (ResourcesManager.getResource(Resource.Smog) / 10 >= smogCount)
+            {
+                instantiateSmog(smog);
+                smogCount++;
+            }
 
     }
 
@@ -88,7 +102,7 @@ public class MainGame : MonoBehaviour {
         {
             for (int j = 0; j < 200; j++)
             {
-                if (grid!=null && grid[i][j] == 1)
+                if (grid != null && grid[i][j] == 1)
                 {
                     if (i < minx) minx = i;
                     if (i > maxx) maxx = i;
@@ -109,17 +123,17 @@ public class MainGame : MonoBehaviour {
 
     public void removeIslandfromList(GameObject island)
     {
-        if(floatingIslands.Contains(island))
+        if (floatingIslands.Contains(island))
             floatingIslands.Remove(island);
     }
-    
+
     void instantiateFI11(GameObject island)
     {
         /*float positionx = Random.Range(-range, range);
         float positiony = Random.Range(-range, range);
         Vector3 translate = new Vector3(positionx, positiony, 0f);*/
         int choice = UnityEngine.Random.Range(1, 9);
-        Vector3 direct=Vector3.zero;
+        Vector3 direct = Vector3.zero;
         switch (choice)
         {
             case 1:
@@ -170,8 +184,64 @@ public class MainGame : MonoBehaviour {
         floatingIslands.Add(temp);
     }
 
+    void instantiateSmog(GameObject smog)
+    {
+        /*float positionx = Random.Range(-range, range);
+        float positiony = Random.Range(-range, range);
+        Vector3 translate = new Vector3(positionx, positiony, 0f);*/
+        int choice = UnityEngine.Random.Range(1, 9);
+        Vector3 direct = Vector3.zero;
+        switch (choice)
+        {
+            case 1:
+                initPosition.x = minx - 100 - 4;
+                initPosition.y = miny - 100 - 30;
+                direct = Vector3.up;
+                break;
+            case 2:
+                initPosition.x = minx - 100 - 30;
+                initPosition.y = miny - 100 - 4;
+                direct = Vector3.right;
+                break;
+            case 3:
+                initPosition.x = minx - 100 - 4;
+                initPosition.y = maxy - 100 + 30;
+                direct = Vector3.down;
+                break;
+            case 4:
+                initPosition.x = minx - 100 - 30;
+                initPosition.y = maxy - 100 + 4;
+                direct = Vector3.right;
+                break;
+            case 5:
+                initPosition.x = maxx - 100 + 30;
+                initPosition.y = miny - 100 - 4;
+                direct = Vector3.left;
+                break;
+            case 6:
+                initPosition.x = maxx - 100 + 4;
+                initPosition.y = miny - 100 - 30;
+                direct = Vector3.up;
+                break;
+            case 7:
+                initPosition.x = maxx - 100 + 30;
+                initPosition.y = maxy - 100 + 4;
+                direct = Vector3.left;
+                break;
+            case 8:
+                initPosition.x = maxx - 100 + 4;
+                initPosition.y = maxy - 100 + 30;
+                direct = Vector3.down;
+                break;
+            default:
+                break;
+        }
+        GameObject temp = Instantiate(smog, initPosition, new Quaternion());
+        temp.GetComponent<SmogScript>().direction = direct;
+    }
+
     #endregion
 
-    
+
 
 }

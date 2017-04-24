@@ -139,6 +139,7 @@
     <Compile Include="Assets\Scripts\MainGame.cs" />
     <Compile Include="Assets\Scripts\ResourceScript.cs" />
     <Compile Include="Assets\Scripts\ResourcesManager.cs" />
+    <Compile Include="Assets\Scripts\SmogScript.cs" />
     <Compile Include="Assets\Scripts\floatingIslandScript.cs" />
     <Compile Include="Assets\Scripts\initialIslandScript.cs" />
     <Compile Include="Assets\Scripts\minionScript.cs" />

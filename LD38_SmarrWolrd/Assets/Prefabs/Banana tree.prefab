@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 95891436210543806}
   - component: {fileID: 114974537126560288}
   - component: {fileID: 136944537043097256}
+  - component: {fileID: 65771982713349638}
   m_Layer: 0
   m_Name: Banana tree
   m_TagString: Untagged
@@ -663,6 +664,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576615586484332}
   m_Mesh: {fileID: 4300002, guid: dc18b6bd993bd5046bbfe76e4c8710b1, type: 3}
+--- !u!65 &65771982713349638
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532577940972916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 25, z: 0}
 --- !u!95 &95891436210543806
 Animator:
   serializedVersion: 3

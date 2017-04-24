@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2378382}
   - component: {fileID: 136489935049439718}
   - component: {fileID: 114358887502253342}
+  - component: {fileID: 65582749686242358}
   m_Layer: 0
   m_Name: Rtree
   m_TagString: Rtree
@@ -9588,6 +9589,18 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112922}
   m_IsPrefabParent: 1
+--- !u!65 &65582749686242358
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &114358887502253342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9628,6 +9641,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.17, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

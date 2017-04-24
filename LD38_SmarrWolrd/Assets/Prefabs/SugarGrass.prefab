@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4830732887564230}
   - component: {fileID: 136097959136643624}
   - component: {fileID: 114046352166330138}
+  - component: {fileID: 65865617600152066}
   m_Layer: 0
   m_Name: SugarGrass
   m_TagString: Untagged
@@ -317,6 +318,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196358854270678}
   m_Mesh: {fileID: 4300000, guid: cf0178bacd6676f42997d136dced35a2, type: 3}
+--- !u!65 &65865617600152066
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177755154791580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &114046352166330138
 MonoBehaviour:
   m_ObjectHideFlags: 1
