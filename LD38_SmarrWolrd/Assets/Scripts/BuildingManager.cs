@@ -61,6 +61,7 @@ public class BuildingManager : MonoBehaviour
                 {
                     if (BuildingSelection.lastIslands.Contains(hit.collider.gameObject))
                     {
+                        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
                         GameObject building = Instantiate(BuildingSelection.selected.GetComponent<BuildingSelection>().buildingPrefab, hit.collider.gameObject.transform.position, Quaternion.identity);
                         building.transform.Rotate(new Vector3(-90f, 0f, 0f));
                         building.transform.localScale /= 3;
