@@ -10,6 +10,7 @@ public class ResourcesManager : MonoBehaviour
 
     public static Dictionary <Resource, int> resources;
     public Texture [] resourcesTextures;
+    public Texture populationTexture;
     public string [] resourcesTooltips;
     static public int resourcesCapacity = 1000;
     static DateTime time;
@@ -18,7 +19,7 @@ public class ResourcesManager : MonoBehaviour
     static ResourcesManager ()
     {
         resources = new Dictionary<Resource, int> ();
-        resources.Add (Resource.Food, 100);
+        resources.Add (Resource.Food, 200);
         resources.Add (Resource.BuildingMaterial, 100);
         resources.Add (Resource.Bananas, 100);
         resources.Add (Resource.Sugar, 100);
@@ -177,20 +178,24 @@ public class ResourcesManager : MonoBehaviour
     void OnGUI()
     {
         int i = 0, width=75, height=40, spacing=5;
+        GUIContent content;
+        content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population.");
+        GUI.Box(new Rect(width* i + spacing, 0, width, height), content);
+        GUI.Label(new Rect(0+spacing, height, width* i, height* 2), GUI.tooltip);
+        i++;
         foreach (KeyValuePair<Resource, int> pair in resources)
         {
-            GUIContent content;
-            if (i < resourcesTextures.Length)
+            if (i-1 < resourcesTextures.Length)
             {
                 if (i<resourcesTooltips.Length)
-                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i],resourcesTooltips[i]);
+                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i-1],resourcesTooltips[i-1]);
                 else
-                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i]);
+                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i-1]);
             }
             else
             {
-                if (i < resourcesTooltips.Length)
-                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(),resourcesTooltips[i]);
+                if (i-1 < resourcesTooltips.Length)
+                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(),resourcesTooltips[i-1]);
                 else
                     content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
             }

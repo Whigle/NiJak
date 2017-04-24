@@ -55,11 +55,11 @@ public class BuildingSelection : MonoBehaviour
 
     void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             selected = null;
             HighlightIslands();
-        }
+        }*/
     }
 
     void LateUpdate ()
@@ -132,7 +132,7 @@ public class BuildingSelection : MonoBehaviour
             {
                 if (buildingPrefab.GetComponent<BuildingObject>() != null || buildingPrefab.GetComponent<HookScript>() != null)
                 {
-                    GUI.TextArea(new Rect(Input.mousePosition.x, Screen.height - Input.mousePosition.y - tooltipHeight, tooltipWidth, tooltipHeight), tooltipText);
+                    GUI.TextArea(new Rect(Input.mousePosition.x-tooltipWidth, Screen.height - Input.mousePosition.y - tooltipHeight/2, tooltipWidth, tooltipHeight), tooltipText);
 
                 }
             }
