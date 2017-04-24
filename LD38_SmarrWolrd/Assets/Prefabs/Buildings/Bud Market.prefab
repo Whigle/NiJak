@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 4376383902963042}
   - component: {fileID: 114459162318019394}
   - component: {fileID: 65702382200026956}
-  - component: {fileID: 65440765012226222}
   m_Layer: 0
   m_Name: Bud Market
   m_TagString: Untagged
@@ -594,18 +593,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456776708792614}
   m_Mesh: {fileID: 4300000, guid: 24604ce785089a84fac68808959ebd89, type: 3}
---- !u!65 &65440765012226222
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252967183542816}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 10.37, z: 0}
 --- !u!65 &65702382200026956
 BoxCollider:
   m_ObjectHideFlags: 1

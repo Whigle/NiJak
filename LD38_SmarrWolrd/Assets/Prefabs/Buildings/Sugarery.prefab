@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 4078458864972096}
   - component: {fileID: 114212422747455768}
   - component: {fileID: 65432454056524464}
-  - component: {fileID: 65257863322106242}
   m_Layer: 0
   m_Name: Sugarery
   m_TagString: Untagged
@@ -3708,18 +3707,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 57b1c6e5e6fd80c4f8ee1d5ccba246c8, type: 3}
---- !u!65 &65257863322106242
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1515604555302284}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 10.43, z: 0}
 --- !u!65 &65432454056524464
 BoxCollider:
   m_ObjectHideFlags: 1

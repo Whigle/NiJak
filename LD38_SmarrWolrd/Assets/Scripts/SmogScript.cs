@@ -41,10 +41,10 @@ public class SmogScript : MonoBehaviour
         {
             Destroy (c.gameObject);
         }
-        else if (c.gameObject.tag != "Rtree")
-        {
-            Destroy (gameObject);
-        }
+        //else if (c.gameObject.tag != "Rtree")
+        //{
+        //    Destroy (gameObject);
+        //}
     }
 
     void OnCollisionEnter (Collision c)
@@ -53,9 +53,9 @@ public class SmogScript : MonoBehaviour
         {
             Destroy (c.gameObject);
         }
-        else if (c.gameObject.tag != "Rtree")
-        {
-            Destroy (gameObject);
-        }
+        //else if (c.gameObject.tag != "Rtree")
+        //{
+        //    Destroy (gameObject);
+        //}
     }
 }

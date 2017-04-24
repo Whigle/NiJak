@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour {
 
     public float cameraSpeed = 0.25f;
-    public float zoomSpeed = 0.4f;
+    public float zoomSpeed = 5f;
     public float maxZoom = 2f;
     public float minZoom = 30f;
-    public float edgeMargin = 20f;
+    public float edgeMargin = 25f;
     private float shakeDuration = 0f;
     private bool toShake = false;
     private bool flaga = false;

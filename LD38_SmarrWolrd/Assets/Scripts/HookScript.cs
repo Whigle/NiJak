@@ -37,7 +37,7 @@ public class HookScript : MonoBehaviour
     {
         if (hookEnabled)
         {
-            if (hookReturned && hookGotIsland)
+            if (hookReturned)// && hookGotIsland)
                 Destroy (gameObject);
             //Cursor.visible=false;
             if (!hookShooting && !hookReturning)
