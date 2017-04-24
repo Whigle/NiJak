@@ -34,10 +34,34 @@ public class floatingIslandScript : MonoBehaviour
         fields = new List<Vector3> ();
         startPosition = transform.position;
 
-        int scalex = (int) Random.Range (0f, 5f);
+        int scalex = (int) Random.Range (0f, 100f);
+        if (scalex < 70)
+        {
+            scalex = 0;
+        }
+        else if (scalex < 90)
+        {
+            scalex = 2;
+        }
+        else
+        {
+            scalex = 4;
+        }
         if (scalex % 2 != 0)
             scalex++;
-        int scaley = (int) Random.Range (0f, 5f);
+        int scaley = (int) Random.Range (0f, 100f);
+        if (scaley < 70)
+        {
+            scaley = 0;
+        }
+        else if (scaley < 90)
+        {
+            scaley = 2;
+        }
+        else
+        {
+            scaley = 4;
+        }
         if (scaley % 2 != 0)
             scaley++;
         transform.localScale += new Vector3 (scalex, scaley);
@@ -113,7 +137,7 @@ public class floatingIslandScript : MonoBehaviour
             collision.gameObject.GetComponent<floatingIslandScript> ().partOfIsland = true;
             collision.gameObject.GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
             ResourcesManager.increaseResource (resource, resourceCount);
-            //FindObjectOfType<CameraScript> ().SHAKE ();
+            FindObjectOfType<CameraScript> ().SHAKE ();
         }
     }
 

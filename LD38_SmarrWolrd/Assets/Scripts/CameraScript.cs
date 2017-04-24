@@ -13,6 +13,8 @@ public class CameraScript : MonoBehaviour {
     private bool toShake = false;
     private bool flaga = false;
     private Vector3 position;
+
+    public bool enableShaker;
     // Use this for initialization
     void Start () {
 		
@@ -54,17 +56,19 @@ public class CameraScript : MonoBehaviour {
                 }
             }
         }
-
-        if (toShake)
+        if (enableShaker)
         {
-            shakeDuration -= Time.deltaTime;
-            transform.position += new Vector3 (Random.Range (-0.5f, 0.5f), Random.Range (-0.5f, 0.5f), 0f);
-        }
-        if (shakeDuration < 0f && flaga)
-        {
-            toShake = false;
-            flaga = false;
-            transform.position = position;
+            if (toShake)
+            {
+                shakeDuration -= Time.deltaTime;
+                transform.position += new Vector3 (Random.Range (-0.5f, 0.5f), Random.Range (-0.5f, 0.5f), 0f);
+            }
+            if (shakeDuration < 0f && flaga)
+            {
+                toShake = false;
+                flaga = false;
+                transform.position = position;
+            }
         }
     }
 
