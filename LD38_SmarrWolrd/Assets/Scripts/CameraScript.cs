@@ -24,6 +24,7 @@ public class CameraScript : MonoBehaviour {
     private Vector3 position;
     static float pitch;
     float windVol, ambVol, musVol, joinVol, windPitch, ambPitch, musPitch, joinPitch;
+    static public bool allowCameraMovement = false;
      [SerializeField]
     private bool enableShaker = true;
     // Use this for initialization
@@ -74,42 +75,44 @@ public class CameraScript : MonoBehaviour {
         }
         else musicAudio.volume = musVol;
 
-
-        Vector3 mousePos = Input.mousePosition;
-        if (mousePos.x >= 0f && mousePos.x <= Screen.width && mousePos.y >= 0f && mousePos.y <= Screen.height)
+        if (allowCameraMovement)
         {
-            if (mousePos.x <= edgeMargin)
+            Vector3 mousePos = Input.mousePosition;
+            if (mousePos.x >= 0f && mousePos.x <= Screen.width && mousePos.y >= 0f && mousePos.y <= Screen.height)
             {
-                transform.Translate(new Vector3(-1f, 0f, 0f) * cameraSpeed,Space.World);
-            }
-            if (mousePos.y <= edgeMargin)
-            {
-                transform.Translate(new Vector3(0f, -1f, 0f) * cameraSpeed, Space.World);
-            }
-            if (mousePos.x >= Screen.width - edgeMargin)
-            {
-                transform.Translate(new Vector3(1f, 0f, 0f) * cameraSpeed, Space.World);
-            }
-            if (mousePos.y >= Screen.height - edgeMargin)
-            {
-                transform.Translate(new Vector3(0f, 1f, 0f) * cameraSpeed, Space.World);
-            }
-            if (Input.mouseScrollDelta.y > 0)
-            {
-                if (Mathf.Abs(transform.position.z) > maxZoom)
+                if (mousePos.x <= edgeMargin)
                 {
-                    transform.Translate(new Vector3(0f, 0f, 1f) * zoomSpeed);
-                    zoom = transform.position.z;
-                    pitch = (zoom / (maxZoom - minZoom));
+                    transform.Translate(new Vector3(-1f, 0f, 0f) * cameraSpeed, Space.World);
                 }
-            }
-            if (Input.mouseScrollDelta.y < 0)
-            {
-                if (Mathf.Abs(transform.position.z) < minZoom)
+                if (mousePos.y <= edgeMargin)
                 {
-                    transform.Translate(new Vector3(0f, 0f, -1f) * zoomSpeed);
-                    zoom = transform.position.z;
-                    pitch = (zoom / (maxZoom - minZoom));
+                    transform.Translate(new Vector3(0f, -1f, 0f) * cameraSpeed, Space.World);
+                }
+                if (mousePos.x >= Screen.width - edgeMargin)
+                {
+                    transform.Translate(new Vector3(1f, 0f, 0f) * cameraSpeed, Space.World);
+                }
+                if (mousePos.y >= Screen.height - edgeMargin)
+                {
+                    transform.Translate(new Vector3(0f, 1f, 0f) * cameraSpeed, Space.World);
+                }
+                if (Input.mouseScrollDelta.y > 0)
+                {
+                    if (Mathf.Abs(transform.position.z) > maxZoom)
+                    {
+                        transform.Translate(new Vector3(0f, 0f, 1f) * zoomSpeed);
+                        zoom = transform.position.z;
+                        pitch = (zoom / (maxZoom - minZoom));
+                    }
+                }
+                if (Input.mouseScrollDelta.y < 0)
+                {
+                    if (Mathf.Abs(transform.position.z) < minZoom)
+                    {
+                        transform.Translate(new Vector3(0f, 0f, -1f) * zoomSpeed);
+                        zoom = transform.position.z;
+                        pitch = (zoom / (maxZoom - minZoom));
+                    }
                 }
             }
         }

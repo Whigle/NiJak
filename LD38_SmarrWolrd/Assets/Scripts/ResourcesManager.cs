@@ -14,6 +14,7 @@ public class ResourcesManager : MonoBehaviour
     public string [] resourcesTooltips;
     static public int resourcesCapacity = 1000;
     static DateTime time;
+    static public bool showResources = false;
     public TimeSpan span=TimeSpan.FromSeconds(10);
 
     static ResourcesManager ()
@@ -177,32 +178,35 @@ public class ResourcesManager : MonoBehaviour
 
     void OnGUI()
     {
-        int i = 0, width=75, height=40, spacing=5;
-        GUIContent content;
-        content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population.");
-        GUI.Box(new Rect(width* i + spacing, 0, width, height), content);
-        GUI.Label(new Rect(0+spacing, height, width* i, height* 2), GUI.tooltip);
-        i++;
-        foreach (KeyValuePair<Resource, int> pair in resources)
+        if (showResources)
         {
-            if (i-1 < resourcesTextures.Length)
-            {
-                if (i<resourcesTooltips.Length)
-                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i-1],resourcesTooltips[i-1]);
-                else
-                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i-1]);
-            }
-            else
-            {
-                if (i-1 < resourcesTooltips.Length)
-                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(),resourcesTooltips[i-1]);
-                else
-                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
-            }
+            int i = 0, width = 75, height = 40, spacing = 5;
+            GUIContent content;
+            content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population.");
             GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
+            GUI.Label(new Rect(0 + spacing, height, width * i, height * 2), GUI.tooltip);
             i++;
+            foreach (KeyValuePair<Resource, int> pair in resources)
+            {
+                if (i - 1 < resourcesTextures.Length)
+                {
+                    if (i < resourcesTooltips.Length)
+                        content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1], resourcesTooltips[i - 1]);
+                    else
+                        content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1]);
+                }
+                else
+                {
+                    if (i - 1 < resourcesTooltips.Length)
+                        content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(), resourcesTooltips[i - 1]);
+                    else
+                        content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
+                }
+                GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
+                i++;
+            }
+            GUI.Label(new Rect(0 + spacing, height, width * i, height * 2), GUI.tooltip);
         }
-        GUI.Label(new Rect(0+spacing, height, width * i, height * 2), GUI.tooltip);
     }
 
 }
