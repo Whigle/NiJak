@@ -131,6 +131,7 @@ public class HookScript : MonoBehaviour
                     col.GetComponent<floatingIslandScript>().direction.z = 0;
                     col.GetComponent<floatingIslandScript> ().direction.Normalize ();
                     col.GetComponent<floatingIslandScript> ().speed = speed;
+                    col.GetComponent<floatingIslandScript>().hooked = true;
                     returnHook ();
                     trigger = true;
                 }

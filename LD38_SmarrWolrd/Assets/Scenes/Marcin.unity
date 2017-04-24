@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatingIsland: {fileID: 1051282113560476, guid: 4c37c1d15f6e5314db6f60f1ba96b671,
     type: 2}
-  initialIslandCount: 20
+  initialIslandCount: 4
 --- !u!4 &198211438
 Transform:
   m_ObjectHideFlags: 0

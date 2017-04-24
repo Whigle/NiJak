@@ -16,6 +16,10 @@ public class floatingIslandScript : MonoBehaviour
     public Resource resource;
     public int resourceCount;
     public List<Vector3> fields;
+    public bool hooked;
+
+    Vector3 startPosition;
+    float spwnTime;
 
 
     #endregion
@@ -25,7 +29,10 @@ public class floatingIslandScript : MonoBehaviour
     // Use this for initialization
     void Awake ()
     {
+        spwnTime = Time.time;
+        hooked = false;
         fields = new List<Vector3> ();
+        startPosition = transform.position;
 
         int scalex = (int) Random.Range (0f, 5f);
         if (scalex % 2 != 0)
@@ -36,7 +43,7 @@ public class floatingIslandScript : MonoBehaviour
         transform.localScale += new Vector3 (scalex, scaley);
         direction = Vector3.zero - transform.position;
         direction.Normalize ();
-        speed = Random.Range (1f, 2f);
+        speed = Random.Range (2f, 4f);
         partOfIsland = false;
         if (mainGame == null)
             mainGame = GameObject.Find ("MainGame").GetComponent<MainGame> ();
@@ -69,11 +76,21 @@ public class floatingIslandScript : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
-        transform.Translate (direction * speed * Time.deltaTime);
+        if (!partOfIsland) { if (Time.time > spwnTime + 30f)
+            {
+                mainGame.removeIslandfromList(this.gameObject); Destroy(this.gameObject);
+            }
+        }
         if (partOfIsland && !flaga)
         {
-            testuj ();
+            testuj();
             flaga = true;
+        }
+        else
+        {
+            //if (Time.time > spwnTime + 5f) Destroy(this.gameObject);
+            transform.Translate(direction * speed * Time.deltaTime);
+            //else transform.position = (Quaternion.Euler(0, 0, Time.time*10) * startPosition);
         }
         //testuj();
     }
@@ -199,7 +216,7 @@ public class floatingIslandScript : MonoBehaviour
         {
             if (mainGame.grid [x + 100] [y + 100] == 1 && mainGame.grid [x + 100] [y + 101] == 0)
             {
-                print ("here 1");
+                //print ("here 1");
                 //transform.position += Vector3.up;
                 //mainGame.grid[x + 100][y + 101] = 1;
                 //cube = Instantiate (box, new Vector3 (x, y + 1, 0), new Quaternion ());
@@ -207,7 +224,7 @@ public class floatingIslandScript : MonoBehaviour
             }
             else if (mainGame.grid [x + 100] [y + 100] == 1 && mainGame.grid [x + 100] [y + 99] == 0)
             {
-                print ("here 2");
+                //print ("here 2");
                 //transform.position += Vector3.down;
                 //mainGame.grid[x + 100][y + 99] = 1;
                 //cube = Instantiate (box, new Vector3 (x, y - 1, 0), new Quaternion ());
@@ -215,7 +232,7 @@ public class floatingIslandScript : MonoBehaviour
             }
             else if (mainGame.grid [x + 100] [y + 100] == 1 && mainGame.grid [x + 99] [y + 100] == 0)
             {
-                print ("here 3");
+                //print ("here 3");
                 //transform.position += Vector3.left;
                 //mainGame.grid[x + 99][y + 100] = 1;
                 //cube = Instantiate (box, new Vector3 (x - 1, y, 0), new Quaternion ());
@@ -223,7 +240,7 @@ public class floatingIslandScript : MonoBehaviour
             }
             else if (mainGame.grid [x + 100] [y + 100] == 1 && mainGame.grid [x + 101] [y + 100] == 0)
             {
-                print ("here 4");
+                //print ("here 4");
                 //transform.position += Vector3.right;
                 //mainGame.grid[x + 101][y + 100] = 1;
                 //cube = Instantiate (box, new Vector3 (x + 1, y, 0), new Quaternion ());
