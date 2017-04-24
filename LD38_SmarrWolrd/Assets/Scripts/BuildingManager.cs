@@ -46,7 +46,7 @@ public class BuildingManager : MonoBehaviour
     }
     void GetMouseInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
 
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -67,10 +67,14 @@ public class BuildingManager : MonoBehaviour
                         }
 
                         ResourcesManager.useResources(reqResources);
-
+                        BuildingSelection.UnHighlightIslands();
                     }
                 }
             }
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            BuildingSelection.UnHighlightIslands();
         }
     }
 }

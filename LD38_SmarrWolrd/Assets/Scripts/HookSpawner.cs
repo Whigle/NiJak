@@ -15,7 +15,7 @@ public class HookSpawner : MonoBehaviour
 
     void Update ()
     {
-        GetInput ();
+        //GetInput ();
     }
 
     private void GetInput ()

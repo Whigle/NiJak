@@ -22,12 +22,14 @@ public class HookScript : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+
         lineRenderer = gameObject.GetComponent<LineRenderer> ();
         lineRenderer.numPositions = 2;
         lineRenderer.enabled = false;
         startPosition = transform.position;
         gridPosition = new GridPoint (100, 100);
         mainGame = FindObjectOfType<MainGame> ();
+        //hookEnabled = true;
     }
 
     // Update is called once per frame
@@ -40,7 +42,7 @@ public class HookScript : MonoBehaviour
             //Cursor.visible=false;
             if (!hookShooting && !hookReturning)
             {
-                GetInput ();
+                //GetInput ();
                 RaycastHit myRay = new RaycastHit ();
                 Physics.Raycast (Camera.allCameras [1].ScreenPointToRay (Input.mousePosition), out myRay);
                 if (myRay.transform != null)
@@ -68,6 +70,7 @@ public class HookScript : MonoBehaviour
                         mousePos.y = Input.mousePosition.y;
 
                         targetPosition = c.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, -c.transform.position.z));
+                        targetPosition.z = startPosition.z;
                         transform.LookAt (targetPosition);
                     }
                 }
