@@ -20,12 +20,12 @@ public class ResourcesManager : MonoBehaviour
     static ResourcesManager ()
     {
         resources = new Dictionary<Resource, int> ();
-        resources.Add (Resource.Food, 200);
-        resources.Add (Resource.BuildingMaterial, 100);
-        resources.Add (Resource.Bananas, 100);
-        resources.Add (Resource.Sugar, 100);
-        resources.Add (Resource.Wood, 100);
-        resources.Add (Resource.Stone, 100);
+        resources.Add (Resource.Food, 300);
+        resources.Add (Resource.BuildingMaterial, 150);
+        resources.Add (Resource.Bananas, 0);
+        resources.Add (Resource.Sugar, 0);
+        resources.Add (Resource.Wood, 0);
+        resources.Add (Resource.Stone, 0);
         resources.Add (Resource.Energy, 100);
         resources.Add (Resource.Smog, 0);
         time = DateTime.Now;

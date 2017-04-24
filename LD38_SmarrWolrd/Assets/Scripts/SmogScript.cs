@@ -31,13 +31,13 @@ public class SmogScript : MonoBehaviour
         {
             Destroy (gameObject);
         }
-        transform.Translate (direction * speed * Time.deltaTime);
-
+        transform.Translate (direction * speed * Time.deltaTime, Space.World);
+        transform.Rotate (Vector3.forward, 10 * Time.deltaTime, Space.World);
     }
 
     void OnTriggerEnter (Collider c)
     {
-        if (c.gameObject.tag != "Island" && c.gameObject.tag != "ChunkIsland")
+        if (c.gameObject.tag != "Island")
         {
             Destroy (c.gameObject);
         }
