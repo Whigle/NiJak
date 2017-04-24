@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class JamMaker : BuildingObject
 {
-    public int bananasCost=10;
-    public int sugarCost=10;
-    public int foodAmount=10;
+    public int bananasCost;
+    public int sugarCost;
+    public int foodAmount;
+    public int energyCost;
 
     public JamMaker() : base(){}
 
@@ -19,11 +20,15 @@ public class JamMaker : BuildingObject
 
     protected override void iterateProduction()
     {
-        if (ResourcesManager.hasResource(Resource.Bananas, bananasCost) && ResourcesManager.hasResource(Resource.Sugar, sugarCost)&&ResourcesManager.getResource(Resource.Food)< ResourcesManager.resourcesCapacity)
+        if (ResourcesManager.hasResource(Resource.Energy, energyCost))
         {
-            ResourcesManager.decreaseResource(Resource.Bananas, bananasCost);
-            ResourcesManager.decreaseResource(Resource.Sugar, sugarCost);
-            ResourcesManager.increaseResource(Resource.Food, foodAmount);
+            if (ResourcesManager.hasResource(Resource.Bananas, bananasCost) && ResourcesManager.hasResource(Resource.Sugar, sugarCost) && ResourcesManager.getResource(Resource.Food) < ResourcesManager.resourcesCapacity)
+            {
+                ResourcesManager.decreaseResource(Resource.Bananas, bananasCost);
+                ResourcesManager.decreaseResource(Resource.Sugar, sugarCost);
+                ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+                ResourcesManager.increaseResource(Resource.Food, foodAmount);
+            }
         }
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Woodery : BuildingObject
 {
-    public int woodAmount = 10;
+    public int woodAmount;
+    public int energyCost;
 
     public Woodery() : base() { }
     void Start()
@@ -15,9 +16,13 @@ public class Woodery : BuildingObject
 
     protected override void iterateProduction()
     {
-        if (ResourcesManager.getResource(Resource.Wood) < ResourcesManager.resourcesCapacity)
+        if (ResourcesManager.hasResource(Resource.Energy))
         {
-            ResourcesManager.increaseResource(Resource.Wood, woodAmount);
+            if (ResourcesManager.getResource(Resource.Wood) < ResourcesManager.resourcesCapacity)
+            {
+                ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+                ResourcesManager.increaseResource(Resource.Wood, woodAmount);
+            }
         }
     }
 }

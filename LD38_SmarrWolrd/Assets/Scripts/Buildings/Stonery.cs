@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Stonery : BuildingObject
 {
-    public int stoneAmount = 10;
+    public int stoneAmount;
+    public int energyCost;
 
     public Stonery() : base() { }
     void Start()
@@ -15,9 +16,13 @@ public class Stonery : BuildingObject
 
     protected override void iterateProduction()
     {
-        if (ResourcesManager.getResource(Resource.Stone) < ResourcesManager.resourcesCapacity)
+        if (ResourcesManager.hasResource(Resource.Energy, energyCost))
         {
-            ResourcesManager.increaseResource(Resource.Stone, stoneAmount);
+            if (ResourcesManager.getResource(Resource.Stone) < ResourcesManager.resourcesCapacity)
+            {
+                ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+                ResourcesManager.increaseResource(Resource.Stone, stoneAmount);
+            }
         }
     }
 }

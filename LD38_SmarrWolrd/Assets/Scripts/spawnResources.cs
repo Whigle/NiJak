@@ -34,13 +34,39 @@ public class spawnResources : MonoBehaviour {
                 }
             }
         }
-        else /*if(resource==Resource.Stone)*/
+        else if (resource == Resource.Stone)
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
                 if (Random.Range(0f, 1f) < 0.3f)
                 {
                     GameObject res = Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
+                    res.transform.localScale *= 0.4f;
+                    res.transform.parent = island.transform;
+                    count++;
+                }
+            }
+        }
+        else if (resource == Resource.Bananas)
+        {
+            foreach (var item in island.GetComponent<floatingIslandScript>().fields)
+            {
+                if (Random.Range(0f, 1f) < 0.3f)
+                {
+                    GameObject res = Instantiate(banana, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
+                    res.transform.localScale *= 0.4f;
+                    res.transform.parent = island.transform;
+                    count++;
+                }
+            }
+        }
+        else if (resource == Resource.Sugar)
+        {
+            foreach (var item in island.GetComponent<floatingIslandScript>().fields)
+            {
+                if (Random.Range(0f, 1f) < 0.3f)
+                {
+                    GameObject res = Instantiate(sugar, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
                     res.transform.parent = island.transform;
                     count++;

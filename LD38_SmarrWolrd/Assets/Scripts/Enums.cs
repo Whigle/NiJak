@@ -12,7 +12,8 @@ public enum Resource
     Sugar,
     Wood,
     Stone,
-    Energy
+    Energy,
+    Smog
 }
 
 public enum Building

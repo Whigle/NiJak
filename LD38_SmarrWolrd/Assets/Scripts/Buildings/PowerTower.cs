@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerTower : BuildingObject
 {
+    public int smogAmount;
     public int energyAmount;
     public PowerTower() : base() { }
     void Start ()
@@ -17,6 +18,7 @@ public class PowerTower : BuildingObject
         if (ResourcesManager.getResource(Resource.Energy) < ResourcesManager.resourcesCapacity)
         {
             ResourcesManager.increaseResource(Resource.Energy, energyAmount);
+            ResourcesManager.increaseResource(Resource.Smog, smogAmount);
         }
     }
 }

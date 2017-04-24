@@ -5,7 +5,8 @@ using UnityEngine;
 public class Sugarery : BuildingObject
 {
 
-    public int sugarAmount = 10;
+    public int sugarAmount;
+    public int energyCost;
 
     public Sugarery() : base() { }
     void Start()
@@ -16,9 +17,13 @@ public class Sugarery : BuildingObject
 
     protected override void iterateProduction()
     {
-        if (ResourcesManager.getResource(Resource.Sugar) < ResourcesManager.resourcesCapacity)
+        if (ResourcesManager.hasResource(Resource.Energy, energyCost))
         {
-            ResourcesManager.increaseResource(Resource.Sugar, sugarAmount);
+            if (ResourcesManager.getResource(Resource.Sugar) < ResourcesManager.resourcesCapacity)
+            {
+                ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+                ResourcesManager.increaseResource(Resource.Sugar, sugarAmount);
+            }
         }
     }
 }

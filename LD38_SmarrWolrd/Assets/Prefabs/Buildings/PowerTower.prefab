@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350746366638398}
   - component: {fileID: 114781573262053196}
+  - component: {fileID: 65185364902564934}
   m_Layer: 0
   m_Name: PowerTower
   m_TagString: Untagged
@@ -556,6 +557,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986194071726372}
   m_Mesh: {fileID: 4300004, guid: 728d34ef80da54d4c80445478318c583, type: 3}
+--- !u!65 &65185364902564934
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515575418703296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 20, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95226082174430434
 Animator:
   serializedVersion: 3
@@ -641,4 +654,5 @@ MonoBehaviour:
   buildingCooldown: 2
   buildingType: 3
   enabled: 1
+  smogAmount: 1
   energyAmount: 10

@@ -20,6 +20,8 @@ public class ResourcesManager : MonoBehaviour
         resources.Add (Resource.Sugar, 1000);
         resources.Add (Resource.Wood, 1000);
         resources.Add (Resource.Stone, 1000);
+        resources.Add (Resource.Energy, 1000);
+        resources.Add (Resource.Smog, 0);
     }
     
     public void Update()

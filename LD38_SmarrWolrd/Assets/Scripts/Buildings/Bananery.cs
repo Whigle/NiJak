@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Bananery : BuildingObject
 {
-    public int bananasAmount = 10;
+    public int bananasAmount;
+    public int energyCost;
 
     public Bananery() : base() { }
     void Start()
@@ -16,9 +17,13 @@ public class Bananery : BuildingObject
 
     protected override void iterateProduction()
     {
-        if (ResourcesManager.getResource(Resource.Bananas) < ResourcesManager.resourcesCapacity)
+        if (ResourcesManager.hasResource(Resource.Energy, energyCost))
         {
-            ResourcesManager.increaseResource(Resource.Bananas, bananasAmount);
+            if (ResourcesManager.getResource(Resource.Bananas) < ResourcesManager.resourcesCapacity)
+            {
+                ResourcesManager.increaseResource(Resource.Bananas, bananasAmount);
+                ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+            }
         }
     }
 }
