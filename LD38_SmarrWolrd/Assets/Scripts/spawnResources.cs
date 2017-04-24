@@ -25,7 +25,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.3f)
+                if (Random.Range(0f, 1f) < 0.35f)
                 {
                     GameObject res = Instantiate(tree, item + new Vector3(0, 0, -0.5f),Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
@@ -38,7 +38,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.3f)
+                if (Random.Range(0f, 1f) < 0.35f)
                 {
                     GameObject res = Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
@@ -51,7 +51,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.3f)
+                if (Random.Range(0f, 1f) < 0.35f)
                 {
                     GameObject res = Instantiate(banana, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
@@ -64,7 +64,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.3f)
+                if (Random.Range(0f, 1f) < 0.35f)
                 {
                     GameObject res = Instantiate(sugar, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
