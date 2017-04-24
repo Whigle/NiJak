@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4164348336340654}
+  - component: {fileID: 114929396737001420}
   m_Layer: 0
   m_Name: Town Center
   m_TagString: Untagged
@@ -716,3 +717,22 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114929396737001420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034731552672570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef27507370694d4e8ac5a79346ce12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Town Center
+  description: 
+  buildingImage: {fileID: 0}
+  buildingCooldown: 5
+  buildingType: 8
+  enabled: 1
+  foodCost: 1
+  minion: {fileID: 1340891649136434, guid: cf4840ebc2d7a4747a1b2920a6faa10d, type: 2}
