@@ -13,8 +13,8 @@ public class CameraScript : MonoBehaviour {
     AudioSource musicAudio;
     AudioSource joinAudio;
     public float cameraSpeed = 0.25f;
-    public float zoomSpeed = 5f;
-    static public float maxZoom = 2f;
+    public float zoomSpeed = 22f;
+    static public float maxZoom = 3f;
     static public float minZoom = 30f;
     static public float zoom;
     public float edgeMargin = 25f;
