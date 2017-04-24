@@ -42,7 +42,7 @@ public class BuildingObject : MonoBehaviour
 
     void OnTriggerEnter (Collider col)
     {
-        if (col.gameObject.CompareTag ("ChunkIsland"))
+        if (col.gameObject.CompareTag ("ChunkIsland") || col.gameObject.CompareTag ("Smog"))
         {
             Destroy (gameObject);
         }

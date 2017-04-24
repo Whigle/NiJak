@@ -244,6 +244,7 @@ MonoBehaviour:
   resource: 0
   resourceCount: 0
   fields: []
+  hooked: 0
   x: 0
   y: 0
 --- !u!114 &114822902375048372
@@ -259,5 +260,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stone: {fileID: 1305474438653252, guid: ae6278983cbaa05448f69ba25bb843b0, type: 2}
   tree: {fileID: 112922, guid: cf96bd2c34fef4f4e9b923b8d03a9e18, type: 2}
-  banana: {fileID: 1532577940972916, guid: 6ab02a507b1b5e34d8745570563d6c7d, type: 2}
+  banana: {fileID: 1395991666102208, guid: 2bedc0a515b2abd4a9f671ca1486d4c6, type: 2}
   sugar: {fileID: 1177755154791580, guid: aa3be0f41b3572747bf78feb3d37bfcb, type: 2}

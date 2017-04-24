@@ -13,6 +13,7 @@ TagManager:
   - Rbanana
   - Rsugar
   - ChunkIsland
+  - Smog
   layers:
   - Default
   - TransparentFX

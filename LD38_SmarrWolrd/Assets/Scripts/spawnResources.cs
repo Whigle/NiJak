@@ -21,11 +21,12 @@ public class spawnResources : MonoBehaviour {
     public int randomSpawn(Resource resource, GameObject island)
     {
         int count = 0;
+        float chanceModifier = island.GetComponent<floatingIslandScript>().fields.Count / 100f;
         if(resource==Resource.Wood)
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.35f)
+                if (Random.Range(0f, 1f) < 0.6f - chanceModifier)
                 {
                     GameObject res = Instantiate(tree, item + new Vector3(0, 0, -0.5f),Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
@@ -38,7 +39,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.35f)
+                if (Random.Range (0f, 1f) < 0.6f - chanceModifier)
                 {
                     GameObject res = Instantiate(stone, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;
@@ -51,10 +52,10 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.35f)
+                if (Random.Range (0f, 1f) < 0.6f - chanceModifier)
                 {
                     GameObject res = Instantiate(banana, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
-                    res.transform.localScale *= 0.4f;
+                    res.transform.localScale *= 0.5f;
                     res.transform.parent = island.transform;
                     count++;
                 }
@@ -64,7 +65,7 @@ public class spawnResources : MonoBehaviour {
         {
             foreach (var item in island.GetComponent<floatingIslandScript>().fields)
             {
-                if (Random.Range(0f, 1f) < 0.35f)
+                if (Random.Range (0f, 1f) < 0.6f - chanceModifier)
                 {
                     GameObject res = Instantiate(sugar, item + new Vector3(0, 0, -0.5f), Quaternion.Euler(Vector3.left * 90));
                     res.transform.localScale *= 0.4f;

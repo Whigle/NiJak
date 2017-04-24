@@ -71,7 +71,7 @@ public class floatingIslandScript : MonoBehaviour
         partOfIsland = false;
         if (mainGame == null)
             mainGame = GameObject.Find ("MainGame").GetComponent<MainGame> ();
-        int r = Random.Range (0, 6);
+        int r = Random.Range (1, 5);
         switch (r)
         {
             case 0:
