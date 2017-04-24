@@ -13,8 +13,8 @@ public class CameraScript : MonoBehaviour {
     private bool toShake = false;
     private bool flaga = false;
     private Vector3 position;
-
-    public bool enableShaker;
+    [SerializeField]
+    private bool enableShaker = true;
     // Use this for initialization
     void Start () {
 		

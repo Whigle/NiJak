@@ -21,10 +21,10 @@ public class initialIslandScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
         firstMinion = Instantiate(Minion, transform.position + Vector3.back * 0.75f, Quaternion.Euler(0, 0, 0));
-        firstMinion.GetComponent<minionScript>().spawner=this.gameObject;
-        
+        firstMinion.GetComponent<minionScript>().spawner = this.gameObject;
+
     }
 
     // Update is called once per frame
@@ -43,6 +43,10 @@ public class initialIslandScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.GetComponent<floatingIslandScript>() != null && !collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland)
+        {
+            FindObjectOfType<CameraScript>().SHAKE();
+        }
         collision.gameObject.GetComponent<floatingIslandScript>().speed = 0f;
         collision.gameObject.GetComponent<floatingIslandScript>().direction = new Vector3(0, 0, 0);
         collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland = true;
@@ -54,10 +58,7 @@ public class initialIslandScript : MonoBehaviour
         collision.gameObject.transform.position = temp;
         mainGame.removeIslandfromList(collision.gameObject);
         collision.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        if (collision.gameObject.GetComponent<floatingIslandScript> () != null && !collision.gameObject.GetComponent<floatingIslandScript> ().partOfIsland)
-        {
-            FindObjectOfType<CameraScript> ().SHAKE ();
-        }
+
     }
 
     private void testuj()
@@ -75,10 +76,10 @@ public class initialIslandScript : MonoBehaviour
                 temp.x += i - (int)x / 2;
                 temp.y += j - (int)y / 2;
                 mainGame.grid[(int)temp.x + 100][(int)temp.y + 100] = 1;
-                cube = Instantiate (box, temp, new Quaternion ());
+                cube = Instantiate(box, temp, new Quaternion());
                 cube.transform.parent = gameObject.transform;
 
-                BuildingManager.AddBuildingField (cube.GetComponent<IslandField> ());
+                BuildingManager.AddBuildingField(cube.GetComponent<IslandField>());
 
             }
         }
