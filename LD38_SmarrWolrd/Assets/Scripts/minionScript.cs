@@ -42,7 +42,7 @@ public class minionScript : MonoBehaviour
             dieingTime = true;
         }
 
-        print(population);
+
         maxPop =BuildingManager.buildingFields.Count+maxPopulation;
         if (Time.time > timetoDie && die)
         {

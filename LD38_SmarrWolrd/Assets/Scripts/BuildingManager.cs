@@ -22,6 +22,7 @@ public class BuildingManager : MonoBehaviour
         building.transform.Rotate(new Vector3(-90f, 0f, 0f));
         building.transform.localScale /= 3;
         building.transform.Translate(new Vector3(0f, 0.5f, 0f));
+
     }
 
     void Update()

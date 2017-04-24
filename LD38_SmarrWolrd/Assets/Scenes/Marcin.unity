@@ -168,6 +168,15 @@ MonoBehaviour:
   - {fileID: 2800000, guid: bdc863d3e4a748244b5030adf80fff03, type: 3}
   - {fileID: 2800000, guid: 3694df7e74e24af4594ce1a12371e5bd, type: 3}
   - {fileID: 2800000, guid: d1e5165b01ae5254580fa5778e8b478e, type: 3}
+  resourcesTooltips:
+  - Used to feed pesants. Made in Jam Maker.
+  - Used to build constructions. Made in Bud Market.
+  - Combined with sugar gives banana jam. Made in Bananery.
+  - Combined with bananas gives banana jam. Made in Sugarery.
+  - Combined with stones gives building material. Made in Woodery.
+  - Combined with wood gives building material. Made in Stonery.
+  - Used to power structures. Made in Power Tower.
+  - Made by Power Towers. Can be reduced with trees.
 --- !u!114 &198211441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,34 +246,6 @@ Transform:
   m_GameObject: {fileID: 215340565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &483999441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 483999442}
-  m_Layer: 0
-  m_Name: ResourceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &483999442
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 483999441}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -652.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -386,6 +367,11 @@ Prefab:
     - target: {fileID: 114541674072327082, guid: c800b346c6ebe254fbc804bd9d8a95ea,
         type: 2}
       propertyPath: requiredResources.BuildingMaterial
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114488266656357758, guid: c800b346c6ebe254fbc804bd9d8a95ea,
+        type: 2}
+      propertyPath: requiredResources.Food
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

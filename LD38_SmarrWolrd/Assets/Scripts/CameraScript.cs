@@ -23,7 +23,7 @@ public class CameraScript : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         Vector3 mousePos = Input.mousePosition;
-        if (mousePos.x > 0f && mousePos.x < Screen.width && mousePos.y > 0f && mousePos.y < Screen.height)
+        if (mousePos.x >= 0f && mousePos.x <= Screen.width && mousePos.y >= 0f && mousePos.y <= Screen.height)
         {
             if (mousePos.x <= edgeMargin)
             {

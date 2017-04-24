@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +10,10 @@ public class ResourcesManager : MonoBehaviour
 
     public static Dictionary <Resource, int> resources;
     public Texture [] resourcesTextures;
+    public string [] resourcesTooltips;
     static public int resourcesCapacity = 1000;
+    static DateTime time;
+    public TimeSpan span=TimeSpan.FromSeconds(10);
 
     static ResourcesManager ()
     {
@@ -22,10 +26,16 @@ public class ResourcesManager : MonoBehaviour
         resources.Add (Resource.Stone, 100);
         resources.Add (Resource.Energy, 100);
         resources.Add (Resource.Smog, 0);
+        time = DateTime.Now;
     }
     
     public void Update()
     {
+        if (DateTime.Now - time > span)
+        {
+            decreaseResource(Resource.Smog, BuildingManager.getIslandsOfTypeConnected(Resource.Wood).Count);
+            time = DateTime.Now;
+        }
         /*if (Input.GetKeyDown(KeyCode.Space))
         {
             string str = "Resources on connected isles:\n";
@@ -172,15 +182,22 @@ public class ResourcesManager : MonoBehaviour
             GUIContent content;
             if (i < resourcesTextures.Length)
             {
-                content = new GUIContent(pair.Value.ToString(), resourcesTextures[i]);
+                if (i<resourcesTooltips.Length)
+                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i],resourcesTooltips[i]);
+                else
+                    content = new GUIContent(pair.Value.ToString(), resourcesTextures[i]);
             }
             else
             {
-                content = new GUIContent(pair.Key.ToString()+": "+pair.Value.ToString());
+                if (i < resourcesTooltips.Length)
+                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(),resourcesTooltips[i]);
+                else
+                    content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
             }
             GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
             i++;
         }
+        GUI.Label(new Rect(0+spacing, height, width * i, height * 2), GUI.tooltip);
     }
 
 }
