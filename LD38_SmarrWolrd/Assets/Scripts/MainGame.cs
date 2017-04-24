@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ public class MainGame : MonoBehaviour {
     public GameObject floatingIsland;
     public int initialIslandCount;
     float range;
+    DateTime timeToEat;
+    TimeSpan span = TimeSpan.FromSeconds(5);
 
     Vector3 initPosition;
 
@@ -29,13 +32,22 @@ public class MainGame : MonoBehaviour {
         range = 70f;
         floatingIslands = new List<GameObject>();
         //for (int i = 0; i < initialIslandCount; i++) instantiateFI11(floatingIsland);
-        
+        timeToEat = DateTime.Now;
+
         FindObjectOfType<initialIslandScript>().Mystart();
     }
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (DateTime.Now - timeToEat >= span)
+        {
+            bool hasFood = ResourcesManager.decreaseResource(Resource.Food, minionScript.population);
+            if (!hasFood)
+            {
+                ResourcesManager.decreaseResource(Resource.Food, ResourcesManager.getResource(Resource.Food));
+            }
+            timeToEat = DateTime.Now;
+        }
 
         //print(minx + " " + miny + " " + maxx + " " + maxy);
         //print((minx + maxx) / 2f + " " + (miny + maxy) / 2f);
@@ -106,7 +118,7 @@ public class MainGame : MonoBehaviour {
         /*float positionx = Random.Range(-range, range);
         float positiony = Random.Range(-range, range);
         Vector3 translate = new Vector3(positionx, positiony, 0f);*/
-        int choice = Random.Range(1, 9);
+        int choice = UnityEngine.Random.Range(1, 9);
         Vector3 direct=Vector3.zero;
         switch (choice)
         {

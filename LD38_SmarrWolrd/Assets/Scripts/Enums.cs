@@ -27,6 +27,7 @@ public enum Building
     JamMaker,
     BudMarket,
     None,
+    TownCenter,
     Unavailable
 }
 

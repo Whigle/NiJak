@@ -9,6 +9,7 @@ public class BuildingManager : MonoBehaviour
     Ray ray;
     RaycastHit hit;
     public static Resources reqResources;
+    public GameObject townCenter;
 
     static BuildingManager()
     {
@@ -17,7 +18,10 @@ public class BuildingManager : MonoBehaviour
 
     void Start()
     {
-
+        GameObject building = Instantiate(townCenter, Vector3.zero, Quaternion.identity);
+        building.transform.Rotate(new Vector3(-90f, 0f, 0f));
+        building.transform.localScale /= 3;
+        building.transform.Translate(new Vector3(0f, 0.5f, 0f));
     }
 
     void Update()

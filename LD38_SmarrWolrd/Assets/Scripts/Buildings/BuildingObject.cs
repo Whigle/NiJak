@@ -22,7 +22,6 @@ public class BuildingObject : MonoBehaviour
     protected void Start ()
     {
         frequency = TimeSpan.FromSeconds(buildingCooldown);
-        print(frequency);
     }
 
     void Update ()

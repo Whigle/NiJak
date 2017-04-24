@@ -22,8 +22,6 @@ public class initialIslandScript : MonoBehaviour
     void Start()
     {
 
-        firstMinion = Instantiate(Minion, transform.position + Vector3.back * 0.75f, Quaternion.Euler(0, 0, 0));
-        firstMinion.GetComponent<minionScript>().spawner = this.gameObject;
 
     }
 
@@ -35,6 +33,8 @@ public class initialIslandScript : MonoBehaviour
 
     public void Mystart()
     {
+        firstMinion = Instantiate(Minion, transform.position + Vector3.back * 0.75f, Quaternion.Euler(0, 0, 0));
+        firstMinion.GetComponent<minionScript>().spawner = this.gameObject;
         if (mainGame == null) mainGame = GameObject.Find("MainGame").GetComponent<MainGame>();
         firstMinion.GetComponent<minionScript>().grid = mainGame.grid;
         testuj();
@@ -75,11 +75,14 @@ public class initialIslandScript : MonoBehaviour
                 Vector3 temp = transform.position;
                 temp.x += i - (int)x / 2;
                 temp.y += j - (int)y / 2;
-                mainGame.grid[(int)temp.x + 100][(int)temp.y + 100] = 1;
-                cube = Instantiate(box, temp, new Quaternion());
-                cube.transform.parent = gameObject.transform;
+                if (temp.x != 0 || temp.y != 0)
+                {
+                    mainGame.grid[(int)temp.x + 100][(int)temp.y + 100] = 1;
+                    cube = Instantiate(box, temp, new Quaternion());
+                    cube.transform.parent = gameObject.transform;
 
-                BuildingManager.AddBuildingField(cube.GetComponent<IslandField>());
+                    BuildingManager.AddBuildingField(cube.GetComponent<IslandField>());
+                }
 
             }
         }

@@ -129,6 +129,7 @@
     <Compile Include="Assets\Scripts\Buildings\PowerTower.cs" />
     <Compile Include="Assets\Scripts\Buildings\Stonery.cs" />
     <Compile Include="Assets\Scripts\Buildings\Sugarery.cs" />
+    <Compile Include="Assets\Scripts\Buildings\TownCenter.cs" />
     <Compile Include="Assets\Scripts\Buildings\Woodery.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
