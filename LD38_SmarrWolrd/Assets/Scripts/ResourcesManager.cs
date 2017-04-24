@@ -190,7 +190,7 @@ public class ResourcesManager : MonoBehaviour
             {
                 if (i - 1 < resourcesTextures.Length)
                 {
-                    if (i < resourcesTooltips.Length)
+                    if (i -1 < resourcesTooltips.Length)
                         content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1], resourcesTooltips[i - 1]);
                     else
                         content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1]);
