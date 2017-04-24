@@ -39,7 +39,7 @@ public class minionScript : MonoBehaviour
         }
         if(Time.time > time)
         {
-            print(maxPop);
+            //print(maxPop);
             time += 3f;
             if (population<maxPop) Instantiate(gameObject,transform.position,transform.rotation).GetComponent<minionScript>().grid=this.grid;
         }

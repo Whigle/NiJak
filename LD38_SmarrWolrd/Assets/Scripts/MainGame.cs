@@ -37,7 +37,7 @@ public class MainGame : MonoBehaviour {
 	void Update () {
 
 
-        print(minx + " " + miny + " " + maxx + " " + maxy);
+        //print(minx + " " + miny + " " + maxx + " " + maxy);
         //print((minx + maxx) / 2f + " " + (miny + maxy) / 2f);
 
         float distx = Mathf.Abs(minx - (minx + maxx) / 2f) + 5f;

@@ -852,13 +852,13 @@ MonoBehaviour:
   name: Jam Maker
   description: Place Jam Maker on empty field to start production of banana jam.
   buildingImage: {fileID: 0}
-  buildingCooldown: 2
+  buildingCooldown: 5
   buildingType: 6
   enabled: 1
   bananasCost: 10
   sugarCost: 10
-  foodAmount: 10
-  energyCost: 1
+  foodAmount: 5
+  energyCost: 2
 --- !u!136 &136180962749091332
 CapsuleCollider:
   m_ObjectHideFlags: 1

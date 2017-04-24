@@ -14,19 +14,19 @@ public class ResourcesManager : MonoBehaviour
     static ResourcesManager ()
     {
         resources = new Dictionary<Resource, int> ();
-        resources.Add (Resource.Food, 1000);
-        resources.Add (Resource.BuildingMaterial, 1000);
-        resources.Add (Resource.Bananas, 1000);
-        resources.Add (Resource.Sugar, 1000);
-        resources.Add (Resource.Wood, 1000);
-        resources.Add (Resource.Stone, 1000);
-        resources.Add (Resource.Energy, 1000);
+        resources.Add (Resource.Food, 100);
+        resources.Add (Resource.BuildingMaterial, 100);
+        resources.Add (Resource.Bananas, 100);
+        resources.Add (Resource.Sugar, 100);
+        resources.Add (Resource.Wood, 100);
+        resources.Add (Resource.Stone, 100);
+        resources.Add (Resource.Energy, 100);
         resources.Add (Resource.Smog, 0);
     }
     
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             string str = "Resources on connected isles:\n";
             foreach (KeyValuePair<Resource,int> res in getResourcesFromIslands())
@@ -34,7 +34,7 @@ public class ResourcesManager : MonoBehaviour
                 str += res.Key + ": " + res.Value+'\n';
             }
             print(str);
-        }
+        }*/
     }
 
     static public bool hasResource (Resource resourceName, int value = 1)

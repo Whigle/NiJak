@@ -619,10 +619,10 @@ MonoBehaviour:
   name: Bud Market
   description: Place Bud Market on empty field to start producing building material.
   buildingImage: {fileID: 0}
-  buildingCooldown: 2
+  buildingCooldown: 5
   buildingType: 7
   enabled: 1
   woodCost: 10
   stoneCost: 10
-  buildingMaterialAmount: 10
-  energyCost: 1
+  buildingMaterialAmount: 5
+  energyCost: 2

@@ -1024,5 +1024,5 @@ MonoBehaviour:
   buildingCooldown: 2
   buildingType: 2
   enabled: 1
-  woodAmount: 10
+  woodAmount: 1
   energyCost: 1

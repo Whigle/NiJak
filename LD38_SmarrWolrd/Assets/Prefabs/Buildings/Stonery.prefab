@@ -238,5 +238,5 @@ MonoBehaviour:
   buildingCooldown: 2
   buildingType: 1
   enabled: 1
-  stoneAmount: 10
+  stoneAmount: 1
   energyCost: 1

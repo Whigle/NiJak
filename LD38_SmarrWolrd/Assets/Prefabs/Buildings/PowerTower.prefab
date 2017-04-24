@@ -651,8 +651,8 @@ MonoBehaviour:
   name: Power Tower
   description: Place Power Tower on empty field to start producing energy.
   buildingImage: {fileID: 0}
-  buildingCooldown: 2
+  buildingCooldown: 3
   buildingType: 3
   enabled: 1
   smogAmount: 1
-  energyAmount: 10
+  energyAmount: 4

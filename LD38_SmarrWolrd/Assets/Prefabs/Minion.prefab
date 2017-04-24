@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08caaec7cf5803447b0e8b4e6f17d16f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPopulation: 10
   spawner: {fileID: 0}
 --- !u!136 &136101597543072312
 CapsuleCollider:

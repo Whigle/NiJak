@@ -86,6 +86,7 @@ public class BuildingSelection : MonoBehaviour
             if (button.GetComponent<BuildingRequirements> ().CanBuild ())
             {
                 button.GetComponent<Image> ().material = green;
+                button.enabled = true;
             }
             else
             {

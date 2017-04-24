@@ -3736,5 +3736,5 @@ MonoBehaviour:
   buildingCooldown: 2
   buildingType: 5
   enabled: 1
-  sugarAmount: 10
+  sugarAmount: 1
   energyCost: 1

@@ -61,7 +61,7 @@ public class CameraScript : MonoBehaviour {
             if (toShake)
             {
                 shakeDuration -= Time.deltaTime;
-                transform.position += new Vector3 (Random.Range (-0.5f, 0.5f), Random.Range (-0.5f, 0.5f), 0f);
+                transform.position += new Vector3 (Random.Range (-0.5f, 0.5f), Random.Range (-0.3f, 0.3f), 0f);
             }
             if (shakeDuration < 0f && flaga)
             {
@@ -74,7 +74,7 @@ public class CameraScript : MonoBehaviour {
 
     public void SHAKE ()
     {
-        shakeDuration = 1f;
+        shakeDuration = .5f;
         toShake = true;
         flaga = true;
         position = transform.position;
