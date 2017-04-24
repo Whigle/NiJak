@@ -46,10 +46,12 @@ public class initialIslandScript : MonoBehaviour
         if (collision.gameObject.GetComponent<floatingIslandScript>() != null && !collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland)
         {
             FindObjectOfType<CameraScript>().SHAKE();
-        }
         collision.gameObject.GetComponent<floatingIslandScript>().speed = 0f;
         collision.gameObject.GetComponent<floatingIslandScript>().direction = new Vector3(0, 0, 0);
         collision.gameObject.GetComponent<floatingIslandScript>().partOfIsland = true;
+        ResourcesManager.increaseResource (collision.gameObject.GetComponent<floatingIslandScript> ().resource, collision.gameObject.GetComponent<floatingIslandScript> ().fields.Count);
+        ResourcesManager.increaseResource (Resource.BuildingMaterial, collision.gameObject.GetComponent<floatingIslandScript> ().fields.Count);
+        ResourcesManager.increaseResource (Resource.Food, collision.gameObject.GetComponent<floatingIslandScript> ().fields.Count);
         Vector3 temp = collision.gameObject.transform.position;
 
         temp.z = 0;
@@ -58,6 +60,7 @@ public class initialIslandScript : MonoBehaviour
         collision.gameObject.transform.position = temp;
         mainGame.removeIslandfromList(collision.gameObject);
         collision.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        }
 
     }
 

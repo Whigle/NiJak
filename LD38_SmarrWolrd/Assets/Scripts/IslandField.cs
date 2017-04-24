@@ -43,8 +43,11 @@ public class IslandField : MonoBehaviour
             if (BuildingManager.buildingFields.IndexOf (this) > BuildingManager.buildingFields.IndexOf (col.GetComponent<IslandField> ()))
             {
                 if (col.GetComponent<IslandField> ().resourceObject != null)
+                {
                     Destroy (col.GetComponent<IslandField> ().resourceObject);
-                Destroy (col.gameObject);
+                    Destroy (col.gameObject);
+                    fieldType = Building.None;
+                }
             }
             else
                 Destroy (gameObject);

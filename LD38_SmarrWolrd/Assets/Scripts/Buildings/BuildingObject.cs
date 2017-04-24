@@ -47,4 +47,11 @@ public class BuildingObject : MonoBehaviour
             Destroy (gameObject);
         }
     }
+    void OnCollisionEnter (Collision col)
+    {
+        if (col.gameObject.CompareTag ("Smog"))
+        {
+            Destroy (gameObject);
+        }
+    }
 }

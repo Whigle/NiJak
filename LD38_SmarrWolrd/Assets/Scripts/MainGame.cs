@@ -15,9 +15,9 @@ public class MainGame : MonoBehaviour
     public GameObject smog;
     public int initialIslandCount;
     float range;
-    int smogCount = 0;
+    public float smogCooldown = 25f;
     DateTime timeToEat;
-    TimeSpan span = TimeSpan.FromSeconds(5);
+    TimeSpan span = TimeSpan.FromSeconds (5);
 
     Vector3 initPosition;
 
@@ -26,30 +26,33 @@ public class MainGame : MonoBehaviour
     #region główne funkcje
 
     // Use this for initialization
-    void Start()
+    void Start ()
     {
         initPosition = Vector3.up * 10f;
-        minx = 100; miny = 100; maxx = 100; maxy = 100;
-        grid = new int[200][];
+        minx = 100;
+        miny = 100;
+        maxx = 100;
+        maxy = 100;
+        grid = new int [200] [];
         for (int i = 0; i < 200; i++)
-            grid[i] = new int[200];
+            grid [i] = new int [200];
         range = 70f;
-        floatingIslands = new List<GameObject>();
+        floatingIslands = new List<GameObject> ();
         //for (int i = 0; i < initialIslandCount; i++) instantiateFI11(floatingIsland);
         timeToEat = DateTime.Now;
 
-        FindObjectOfType<initialIslandScript>().Mystart();
+        FindObjectOfType<initialIslandScript> ().Mystart ();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
         if (DateTime.Now - timeToEat >= span)
         {
-            bool hasFood = ResourcesManager.decreaseResource(Resource.Food, minionScript.population);
+            bool hasFood = ResourcesManager.decreaseResource (Resource.Food, minionScript.population);
             if (!hasFood)
             {
-                ResourcesManager.decreaseResource(Resource.Food, ResourcesManager.getResource(Resource.Food));
+                ResourcesManager.decreaseResource (Resource.Food, ResourcesManager.getResource (Resource.Food));
             }
             timeToEat = DateTime.Now;
         }
@@ -57,9 +60,9 @@ public class MainGame : MonoBehaviour
         //print(minx + " " + miny + " " + maxx + " " + maxy);
         //print((minx + maxx) / 2f + " " + (miny + maxy) / 2f);
 
-        float distx = Mathf.Abs(minx - (minx + maxx) / 2f) + 5f;
-        float disty = Mathf.Abs(miny - (miny + maxy) / 2f) + 5f;
-        float dist = Mathf.Sqrt(distx * distx + disty * disty);
+        float distx = Mathf.Abs (minx - (minx + maxx) / 2f) + 5f;
+        float disty = Mathf.Abs (miny - (miny + maxy) / 2f) + 5f;
+        float dist = Mathf.Sqrt (distx * distx + disty * disty);
 
         //print(dist);
 
@@ -70,12 +73,16 @@ public class MainGame : MonoBehaviour
             {
                 for (int j = 0; j < 200; j++)
                 {
-                    if (grid != null && grid[i][j] == 1)
+                    if (grid != null && grid [i] [j] == 1)
                     {
-                        if (i < minx) minx = i;
-                        if (i > maxx) maxx = i;
-                        if (j < miny) miny = j;
-                        if (j > maxy) maxy = j;
+                        if (i < minx)
+                            minx = i;
+                        if (i > maxx)
+                            maxx = i;
+                        if (j < miny)
+                            miny = j;
+                        if (j > maxy)
+                            maxy = j;
                         /*Vector3 temp = transform.position;
                         temp.x += i - 100;
                         temp.y += j - 100;
@@ -83,35 +90,41 @@ public class MainGame : MonoBehaviour
                     }
                 }
             }
-            instantiateFI11(floatingIsland);
+            instantiateFI11 (floatingIsland);
 
 
         }
-            if (ResourcesManager.getResource(Resource.Smog) / 10 >= smogCount)
-            {
-                instantiateSmog(smog);
-                smogCount++;
-            }
+        if (smogCooldown > 0f)
+            smogCooldown -= Time.deltaTime;
+        if (smogCooldown < 0f)
+        {
+            instantiateSmog (smog);
+            smogCooldown = 25f;
+        }
 
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmos ()
     {
         Gizmos.color = Color.red;
         for (int i = 0; i < 200; i++)
         {
             for (int j = 0; j < 200; j++)
             {
-                if (grid != null && grid[i][j] == 1)
+                if (grid != null && grid [i] [j] == 1)
                 {
-                    if (i < minx) minx = i;
-                    if (i > maxx) maxx = i;
-                    if (j < miny) miny = j;
-                    if (j > maxy) maxy = j;
+                    if (i < minx)
+                        minx = i;
+                    if (i > maxx)
+                        maxx = i;
+                    if (j < miny)
+                        miny = j;
+                    if (j > maxy)
+                        maxy = j;
                     Vector3 temp = transform.position;
                     temp.x += i - 100;
                     temp.y += j - 100;
-                    Gizmos.DrawCube(temp, new Vector3(0.9f, 0.9f, 1.1f));
+                    Gizmos.DrawCube (temp, new Vector3 (0.9f, 0.9f, 1.1f));
                 }
             }
         }
@@ -121,18 +134,18 @@ public class MainGame : MonoBehaviour
 
     #region dodatkoweFunkcje
 
-    public void removeIslandfromList(GameObject island)
+    public void removeIslandfromList (GameObject island)
     {
-        if (floatingIslands.Contains(island))
-            floatingIslands.Remove(island);
+        if (floatingIslands.Contains (island))
+            floatingIslands.Remove (island);
     }
 
-    void instantiateFI11(GameObject island)
+    void instantiateFI11 (GameObject island)
     {
         /*float positionx = Random.Range(-range, range);
         float positiony = Random.Range(-range, range);
         Vector3 translate = new Vector3(positionx, positiony, 0f);*/
-        int choice = UnityEngine.Random.Range(1, 9);
+        int choice = UnityEngine.Random.Range (1, 9);
         Vector3 direct = Vector3.zero;
         switch (choice)
         {
@@ -179,17 +192,17 @@ public class MainGame : MonoBehaviour
             default:
                 break;
         }
-        GameObject temp = Instantiate(island, initPosition, new Quaternion());
-        temp.GetComponent<floatingIslandScript>().direction = direct;
-        floatingIslands.Add(temp);
+        GameObject temp = Instantiate (island, initPosition, new Quaternion ());
+        temp.GetComponent<floatingIslandScript> ().direction = direct;
+        floatingIslands.Add (temp);
     }
 
-    void instantiateSmog(GameObject smog)
+    void instantiateSmog (GameObject smog)
     {
         /*float positionx = Random.Range(-range, range);
         float positiony = Random.Range(-range, range);
         Vector3 translate = new Vector3(positionx, positiony, 0f);*/
-        int choice = UnityEngine.Random.Range(1, 9);
+        int choice = UnityEngine.Random.Range (1, 9);
         Vector3 direct = Vector3.zero;
         switch (choice)
         {
@@ -236,8 +249,8 @@ public class MainGame : MonoBehaviour
             default:
                 break;
         }
-        GameObject temp = Instantiate(smog, initPosition, new Quaternion());
-        temp.GetComponent<SmogScript>().direction = direct;
+        GameObject temp = Instantiate (smog, initPosition, new Quaternion ());
+        temp.GetComponent<SmogScript> ().direction = direct;
     }
 
     #endregion
