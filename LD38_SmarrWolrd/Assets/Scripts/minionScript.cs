@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class minionScript : MonoBehaviour
 {
-
+    static int population;
+    static int maxPop = 10;
+    public int maxPopulation = 10;
     float speed;
     int gridPositionx;
     int gridPositiony;
@@ -15,10 +17,11 @@ public class minionScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        population++;
         aimGridx = gridPositionx = (int)transform.position.x + 100;
         aimGridy = gridPositiony = (int)transform.position.y + 100;
         speed = Random.Range(1f,2f) ;
-        time = Time.time+5f;
+        time = Time.time+3f;
         timetoDie = Time.time + Random.Range(3f, 15f);
     }
 
@@ -28,8 +31,18 @@ public class minionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > timetoDie) Destroy(this.gameObject);
-        if(Time.time > time) { time += 5f;  Instantiate(gameObject,transform.position,transform.rotation).GetComponent<minionScript>().grid=this.grid; }
+        maxPop=BuildingManager.buildingFields.Count+maxPopulation;
+        if (Time.time > timetoDie)
+        {
+            Destroy(this.gameObject);
+            population--;
+        }
+        if(Time.time > time)
+        {
+            print(maxPop);
+            time += 3f;
+            if (population<maxPop) Instantiate(gameObject,transform.position,transform.rotation).GetComponent<minionScript>().grid=this.grid;
+        }
         if (grid == null)
         {
             //grid = spawner.GetComponent<initialIslandScript>().mainGame.GetComponent<MainGame>().grid;

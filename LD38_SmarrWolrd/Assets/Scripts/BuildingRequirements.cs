@@ -44,6 +44,10 @@ public class BuildingRequirements : MonoBehaviour
         {
             return false;
         }
+        else if (ResourcesManager.getResource(Resource.Energy) < requiredResources.Energy)
+        {
+            return false;
+        }
 
 
         return true;
