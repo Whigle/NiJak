@@ -14,6 +14,7 @@ public class Stonery : BuildingObject
     {
         base.Start();
         productionFrequency = buildingCooldown;
+        PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         increaseOverTime += stoneAmount;
         buildingType = Building.Stonery;
     }
@@ -26,6 +27,7 @@ public class Stonery : BuildingObject
             {
                 if (!enabled)
                 {
+                    PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += stoneAmount;
                     enabled = true;
                 }
@@ -34,13 +36,22 @@ public class Stonery : BuildingObject
             }
             else
             {
+                if (enabled)
+                {
+                    PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                    increaseOverTime -= stoneAmount;
+                    enabled = false;
+                }
+            }
+        }
+        else
+        {
+            if (enabled)
+            {
+                PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                 increaseOverTime -= stoneAmount;
                 enabled = false;
             }
-        }
-        else {
-            increaseOverTime -= stoneAmount;
-            enabled = false;
         }
     }
 }

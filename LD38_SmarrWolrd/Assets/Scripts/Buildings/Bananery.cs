@@ -14,6 +14,7 @@ public class Bananery : BuildingObject
     {
         base.Start();
         increaseOverTime += bananasAmount;
+        PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.Bananery;
     }
@@ -27,6 +28,7 @@ public class Bananery : BuildingObject
                 if (!enabled)
                 {
                     increaseOverTime += bananasAmount;
+                    PowerTower.energyConsumptionOverTime += (energyCost/frequency.TotalSeconds);
                     enabled = true;
                 }
                 ResourcesManager.increaseResource(Resource.Bananas, bananasAmount);
@@ -35,13 +37,22 @@ public class Bananery : BuildingObject
             }
             else
             {
-                increaseOverTime -= bananasAmount;
-                enabled = false;
+                if (enabled)
+                {
+                    increaseOverTime -= bananasAmount;
+                    PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                    enabled = false;
+                }
             }
         }
-        else {
-            increaseOverTime -= bananasAmount;
-            enabled = false;
+        else
+        {
+            if (enabled)
+            {
+                increaseOverTime -= bananasAmount;
+                PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                enabled = false;
+            }
         }
     }
 }

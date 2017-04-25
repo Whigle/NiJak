@@ -15,6 +15,7 @@ public class BudMarket : BuildingObject
     {
         base.Start();
         increaseOverTime += buildingMaterialAmount;
+        PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.BudMarket;
     }
@@ -28,6 +29,7 @@ public class BudMarket : BuildingObject
             {
                 if (!enabled)
                 {
+                    PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += buildingMaterialAmount;
                     enabled = true;
                 }
@@ -38,14 +40,22 @@ public class BudMarket : BuildingObject
             }
             else
             {
-                increaseOverTime -= buildingMaterialAmount;
-                enabled = false;
+                if (enabled)
+                {
+                    increaseOverTime -= buildingMaterialAmount;
+                    PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                    enabled = false;
+                }
             }
         }
         else
         {
-            increaseOverTime -= buildingMaterialAmount;
-            enabled = false;
+            if (enabled)
+            {
+                increaseOverTime -= buildingMaterialAmount;
+                PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                enabled = false;
+            }
         }
     }
 }

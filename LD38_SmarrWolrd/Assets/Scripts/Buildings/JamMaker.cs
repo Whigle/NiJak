@@ -17,6 +17,7 @@ public class JamMaker : BuildingObject
     {
         base.Start();
         increaseOverTime += foodAmount;
+        PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.JamMaker;
     }
@@ -30,6 +31,7 @@ public class JamMaker : BuildingObject
             {
                 if (!enabled)
                 {
+                    PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += foodAmount;
                     enabled = true;
                 }
@@ -41,13 +43,22 @@ public class JamMaker : BuildingObject
             }
             else
             {
+                if (enabled)
+                {
+                    PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                    increaseOverTime -= foodAmount;
+                    enabled = false;
+                }
+            }
+        }
+        else
+        {
+            if (enabled)
+            {
+                PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                 increaseOverTime -= foodAmount;
                 enabled = false;
             }
-        }
-        else {
-            increaseOverTime -= foodAmount;
-            enabled = false;
         }
     }
 }

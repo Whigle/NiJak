@@ -18,6 +18,8 @@ public class ResourcesManager : MonoBehaviour
     static public bool showResources = false;
     static public int smogReduction=0;
     public TimeSpan span=TimeSpan.FromSeconds(10);
+    int screenHeightGUIModifier = 1;
+    int screenWidthGUIModifier = 1;
 
     static ResourcesManager ()
     {
@@ -50,7 +52,8 @@ public class ResourcesManager : MonoBehaviour
         resourcesTooltipsExtended[3] = resourcesTooltips[3] + "\nProduction: " + Sugarery.increaseOverTime + " / " + Sugarery.productionFrequency + " sec.";
         resourcesTooltipsExtended[4] = resourcesTooltips[4] + "\nProduction: " + Woodery.increaseOverTime + " / " + Woodery.productionFrequency + " sec.";
         resourcesTooltipsExtended[5] = resourcesTooltips[5] + "\nProduction: " + Stonery.increaseOverTime + " / " + Stonery.productionFrequency + " sec.";
-        resourcesTooltipsExtended[6] = resourcesTooltips[6] + "\nProduction: " + PowerTower.increaseOverTime + " / " + PowerTower.productionFrequency + " sec.";
+        resourcesTooltipsExtended[6] = resourcesTooltips[6] + "\nProduction: " + PowerTower.increaseOverTime + " / " + PowerTower.productionFrequency + " sec."
+                                                            + "\nConsumption: " + PowerTower.energyConsumptionOverTime * PowerTower.productionFrequency + " / " + PowerTower.productionFrequency + " sec.";
         resourcesTooltipsExtended[7] = resourcesTooltips[7] + "\nProduction: " + PowerTower.pollutionOverTime + " / " + PowerTower.productionFrequency + " sec."
                                                             + "\nReduction: " + smogReduction + " / " + span.TotalSeconds + " sec.";
         
@@ -188,14 +191,19 @@ public class ResourcesManager : MonoBehaviour
     {
         if (showResources)
         {
-            int i = 0, width = 75, height = 40, spacing = 5;
+            screenHeightGUIModifier = Screen.height / 20;
+            screenWidthGUIModifier = Screen.width / 20;
+            int i = 0, spacing = 20;
+            float width = 1.5f, height = 1.25f; 
+            width *= screenWidthGUIModifier;
+            height *= screenHeightGUIModifier;
             GUIContent content;
             string populationInfo = "";
             if (minionScript.die) populationInfo = "\nYour population is dying out!";
             else populationInfo = "\nYour population is growing.";
             content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population."+populationInfo);
-            GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
-            GUI.Label(new Rect(0 + spacing, height, width * i, height * 2), GUI.tooltip);
+            GUI.Box(new Rect(width * i + spacing, spacing, width, height), content);
+            GUI.Label(new Rect(0 + spacing, height, width * i, height * 2 + (populationInfo.Length-populationInfo.Trim('\n').Length)*10), GUI.tooltip);
             i++;
             foreach (KeyValuePair<Resource, int> pair in resources)
             {
@@ -213,10 +221,10 @@ public class ResourcesManager : MonoBehaviour
                     else
                         content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
                 }
-                GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
+                GUI.Box(new Rect(width * i + spacing, spacing, width, height), content);
                 i++;
             }
-            if(GUI.tooltip!="") GUI.TextArea(new Rect(Input.mousePosition.x+15, Screen.height-Input.mousePosition.y+20, width*3, height*2), GUI.tooltip);
+            if(GUI.tooltip!="") GUI.TextArea(new Rect(Input.mousePosition.x+15, Screen.height-Input.mousePosition.y+20, width*3, height*2 +(populationInfo.Length - populationInfo.Trim('\n').Length) * 10), GUI.tooltip);
         }
     }
 

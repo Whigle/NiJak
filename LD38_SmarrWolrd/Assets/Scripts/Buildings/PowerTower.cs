@@ -7,6 +7,7 @@ public class PowerTower : BuildingObject
     public int smogAmount;
     public int energyAmount;
     static public int increaseOverTime = 0;
+    static public double energyConsumptionOverTime = 0;
     static public int pollutionOverTime = 0;
     static public double productionFrequency;
     public PowerTower() : base() {}
@@ -33,9 +34,12 @@ public class PowerTower : BuildingObject
             ResourcesManager.increaseResource(Resource.Smog, smogAmount);
         }
         else {
-            increaseOverTime -= energyAmount;
-            pollutionOverTime -= smogAmount;
-            enabled = false;
+            if (enabled)
+            {
+                increaseOverTime -= energyAmount;
+                pollutionOverTime -= smogAmount;
+                enabled = false;
+            }
         }
         print(increaseOverTime);
     }

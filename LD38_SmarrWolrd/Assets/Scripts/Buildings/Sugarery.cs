@@ -15,6 +15,7 @@ public class Sugarery : BuildingObject
     {
         base.Start();
         increaseOverTime += sugarAmount;
+        PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.Sugarery;
     }
@@ -27,6 +28,7 @@ public class Sugarery : BuildingObject
             {
                 if (!enabled)
                 {
+                    PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += sugarAmount;
                     enabled = true;
                 }
@@ -36,14 +38,22 @@ public class Sugarery : BuildingObject
             }
             else
             {
-                increaseOverTime -= sugarAmount;
-                enabled = false;
+                if (enabled)
+                {
+                    PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                    increaseOverTime -= sugarAmount;
+                    enabled = false;
+                }
             }
         }
         else
         {
-            increaseOverTime -= sugarAmount;
-            enabled = false;
+            if (enabled)
+            {
+                PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+                increaseOverTime -= sugarAmount;
+                enabled = false;
+            }
         }
     }
 }
