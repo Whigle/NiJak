@@ -1911,8 +1911,8 @@ MonoBehaviour:
   requiredResources:
     Food: 0
     BuildingMaterial: 20
-    Bananas: 10
-    Sugar: 10
+    Bananas: 3
+    Sugar: 3
     Wood: 0
     Stone: 0
     Energy: 0

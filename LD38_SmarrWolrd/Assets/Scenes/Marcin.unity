@@ -37,12 +37,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45125353, g: 0.5009522, b: 0.5734667, a: 1}
+  m_IndirectSpecularColor: {r: 0.45125335, g: 0.500952, b: 0.57346624, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -71,7 +71,8 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000001, guid: e2e3660405bc88a4299ec07d877edb77,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -174,14 +175,14 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 3a3b70a2349946242b95f9402c13d0f1, type: 3}
   populationTexture: {fileID: 2800000, guid: d75cc0800241dd04fb15b69063f5c547, type: 3}
   resourcesTooltips:
-  - Used to feed pesants. Made in Jam Maker.
-  - Used to build constructions. Made in Bud Market.
-  - Combined with sugar gives banana jam. Made in Bananery.
-  - Combined with bananas gives banana jam. Made in Sugarery.
-  - Combined with stones gives building material. Made in Woodery.
-  - Combined with wood gives building material. Made in Stonery.
-  - Used to power structures. Made in Power Tower.
-  - Made by Power Towers. Can be reduced with trees.
+  - 'Food: Used to feed pesants. Made in Jam Maker.'
+  - 'Building Material: Used to build constructions. Made in Bud Market.'
+  - 'Bananas: Combined with sugar gives banana jam. Made in Bananery.'
+  - 'Sugar: Combined with bananas gives banana jam. Made in Sugarery.'
+  - 'Wood: Combined with stones gives building material. Made in Woodery.'
+  - 'Stone: Combined with wood gives building material. Made in Stonery.'
+  - 'Energy: Used to power structures. Made in Power Tower.'
+  - 'Smog: Made by Power Towers. Can be reduced with trees.'
 --- !u!114 &198211441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +337,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &431998641
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &985611050
 Prefab:
   m_ObjectHideFlags: 0
@@ -945,70 +988,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1786707652
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1525630531220874, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_TagString
-      value: Island
-      objectReference: {fileID: 0}
-    - target: {fileID: 114267159601315716, guid: 92ca89ffe5ad07d42bc938c78a461f7c,
-        type: 2}
-      propertyPath: Minion
-      value: 
-      objectReference: {fileID: 1340891649136434, guid: cf4840ebc2d7a4747a1b2920a6faa10d,
-        type: 2}
-    - target: {fileID: 4248016065727584, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1525630531220874, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 92ca89ffe5ad07d42bc938c78a461f7c, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2024351950
 GameObject:
   m_ObjectHideFlags: 0
