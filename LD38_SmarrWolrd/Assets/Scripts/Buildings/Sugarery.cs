@@ -7,11 +7,15 @@ public class Sugarery : BuildingObject
 
     public int sugarAmount;
     public int energyCost;
+    static public int increaseOverTime = 0;
+    static public double productionFrequency;
 
-    public Sugarery() : base() { }
+    public Sugarery() : base() {}
     void Start()
     {
         base.Start();
+        increaseOverTime += sugarAmount;
+        productionFrequency = buildingCooldown;
         buildingType = Building.Sugarery;
     }
 
@@ -21,9 +25,25 @@ public class Sugarery : BuildingObject
         {
             if (ResourcesManager.getResource(Resource.Sugar) < ResourcesManager.resourcesCapacity)
             {
+                if (!enabled)
+                {
+                    increaseOverTime += sugarAmount;
+                    enabled = true;
+                }
                 ResourcesManager.decreaseResource(Resource.Energy, energyCost);
                 ResourcesManager.increaseResource(Resource.Sugar, sugarAmount);
+
             }
+            else
+            {
+                increaseOverTime -= sugarAmount;
+                enabled = false;
+            }
+        }
+        else
+        {
+            increaseOverTime -= sugarAmount;
+            enabled = false;
         }
     }
 }

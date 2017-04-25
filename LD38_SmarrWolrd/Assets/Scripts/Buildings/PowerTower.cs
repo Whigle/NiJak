@@ -6,10 +6,16 @@ public class PowerTower : BuildingObject
 {
     public int smogAmount;
     public int energyAmount;
-    public PowerTower() : base() { }
+    static public int increaseOverTime = 0;
+    static public int pollutionOverTime = 0;
+    static public double productionFrequency;
+    public PowerTower() : base() {}
     void Start ()
     {
         base.Start();
+        increaseOverTime += energyAmount;
+        pollutionOverTime += smogAmount;
+        productionFrequency = buildingCooldown;
         buildingType = Building.PowerTower;
     }
 
@@ -17,8 +23,20 @@ public class PowerTower : BuildingObject
     {
         if (ResourcesManager.getResource(Resource.Energy) < ResourcesManager.resourcesCapacity)
         {
+            if (!enabled)
+            {
+                increaseOverTime += energyAmount;
+                pollutionOverTime += smogAmount;
+                enabled = true;
+            }
             ResourcesManager.increaseResource(Resource.Energy, energyAmount);
             ResourcesManager.increaseResource(Resource.Smog, smogAmount);
         }
+        else {
+            increaseOverTime -= energyAmount;
+            pollutionOverTime -= smogAmount;
+            enabled = false;
+        }
+        print(increaseOverTime);
     }
 }

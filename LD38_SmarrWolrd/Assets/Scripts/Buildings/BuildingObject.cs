@@ -25,15 +25,11 @@ public class BuildingObject : MonoBehaviour
     }
 
     void Update ()
-    {
-        if (enabled)
+    {   
+        if ((DateTime.Now - time) >= frequency)
         {
-            
-            if ((DateTime.Now - time) >= frequency)
-            {
-                iterateProduction();
-                time = DateTime.Now;
-            }
+            iterateProduction();
+            time = DateTime.Now;
         }
     }
 

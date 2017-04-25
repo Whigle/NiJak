@@ -8,10 +8,14 @@ public class BudMarket : BuildingObject
     public int stoneCost;
     public int buildingMaterialAmount;
     public int energyCost;
-    public BudMarket() : base() { }
+    static public int increaseOverTime = 0;
+    static public double productionFrequency;
+    public BudMarket() : base() {}
     void Start()
     {
         base.Start();
+        increaseOverTime += buildingMaterialAmount;
+        productionFrequency = buildingCooldown;
         buildingType = Building.BudMarket;
     }
 
@@ -22,11 +26,26 @@ public class BudMarket : BuildingObject
         {
             if (ResourcesManager.hasResource(Resource.Wood, woodCost) && ResourcesManager.hasResource(Resource.Stone, stoneCost) && ResourcesManager.getResource(Resource.BuildingMaterial) < ResourcesManager.resourcesCapacity)
             {
+                if (!enabled)
+                {
+                    increaseOverTime += buildingMaterialAmount;
+                    enabled = true;
+                }
                 ResourcesManager.decreaseResource(Resource.Wood, woodCost);
                 ResourcesManager.decreaseResource(Resource.Stone, stoneCost);
                 ResourcesManager.decreaseResource(Resource.Energy, energyCost);
                 ResourcesManager.increaseResource(Resource.BuildingMaterial, buildingMaterialAmount);
             }
+            else
+            {
+                increaseOverTime -= buildingMaterialAmount;
+                enabled = false;
+            }
+        }
+        else
+        {
+            increaseOverTime -= buildingMaterialAmount;
+            enabled = false;
         }
     }
 }

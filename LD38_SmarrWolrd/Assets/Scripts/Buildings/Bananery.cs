@@ -7,11 +7,14 @@ public class Bananery : BuildingObject
 {
     public int bananasAmount;
     public int energyCost;
-
-    public Bananery() : base() { }
+    static public int increaseOverTime=0;
+    static public double productionFrequency;
+    public Bananery() : base() {}
     void Start()
     {
         base.Start();
+        increaseOverTime += bananasAmount;
+        productionFrequency = buildingCooldown;
         buildingType = Building.Bananery;
     }
 
@@ -21,9 +24,24 @@ public class Bananery : BuildingObject
         {
             if (ResourcesManager.getResource(Resource.Bananas) < ResourcesManager.resourcesCapacity)
             {
+                if (!enabled)
+                {
+                    increaseOverTime += bananasAmount;
+                    enabled = true;
+                }
                 ResourcesManager.increaseResource(Resource.Bananas, bananasAmount);
                 ResourcesManager.decreaseResource(Resource.Energy, energyCost);
+                
             }
+            else
+            {
+                increaseOverTime -= bananasAmount;
+                enabled = false;
+            }
+        }
+        else {
+            increaseOverTime -= bananasAmount;
+            enabled = false;
         }
     }
 }

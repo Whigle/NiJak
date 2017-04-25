@@ -12,9 +12,11 @@ public class ResourcesManager : MonoBehaviour
     public Texture [] resourcesTextures;
     public Texture populationTexture;
     public string [] resourcesTooltips;
+    string[] resourcesTooltipsExtended = new string[8];
     static public int resourcesCapacity = 1000;
     static DateTime time;
     static public bool showResources = false;
+    static public int smogReduction=0;
     public TimeSpan span=TimeSpan.FromSeconds(10);
 
     static ResourcesManager ()
@@ -30,23 +32,29 @@ public class ResourcesManager : MonoBehaviour
         resources.Add (Resource.Smog, 0);
         time = DateTime.Now;
     }
-    
+    public void Start()
+    {
+
+    }
     public void Update()
     {
         if (DateTime.Now - time > span)
         {
-            decreaseResource(Resource.Smog, BuildingManager.getIslandsOfTypeConnected(Resource.Wood).Count);
+            smogReduction = BuildingManager.getIslandsOfTypeConnected(Resource.Wood).Count;
+            decreaseResource(Resource.Smog, smogReduction);
             time = DateTime.Now;
         }
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            string str = "Resources on connected isles:\n";
-            foreach (KeyValuePair<Resource,int> res in getResourcesFromIslands())
-            {
-                str += res.Key + ": " + res.Value+'\n';
-            }
-            print(str);
-        }*/
+        resourcesTooltipsExtended[0] = resourcesTooltips[0] + "\nProduction: " + JamMaker.increaseOverTime + " / " + JamMaker.productionFrequency + " sec.";
+        resourcesTooltipsExtended[1] = resourcesTooltips[1] + "\nProduction: " + BudMarket.increaseOverTime + " / " + BudMarket.productionFrequency + " sec.";
+        resourcesTooltipsExtended[2] = resourcesTooltips[2] + "\nProduction: " + Bananery.increaseOverTime + " / " + Bananery.productionFrequency + " sec.";
+        resourcesTooltipsExtended[3] = resourcesTooltips[3] + "\nProduction: " + Sugarery.increaseOverTime + " / " + Sugarery.productionFrequency + " sec.";
+        resourcesTooltipsExtended[4] = resourcesTooltips[4] + "\nProduction: " + Woodery.increaseOverTime + " / " + Woodery.productionFrequency + " sec.";
+        resourcesTooltipsExtended[5] = resourcesTooltips[5] + "\nProduction: " + Stonery.increaseOverTime + " / " + Stonery.productionFrequency + " sec.";
+        resourcesTooltipsExtended[6] = resourcesTooltips[6] + "\nProduction: " + PowerTower.increaseOverTime + " / " + PowerTower.productionFrequency + " sec.";
+        resourcesTooltipsExtended[7] = resourcesTooltips[7] + "\nProduction: " + PowerTower.pollutionOverTime + " / " + PowerTower.productionFrequency + " sec."
+                                                            + "\nReduction: " + smogReduction + " / " + span.TotalSeconds + " sec.";
+        
+        
     }
 
     static public bool hasResource (Resource resourceName, int value = 1)
@@ -182,7 +190,10 @@ public class ResourcesManager : MonoBehaviour
         {
             int i = 0, width = 75, height = 40, spacing = 5;
             GUIContent content;
-            content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population.");
+            string populationInfo = "";
+            if (minionScript.die) populationInfo = "\nYour population is dying out!";
+            else populationInfo = "\nYour population is growing.";
+            content = new GUIContent(minionScript.population + "/" + minionScript.maxPop, populationTexture, "Island population."+populationInfo);
             GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
             GUI.Label(new Rect(0 + spacing, height, width * i, height * 2), GUI.tooltip);
             i++;
@@ -191,21 +202,21 @@ public class ResourcesManager : MonoBehaviour
                 if (i - 1 < resourcesTextures.Length)
                 {
                     if (i -1 < resourcesTooltips.Length)
-                        content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1], resourcesTooltips[i - 1]);
+                        content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1], resourcesTooltipsExtended[i - 1]);
                     else
                         content = new GUIContent(pair.Value.ToString(), resourcesTextures[i - 1]);
                 }
                 else
                 {
                     if (i - 1 < resourcesTooltips.Length)
-                        content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(), resourcesTooltips[i - 1]);
+                        content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString(), resourcesTooltipsExtended[i - 1]);
                     else
                         content = new GUIContent(pair.Key.ToString() + ": " + pair.Value.ToString());
                 }
                 GUI.Box(new Rect(width * i + spacing, 0, width, height), content);
                 i++;
             }
-            GUI.Label(new Rect(0 + spacing, height, width * i, height * 2), GUI.tooltip);
+            if(GUI.tooltip!="") GUI.TextArea(new Rect(Input.mousePosition.x+15, Screen.height-Input.mousePosition.y+20, width*3, height*2), GUI.tooltip);
         }
     }
 

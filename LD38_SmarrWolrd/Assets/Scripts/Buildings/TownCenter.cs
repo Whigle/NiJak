@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TownCenter : BuildingObject {
-    
-    public int foodCost;
+
+    public int foodPerMinionCost = 1;
+    int foodCost;
     public GameObject minion;
     MainGame mainGame;
 
@@ -17,7 +18,7 @@ public class TownCenter : BuildingObject {
 
     protected override void iterateProduction()
     {
-        foodCost = minionScript.population;
+        foodCost = foodPerMinionCost * minionScript.population;
         if (ResourcesManager.hasResource(Resource.Food, foodCost))
         {
             minionScript.die = false;
