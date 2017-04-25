@@ -65,7 +65,7 @@ public class CameraScript : MonoBehaviour {
             joinAudio.volume = temp;
         }
         else joinAudio.volume = joinVol;
-        print(temp);
+        //print(temp);
         windAudio.pitch = ((windPitch+3) * pitch)-4f;
         temp= windVol * pitch - 0.75f;
         windAudio.volume = temp;

@@ -2103,11 +2103,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredResources:
     Food: 0
-    BuildingMaterial: 0
+    BuildingMaterial: 10
     Bananas: 0
     Sugar: 0
-    Wood: 10
-    Stone: 10
+    Wood: 3
+    Stone: 3
     Energy: 10
   islandTypeNeeded: 0
 --- !u!114 &114576964455064194
