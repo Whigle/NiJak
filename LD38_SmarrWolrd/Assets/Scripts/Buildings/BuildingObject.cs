@@ -13,6 +13,13 @@ public class BuildingObject : MonoBehaviour
     public bool enabled = true;
     protected DateTime time;
     public TimeSpan frequency;
+    static public double foodGlobalCost = 0;
+    static public double buildingMaterialGlobalCost = 0;
+    static public double bananasGlobalCost = 0;
+    static public double sugarGlobalCost = 0;
+    static public double woodGlobalCost = 0;
+    static public double stoneGlobalCost = 0;
+    static public double energyGlobalCost = 0;
 
     public BuildingObject()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TownCenter : BuildingObject {
 
     public int foodPerMinionCost = 1;
-    int foodCost;
+    static public int foodCost;
     public GameObject minion;
     MainGame mainGame;
 

@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: f3432ea7343d1894e990ca65dba07f62
-timeCreated: 1492869633
+timeCreated: 1493236881
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - populationTexture: {instanceID: 0}
+  - tooltipBackground: {fileID: 10906, guid: 0000000000000000f000000000000000, type: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

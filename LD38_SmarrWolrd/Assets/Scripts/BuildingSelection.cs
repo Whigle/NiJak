@@ -16,6 +16,7 @@ public class BuildingSelection : MonoBehaviour
     static public GameObject selected;
     static GameObject lastselected;
     public Image buildingImage;
+    static GUIStyle style;
     bool showTip = false;
     float tooltipWidth = 200f, tooltipHeight = 75f;
     string costs = "Costs:\n";
@@ -27,16 +28,53 @@ public class BuildingSelection : MonoBehaviour
         {
             if (buildingPrefab.GetComponent<BuildingObject>() != null || buildingPrefab.GetComponent<HookScript>() != null)
             {
+                costs = "Costs:\n";
                 Resources r = GetComponent<BuildingRequirements>().requiredResources;
-                if (r.Bananas > 0) costs += "Bananas: " + r.Bananas + '\n';
-                if (r.BuildingMaterial > 0) costs += "BuildingMaterial: " + r.BuildingMaterial + '\n';
-                if (r.Energy > 0) costs += "Energy: " + r.Energy + '\n';
-                if (r.Food > 0) costs += "Food: " + r.Food + '\n';
-                if (r.Stone > 0) costs += "Stone: " + r.Stone + '\n';
-                if (r.Sugar > 0) costs += "Sugar: " + r.Sugar + '\n';
-                if (r.Wood > 0) costs += "Wood: " + r.Wood + '\n';
+                if (r.Bananas > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Bananas, r.Bananas)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Bananas: " + r.Bananas + "</color>\n";
+                }
+                if (r.BuildingMaterial > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.BuildingMaterial, r.BuildingMaterial)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "BuildingMaterial: " + r.BuildingMaterial + "</color>\n";
+                }
+                if (r.Energy > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Energy, r.Energy)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Energy: " + r.Energy + "</color>\n";
+                }
+                if (r.Food > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Food, r.Food)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Food: " + r.Food + "</color>\n";
+                }
+                if (r.Stone > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Stone, r.Stone)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Stone: " + r.Stone + "</color>\n";
+                }
+                if (r.Sugar > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Sugar, r.Sugar)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Sugar: " + r.Sugar + "</color>\n";
+                }
+                if (r.Wood > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Wood, r.Wood)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Wood: " + r.Wood + "</color>\n";
+                }
 
-                if (buildingPrefab.GetComponent<BuildingObject>() != null) { 
+                if (buildingPrefab.GetComponent<BuildingObject>() != null)
+                {
                     tooltipText = buildingPrefab.GetComponent<BuildingObject>().name + "\n" + buildingPrefab.GetComponent<BuildingObject>().description + "\n" + costs;
                 }
                 else
@@ -55,6 +93,66 @@ public class BuildingSelection : MonoBehaviour
 
     void Update ()
     {
+        if (GetComponent<BuildingRequirements>() != null)
+        {
+            if (buildingPrefab.GetComponent<BuildingObject>() != null || buildingPrefab.GetComponent<HookScript>() != null)
+            {
+                costs = "Costs:\n";
+                Resources r = GetComponent<BuildingRequirements>().requiredResources;
+                if (r.Bananas > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Bananas, r.Bananas)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Bananas: " + r.Bananas + "</color>\n";
+                }
+                if (r.BuildingMaterial > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.BuildingMaterial, r.BuildingMaterial)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "BuildingMaterial: " + r.BuildingMaterial + "</color>\n";
+                }
+                if (r.Energy > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Energy, r.Energy)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Energy: " + r.Energy + "</color>\n";
+                }
+                if (r.Food > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Food, r.Food)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Food: " + r.Food + "</color>\n";
+                }
+                if (r.Stone > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Stone, r.Stone)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Stone: " + r.Stone + "</color>\n";
+                }
+                if (r.Sugar > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Sugar, r.Sugar)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Sugar: " + r.Sugar + "</color>\n";
+                }
+                if (r.Wood > 0)
+                {
+                    if (ResourcesManager.hasResource(Resource.Wood, r.Wood)) costs += "<color=lime>";
+                    else costs += "<color=red>";
+                    costs += "Wood: " + r.Wood + "</color>\n";
+                }
+
+                if (buildingPrefab.GetComponent<BuildingObject>() != null)
+                {
+                    tooltipText = buildingPrefab.GetComponent<BuildingObject>().name + "\n" + buildingPrefab.GetComponent<BuildingObject>().description + "\n" + costs;
+                }
+                else
+                {
+                    tooltipText = "Hook\nPlace Hook on empty field to grab floating island.\n" + costs;
+                }
+            }
+        }
+        else costs = "";
         /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             selected = null;
@@ -127,12 +225,16 @@ public class BuildingSelection : MonoBehaviour
 
     public void OnGUI()
     {
-        if (showTip) {
+        if (showTip)
+        {
+            style = new GUIStyle(GUI.skin.textArea);
+            style.richText = true;
+            style.clipping = TextClipping.Overflow;
             if (buildingPrefab != null)
             {
                 if (buildingPrefab.GetComponent<BuildingObject>() != null || buildingPrefab.GetComponent<HookScript>() != null)
                 {
-                    GUI.TextArea(new Rect(Input.mousePosition.x-tooltipWidth, Screen.height - Input.mousePosition.y - tooltipHeight/2, tooltipWidth, tooltipHeight), tooltipText);
+                    GUI.TextArea(new Rect(Input.mousePosition.x-tooltipWidth, Screen.height - Input.mousePosition.y - tooltipHeight/2, tooltipWidth, tooltipHeight), tooltipText,style);
 
                 }
             }

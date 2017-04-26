@@ -10,11 +10,17 @@ public class BudMarket : BuildingObject
     public int energyCost;
     static public int increaseOverTime = 0;
     static public double productionFrequency;
+    static public int enabledStructures = 0;
+    static public int totalStructures = 0;
     public BudMarket() : base() {}
     void Start()
     {
         base.Start();
+        totalStructures++;
+        enabledStructures++;
         increaseOverTime += buildingMaterialAmount;
+        woodGlobalCost += (woodCost / buildingCooldown);
+        stoneGlobalCost += (stoneCost / buildingCooldown);
         PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.BudMarket;
@@ -29,6 +35,9 @@ public class BudMarket : BuildingObject
             {
                 if (!enabled)
                 {
+                    enabledStructures++;
+                    woodGlobalCost += (woodCost / buildingCooldown);
+                    stoneGlobalCost += (stoneCost / buildingCooldown);
                     PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += buildingMaterialAmount;
                     enabled = true;
@@ -42,6 +51,9 @@ public class BudMarket : BuildingObject
             {
                 if (enabled)
                 {
+                    enabledStructures--;
+                    woodGlobalCost -= (woodCost / buildingCooldown);
+                    stoneGlobalCost -= (stoneCost / buildingCooldown);
                     increaseOverTime -= buildingMaterialAmount;
                     PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                     enabled = false;
@@ -52,10 +64,26 @@ public class BudMarket : BuildingObject
         {
             if (enabled)
             {
+                enabledStructures--;
+                woodGlobalCost -= (woodCost / buildingCooldown);
+                stoneGlobalCost -= (stoneCost / buildingCooldown);
                 increaseOverTime -= buildingMaterialAmount;
                 PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                 enabled = false;
             }
         }
+    }
+    ~BudMarket()
+    {
+        if (enabled)
+        {
+            enabledStructures--;
+            woodGlobalCost -= (woodCost / buildingCooldown);
+            stoneGlobalCost -= (stoneCost / buildingCooldown);
+            increaseOverTime -= buildingMaterialAmount;
+            PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+            enabled = false;
+        }
+        totalStructures--;
     }
 }

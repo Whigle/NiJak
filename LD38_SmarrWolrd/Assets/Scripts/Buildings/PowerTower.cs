@@ -10,10 +10,15 @@ public class PowerTower : BuildingObject
     static public double energyConsumptionOverTime = 0;
     static public int pollutionOverTime = 0;
     static public double productionFrequency;
+    static public int enabledStructures = 0;
+    static public int totalStructures = 0;
     public PowerTower() : base() {}
+    
     void Start ()
     {
         base.Start();
+        enabledStructures++;
+        totalStructures++;
         increaseOverTime += energyAmount;
         pollutionOverTime += smogAmount;
         productionFrequency = buildingCooldown;
@@ -26,6 +31,7 @@ public class PowerTower : BuildingObject
         {
             if (!enabled)
             {
+                enabledStructures++;
                 increaseOverTime += energyAmount;
                 pollutionOverTime += smogAmount;
                 enabled = true;
@@ -36,11 +42,23 @@ public class PowerTower : BuildingObject
         else {
             if (enabled)
             {
+                enabledStructures--;
                 increaseOverTime -= energyAmount;
                 pollutionOverTime -= smogAmount;
                 enabled = false;
             }
         }
-        print(increaseOverTime);
+    }
+
+    ~PowerTower()
+    {
+        if (enabled)
+        {
+            enabledStructures--;
+            increaseOverTime -= energyAmount;
+            pollutionOverTime -= smogAmount;
+            enabled = false;
+        }
+        totalStructures--;
     }
 }

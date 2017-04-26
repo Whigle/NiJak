@@ -8,11 +8,15 @@ public class Woodery : BuildingObject
     public int energyCost;
     static public int increaseOverTime = 0;
     static public double productionFrequency;
+    static public int enabledStructures = 0;
+    static public int totalStructures = 0;
 
     public Woodery() : base() {}
     void Start()
     {
         base.Start();
+        totalStructures++;
+        enabledStructures++;
         increaseOverTime += woodAmount;
         PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
@@ -27,6 +31,7 @@ public class Woodery : BuildingObject
             {
                 if (!enabled)
                 {
+                    enabledStructures++;
                     PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += woodAmount;
                     enabled = true;
@@ -39,6 +44,7 @@ public class Woodery : BuildingObject
             {
                 if (enabled)
                 {
+                    enabledStructures--;
                     PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                     increaseOverTime -= woodAmount;
                     enabled = false;
@@ -49,10 +55,23 @@ public class Woodery : BuildingObject
         {
             if (enabled)
             {
+                enabledStructures--;
                 PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                 increaseOverTime -= woodAmount;
                 enabled = false;
             }
         }
+    }
+
+    ~Woodery()
+    {
+        if (enabled)
+        {
+            enabledStructures--;
+            PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+            increaseOverTime -= woodAmount;
+            enabled = false;
+        }
+        totalStructures--;
     }
 }

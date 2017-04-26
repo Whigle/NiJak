@@ -10,13 +10,19 @@ public class JamMaker : BuildingObject
     public int energyCost;
     static public int increaseOverTime = 0;
     static public double productionFrequency;
+    static public int enabledStructures = 0;
+    static public int totalStructures = 0;
 
     public JamMaker() : base() {}
 
     void Start ()
     {
         base.Start();
+        totalStructures++;
+        enabledStructures++;
         increaseOverTime += foodAmount;
+        bananasGlobalCost += (bananasCost/buildingCooldown);
+        sugarGlobalCost += (sugarCost / buildingCooldown);
         PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
         productionFrequency = buildingCooldown;
         buildingType = Building.JamMaker;
@@ -31,6 +37,9 @@ public class JamMaker : BuildingObject
             {
                 if (!enabled)
                 {
+                    enabledStructures++;
+                    bananasGlobalCost += (bananasCost / buildingCooldown);
+                    sugarGlobalCost += (sugarCost / buildingCooldown);
                     PowerTower.energyConsumptionOverTime += (energyCost / frequency.TotalSeconds);
                     increaseOverTime += foodAmount;
                     enabled = true;
@@ -45,6 +54,9 @@ public class JamMaker : BuildingObject
             {
                 if (enabled)
                 {
+                    enabledStructures--;
+                    bananasGlobalCost -= (bananasCost / buildingCooldown);
+                    sugarGlobalCost -= (sugarCost / buildingCooldown);
                     PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                     increaseOverTime -= foodAmount;
                     enabled = false;
@@ -55,10 +67,27 @@ public class JamMaker : BuildingObject
         {
             if (enabled)
             {
+                enabledStructures--;
+                bananasGlobalCost -= (bananasCost / buildingCooldown);
+                sugarGlobalCost -= (sugarCost / buildingCooldown);
                 PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
                 increaseOverTime -= foodAmount;
                 enabled = false;
             }
         }
+    }
+
+    ~JamMaker()
+    {
+        if (enabled)
+        {
+            enabledStructures--;
+            bananasGlobalCost -= (bananasCost / buildingCooldown);
+            sugarGlobalCost -= (sugarCost / buildingCooldown);
+            PowerTower.energyConsumptionOverTime -= (energyCost / frequency.TotalSeconds);
+            increaseOverTime -= foodAmount;
+            enabled = false;
+        }
+        totalStructures--;
     }
 }
