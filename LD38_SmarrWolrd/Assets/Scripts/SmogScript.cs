@@ -41,10 +41,10 @@ public class SmogScript : MonoBehaviour
         {
             Destroy (c.gameObject);
         }
-        //else if (c.gameObject.tag != "Rtree")
-        //{
-        //    Destroy (gameObject);
-        //}
+        else if (c.gameObject.tag == "ChunkIsland")
+        {
+            c.gameObject.GetComponent<IslandField>().fieldType = Building.None;
+        }
     }
 
     void OnCollisionEnter (Collision c)
